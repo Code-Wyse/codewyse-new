@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
-console.log('✅ next.config.cjs loaded');
-
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  images: {
+    unoptimized: true, // ✅ Crucial for next export
+  },
 };
 
 module.exports = nextConfig;
-
