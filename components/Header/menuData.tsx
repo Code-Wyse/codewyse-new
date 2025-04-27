@@ -15,6 +15,12 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
+    title: "Projects",
+    newTab: false,
+    path: "/#project",
+  },
+  {
+    id: 2,
     title: "Launch Kits",
     newTab: false,
     path: "/#launchkits",

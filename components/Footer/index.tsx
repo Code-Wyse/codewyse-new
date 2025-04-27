@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -158,12 +159,12 @@ const Footer = () => {
 
                   <ul>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/about-us"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
@@ -174,20 +175,20 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/blog"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </motion.div>
@@ -280,19 +281,19 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link  href="/privacy-policy" className="hover:text-primary">
                     Privacy Policy
-                  </a>
+                  </Link >
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link  href="/terms-conditions" className="hover:text-primary">
                     Terms of Service
-                  </a>
+                  </Link >
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link  href="/support" className="hover:text-primary">
                     Client Support
-                  </a>
+                  </Link >
                 </li>
               </ul>
             </motion.div>
@@ -315,7 +316,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>
+              <p className="text-center">
                 &copy; {new Date().getFullYear()} CodeWyse. All rights reserved <br />Crafted for builders. Trusted by visionaries.
               </p>
             </motion.div>

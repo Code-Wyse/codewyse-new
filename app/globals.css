@@ -223,3 +223,12 @@ pre {
 .active-tab {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
+
+
+.new-bg{
+  background: #09E3BA14;
+
+}
+.hello .swiper-wrapper{
+  height: 370px;
+}

@@ -52,22 +52,22 @@ const Pricing = () => {
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                   SEO & Blog
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   Mailgun emails
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   Stripe / Lemon Squeezy
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   MongoDB / Supabase
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   Google Oauth & Magic Links
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   Components & animations
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   ChatGPT prompts for terms & privacy
                   </li>
                 </ul>
@@ -119,31 +119,31 @@ const Pricing = () => {
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                   SEO & Blog
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   Mailgun emails
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   Stripe / Lemon Squeezy
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   MongoDB / Supabase
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   Google Oauth & Magic Links
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   Components & animations
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   ChatGPT prompts for terms & privacy
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   Discord community & Leaderboard
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   $1,210 worth of discounts
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black   last:mb-0 dark:text-manatee">
                   Lifetime updates
                   </li>
                 </ul>
