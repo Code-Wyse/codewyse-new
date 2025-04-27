@@ -279,7 +279,7 @@ const About = () => {
                 fill
               />
               <Image
-                src="./images/about/about-dark-02.svg"
+                src="/images/about/about-dark-02.svg"
                 alt="About"
                 className="hidden dark:block"
                 fill

@@ -9,7 +9,7 @@ export const RecentsWordData: RecentWork[] = [
       name1: "App",
       name2: "Technology"
     },
-    image: './images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec1.png',
     buttonUrl: "hello/",
   },
   {
@@ -18,7 +18,7 @@ export const RecentsWordData: RecentWork[] = [
       name1: "App",
       name2: "Technology"
     },
-    image: './images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec1.png',
     buttonUrl: "hello/",
   },
   {
@@ -27,7 +27,7 @@ export const RecentsWordData: RecentWork[] = [
       name1: "App",
       name2: "Technology"
     },
-    image: './images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec1.png',
     buttonUrl: "hello/",
   },
   {
@@ -36,7 +36,7 @@ export const RecentsWordData: RecentWork[] = [
       name1: "App",
       name2: "Technology"
     },
-    image: './images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec1.png',
     buttonUrl: "hello/",
   }
   
