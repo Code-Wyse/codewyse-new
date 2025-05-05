@@ -28,6 +28,13 @@ const Feature = () => {
             ))}
             {/* <!-- Features item End --> */}
           </div>
+          <div className="flex items-center justify-center mt-5">
+            <button
+              aria-label="get started button"
+              className="flex rounded-full bg-primary pointer px-7.5 py-2.5 text-white duration-300 ease-in-out  hover:bg-primaryho">
+              Book a Call
+            </button>
+          </div>
         </div>
       </section>
 

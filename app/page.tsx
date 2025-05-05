@@ -13,6 +13,7 @@ import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import RecentWork from "@/components/RecentWorks/RecentWork";
+import CookieConsent from "@/components/Cookies/CookieConsent";
 
 export const metadata: Metadata = {
   title: "Codewyse",
@@ -37,6 +38,7 @@ export default function Home() {
       <Testimonial />
       <Pricing />
       <Contact />
+      <CookieConsent />
       {/* <Blog /> */}
     </main>
   );

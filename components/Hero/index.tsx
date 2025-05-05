@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import SectionHeader from "../Common/SectionHeader";
+import NewSectionHeader from "../Common/NewSectionHeader";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -15,20 +17,39 @@ const Hero = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
-              <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                  Build Smarter. Launch Faster. Scale Fearlessly.
-              </h4>
-              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
+            <NewSectionHeader
+            headerInfo={{
+              title: "Build Smarter. Launch Faster. Scale Fearlessly.",
+              subtitle: "",
+              description: ``,
+          
+            }}
+          />
+              {/* <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
+                  
+              </h4> */}
+              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white text-[28px] ">
                   Custom Web & Mobile App Development Powered by AI, Blockchain & Automation.
               </h1>
               <p>
                 At CodeWyse, we engineer scalable digital products for startups and enterprises using future-ready tech—so you can launch confidently and grow without limits.<br /><br />
-                ✅ RPA & AI Automation<br />
+                {/* ✅ RPA & AI Automation<br />
                 ✅ Scalable Web Platforms<br />
                 ✅ iOS & Android Apps<br />
                 ✅ Blockchain Solutions<br />
-                ✅ UI/UX Design & Optimization<br />
+                ✅ UI/UX Design & Optimization<br /> */}
               </p>
+              <ul className="new-list">
+                <li>
+                RPA & AI Automation
+                </li>
+                <li>
+                Scalable Web Platforms
+                </li>
+                <li>iOS & Android Apps</li>
+                <li>Blockchain Solutions</li>
+                <li>UI/UX Design & Optimization</li>
+              </ul>
 
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
@@ -80,17 +101,19 @@ const Hero = () => {
                 />
                 <div className=" relative aspect-700/444 w-full rounded-xl overflow-hidden">
                   <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.jpg"
+                    className="object-contain dark:hidden"
+                    src="/images/banner-sec/main-banner-sec_img.png"
                     alt="Hero"
-                    fill
+                      width={450}
+                      height={500}
                   />
-                  <Image
+                  {/* <Image
                     className="hidden shadow-solid-l dark:block"
-                    src="/images/hero/hero-dark.svg"
+                    src="/images/banner-sec/main-banner-sec_img.png"
                     alt="Hero"
-                    fill
-                  />
+                    width={500}
+                    height={500}
+                  /> */}
                 </div>
               </div>
             </div>

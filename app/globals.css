@@ -232,3 +232,24 @@ pre {
 .hello .swiper-wrapper{
   height: 370px;
 }
+
+
+
+/* testing  */
+
+ul.new-list li {
+  margin: 0 0 7px 16px;
+  position: relative;
+}
+
+ul.new-list li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background: #38a297;
+  border-radius: 50%;
+  left: -18px;
+}

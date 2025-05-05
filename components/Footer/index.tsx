@@ -117,12 +117,12 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="careers/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Careers
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a

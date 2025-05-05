@@ -240,7 +240,7 @@ const About = () => {
                   </p>
                 <a
                   href="#"
-                  className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                  className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[40%] gap-4 hover:bg-primaryho"
                 >
                   Book a Call
                   <svg

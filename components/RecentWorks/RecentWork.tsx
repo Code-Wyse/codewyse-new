@@ -17,14 +17,14 @@ function RecentWork() {
             <div className="flex flex-col  ">
                 <SectionHeader
                     headerInfo={{
-                        title: "Our Recent Work",
+                        title: "🚀 Our Recent Work",
                         subtitle: "",
                         description: ``,
                     }}
                 />
                 <div className="">
-                    <h4 className='mx-auto text-center mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3'>Custom Wordpress Website designs</h4>
-                    <p className='mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint necessitatibus blanditiis autem quia quasi voluptate? Est, numquam vero! Provident quaerat mollitia illo incidunt! Eum tempora, quis hic eius ducimus dolor?</p>
+                    <h4 className='mx-auto text-center mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3'>Custom Web & Mobile Development That Drives Results</h4>
+                    <p className='mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] text-center'>We specialize in building powerful, user-first digital experiences — from responsive websites to high-performance mobile apps. Whether you're launching a startup or scaling an enterprise, our team brings your vision to life with clean code, intuitive design, and scalable architecture.</p>
                 </div>
                 <div className="hello">
                     <motion.div
@@ -52,10 +52,10 @@ function RecentWork() {
                                 spaceBetween={50}
                                 slidesPerView={3}
                                 autoplay=
-                                  {{
+                                {{
                                     delay: 2500,
                                     disableOnInteraction: false,
-                                  }}
+                                }}
                                 pagination={{
                                     clickable: true,
                                 }}

@@ -224,6 +224,25 @@ const Pricing = () => {
               </button>
             </div>
           </div>
+          <div className="flex items-center justify-center mt-5">
+          <a
+                href="#"
+                className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[20%] gap-4 hover:bg-primaryho"
+              >
+                <span className="duration-300 group-hover:pr-2">Explore More</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+          </div>
         </div>
       </section>
       {/* <!-- ===== Pricing Table End ===== --> */}
