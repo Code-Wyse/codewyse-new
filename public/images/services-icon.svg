@@ -5,7 +5,7 @@
         <polygon id="path-1" points="0 0 24.9999004 0 24.9999004 15.1451288 0 15.1451288"></polygon>
         <polygon id="path-3" points="0 18.0148805 25 18.0148805 25 0 0 0"></polygon>
     </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
         <g id="mobile-services-active" transform="translate(-24.000000, -17.000000)">
             <g id="services-icon" transform="translate(24.000000, 17.000000)">
                 <g id="Group-3" transform="translate(0.000100, 0.000000)">

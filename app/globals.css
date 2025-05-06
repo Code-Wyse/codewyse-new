@@ -253,3 +253,105 @@ ul.new-list li::after {
   border-radius: 50%;
   left: -18px;
 }
+
+
+/* fot real testing  */
+.avatar-group {
+  display: flex;
+  overflow: hidden;
+}
+.avatar-group :where(.avatar) {
+  overflow: hidden;
+  border-radius: 9999px;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--b1) / var(--tw-border-opacity));
+}
+.avatar {
+  position: relative;
+  display: inline-flex
+;
+}
+.rating {
+  position: relative;
+  display: inline-flex
+;
+}
+.rating {
+  position: relative;
+  display: inline-flex
+;
+}
+.text-neutral {
+  --tw-text-opacity: 1;
+  color: (#2e1a05 / var(--tw-text-opacity));
+}
+
+.relative {
+  position: relative;
+}
+.bg-neutral-content {
+  --tw-bg-opacity: 1;
+  background-color: (#d2cbc6 / var(--tw-bg-opacity));
+}
+.btn-wide {
+  width: 16rem;
+}
+
+
+.btn-primary {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+  outline-color: hsl(var(--p) / 1);
+}
+.btn {
+  display: inline-flex
+;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  text-align: center;
+  transition-duration: .2s;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  line-height: 1em;
+  min-height: 3rem;
+  gap: .5rem;
+  font-weight: 600;
+  text-decoration-line: none;
+ border: 1px solid black;
+ border-radius: 10px;
+}
+.btn {
+  text-transform: capitalize !important;
+}
+.badge-outline.badge-accent {
+  --tw-text-opacity: 1;
+  color: hsl(var(--a) / var(--tw-text-opacity));
+}
+.gap-1 {
+  gap: .25rem;
+}
+.badge-outline {
+  border-color: currentColor;
+  --tw-border-opacity: 0.5;
+  background-color: transparent;
+  color: currentColor;
+}
+.bg-neutral {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 26 5 / var(--tw-bg-opacity));
+}

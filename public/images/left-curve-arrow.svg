@@ -6,7 +6,7 @@
         <polygon id="path-3" points="0 0.174244531 3 0.174244531 3 2.82575547 0 2.82575547"></polygon>
         <polygon id="path-5" points="0.2544 -2.13162821e-14 2.7456 -2.13162821e-14 2.7456 3 0.2544 3"></polygon>
     </defs>
-    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Landing-Page" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
         <g id="Landing-Page_A---Desktop" transform="translate(-689.000000, -235.000000)">
             <g id="left-curve-arrow" transform="translate(689.000000, 235.000000)">
                 <path d="M63.0455,29.6810963 C64.4225,29.5190963 62.3315,28.8920963 63.9545,29.3660963 C63.7505,29.7110963 63.4805,29.9750963 63.0455,29.6810963" id="Fill-1" fill="#35BC9B"></path>

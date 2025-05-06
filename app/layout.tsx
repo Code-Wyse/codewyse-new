@@ -8,7 +8,10 @@ import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
 // import "./style.css";
-
+import '@/lib/fontawesome'; // adjust the path
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "./context/ToastContext";
