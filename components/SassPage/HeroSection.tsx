@@ -133,11 +133,13 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-            <div className="relative max-md:-m-4 lg:w-full">
+            <div className="relative mx-auto max-md:-m-4 lg:w-full">
                 <Image
                     alt='banner image'
-                    src={'/images/sass/sass-banner.png'}
-                    fill
+                    src={'/images/sass/banner-side.png'}
+                    width={480}
+                    height={700}
+                    className='w-[100%] mx-auto'
                 />
                 {/* <img
                 alt="Mongo + Mailgun + Stripe + NextJS + Tailwind + NextAuth = ShipFast" fetchpriority="high" width="1080"
