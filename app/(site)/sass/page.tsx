@@ -11,10 +11,10 @@ import TestimonialsSection from "@/components/SassPage/TestimonialsSection";
 import BoostAppSection from "@/components/SassPage/BoostAppSection";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy : Codewyse",
+  title: "Launch Your Startup in Days, Not Weeks | Codewyse",
 
   // other metadata
-  description: "Privacy Policy : Codewyse"
+  description: "The NextJS boilerplate with all the stuff you need to get your product in front of customers. From idea to production in 5 minutes."
 };
 
 const page = () => {

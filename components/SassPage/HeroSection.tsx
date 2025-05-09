@@ -126,7 +126,7 @@ function HeroSection() {
                             <FontAwesomeIcon icon={faStar} style={{ color: '#f0b100' }} />
                             <FontAwesomeIcon icon={faStar} style={{ color: '#f0b100' }} />
                         </div>
-                        <div className="text-base text-black"><span className="font-semibold text-base-content">6998 </span>
+                        <div className="text-base text-black"><span className="font-semibold text-black">6998 </span>
                             maker
                             s
                             ship faster</div>

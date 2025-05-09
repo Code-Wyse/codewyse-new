@@ -13,7 +13,7 @@ import SectionHeader from '../Common/SectionHeader';
 
 const PricingSection: React.FC = () => {
     return (
-        <section className="bg-base-200 overflow-hidden pt-20 pb-20" id="pricing">
+        <section className="bg-[#80808012] overflow-hidden pt-20 pb-20" id="pricing">
             <div className="py-24 pb-0 px-8 max-w-7xl mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                     <p className="font-medium text-primary mb-8"></p>
