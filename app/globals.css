@@ -334,6 +334,7 @@ ul.new-list li::after {
   text-decoration-line: none;
  border: 1px solid black;
  border-radius: 10px;
+ color: #000;
 }
 .btn {
   text-transform: capitalize !important;
@@ -354,4 +355,29 @@ ul.new-list li::after {
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: rgb(46 26 5 / var(--tw-bg-opacity));
+}
+
+.bg-base-100{
+  background: #212121;
+}
+.btn-primary{
+  background: #ffbe1a;
+}
+
+.bg-accent{
+  background: #38a297;
+}
+.relative.z-20.bg-primary.text-primary-content.text-lg.font-medium.p-4.leading-tight.select-none.rounded-b-xl {
+  color: white;
+}
+.h-full.relative.flex.flex-col.gap-5.lg\:gap-8.z-10.p-8.rounded-lg.bg-base-100 {
+  color: white !important;
+}
+
+span.text-base-content {
+  color: white !important;
+}
+
+p.text-xs.opacity-60.uppercase.font-semibold {
+  color: white;
 }

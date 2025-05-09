@@ -24,7 +24,7 @@ function MrrSection() {
             src="/_next/static/media/jackMrrScreen.cf989856.jpg"> */}
         <div className="space-y-4 max-w-md mx-auto">
             <CommaIconScg />
-            <p className="md:text-lg leading-relaxed max-md:text-center">Without ShipFast I might have never launched my
+            <p className="md:text-lg leading-relaxed max-md:text-center text-black" >Without ShipFast I might have never launched my
                 SaaS and I would still be at $0 MRR.</p>
             <div className="flex items-center gap-2 max-md:justify-center">
                 <Image 
@@ -40,18 +40,20 @@ function MrrSection() {
                     src="/_next/static/media/jackpfp.38e84582.jpg"> */}
                 <p>Jack Friks</p>
             </div>
-            <div className="max-md:flex max-md:justify-center"><span className="badge badge-accent badge-outline gap-1">Built
+            <div className="max-md:flex max-md:justify-center"><span className="text-black badge badge-accent badge-outline gap-1">Built
                     <span className="select-all">post-bridge.com</span></span></div>
         </div>
     </div>
     <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8"><span
-            className="text-xs text-[10px] opacity-50">Featured on</span><a
-            href="#" target="_blank" rel="noreferrer"
+            className="text-xs text-[14px] text-black">Featured on</span>
+            <a
+            href="#" target="_blank" className='flex group gap-3 item-center' rel="noreferrer"
             title="Featured on Hackers New">
-                <HackerNewSvg />
-            </a><a href="#" target="_blank" rel="noreferrer"
+                <HackerNewSvg /><p className='pl-8'>Hacker News</p>
+            </a>
+            <a href="#" target="_blank" className='flex items-center gap-1' rel="noreferrer"
             title="Featured on Product Hunt">
-                <ProductHuntSvg />
+                <ProductHuntSvg /> <p className='pl-9'>Product Hunt</p>
             </a><a href="#" target="_blank"
             rel="noreferrer" title="Featured on X.com">
                <TwitterIconSvg />

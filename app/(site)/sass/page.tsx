@@ -5,6 +5,10 @@ import MrrSection from "@/components/SassPage/MrrSection";
 import HeadacheSection from "@/components/SassPage/HeadacheSection";
 import FeatureSection from "@/components/SassPage/FeatureSection";
 import ProductStorySection from "@/components/SassPage/ProductStorySection";
+import PricingSection from "@/components/SassPage/PricingSection";
+import FAQ from "@/components/FAQ";
+import TestimonialsSection from "@/components/SassPage/TestimonialsSection";
+import BoostAppSection from "@/components/SassPage/BoostAppSection";
 
 export const metadata: Metadata = {
   title: "Privacy Policy : Codewyse",
@@ -21,6 +25,10 @@ const page = () => {
     <HeadacheSection />
     <FeatureSection />
     <ProductStorySection />
+    <PricingSection />
+    <FAQ />
+    <TestimonialsSection />
+    <BoostAppSection />
     </>
   );
 };

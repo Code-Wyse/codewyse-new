@@ -50,13 +50,13 @@ export default function FeatureSection() {
   const current = features[activeTab]
 
   return (
-    <section className="bg-neutral text-white py-12">
+    <section className="bg-[#38a297] text-white py-12">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4">
           Supercharge your app instantly,
           <br /> launch faster, make $
         </h2>
-        <p className="text-gray-400 mb-6 max-w-2xl">
+        <p className="text-white mb-6 max-w-2xl">
           Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. ShipFast provides boilerplate code to launch, FAST.
         </p>
 
@@ -66,7 +66,7 @@ export default function FeatureSection() {
             <div
               key={tab.id}
               className={`flex flex-col items-center cursor-pointer px-4 py-2 rounded ${
-                activeTab === tab.id ? 'text-yellow-400' : 'text-gray-500'
+                activeTab === tab.id ? 'text-yellow-400' : 'text-white'
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
@@ -79,9 +79,9 @@ export default function FeatureSection() {
         {/* Tab Content */}
         <div>
           <h3 className="text-xl font-semibold mb-4">{current.title}</h3>
-          <ul className="list-disc ml-6 space-y-1 text-sm text-gray-300">
+          <ul className="list-disc ml-6 space-y-1 text-sm text-white">
             {current.points.map((point, index) => (
-              <li key={index} className={point.includes('saved') || point.includes('Headaches') ? 'text-green-400' : ''}>
+              <li key={index} className={point.includes('saved') || point.includes('Headaches') ? 'text-black' : ''}>
                 {point}
               </li>
             ))}
