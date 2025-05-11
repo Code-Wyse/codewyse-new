@@ -381,3 +381,37 @@ span.text-base-content {
 p.text-xs.opacity-60.uppercase.font-semibold {
   color: white;
 }
+
+
+/* for testing 
+ */
+
+.new_class:after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    border-top: 2px dashed #18b28d;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+.new_class:before {
+    content: "";
+    width: -webkit-calc(100% + 30px);
+    width: -moz-calc(100% + 30px);
+    width: calc(100% + 30px);
+    height: 1px;
+    background: #18b28d;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.new_class{
+  position: relative;
+}

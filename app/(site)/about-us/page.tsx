@@ -5,6 +5,10 @@ import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import FunFact from "@/components/FunFact";
 import OurTeam from "@/components/AboutPage/OurTeam";
+import NewAboutBanner from "@/components/About/NewAboutBanner";
+import HistorySlider from "@/components/AboutPage/HistorySlider";
+import AboutSection from "@/components/AboutPage/AboutSection";
+import WhatDefinesUs from "@/components/AboutPage/WhatDefinesUs";
 
 export const metadata: Metadata = {
     title: "Privacy Policy : Codewyse",
@@ -16,11 +20,15 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <section className="pt-[50px] pb-10">
-                <Hero />
+                {/* <Hero /> */}
+                <NewAboutBanner />
                 <Brands />
-                <div className="mt-10">
+                <AboutSection />
+                <HistorySlider />
+                <WhatDefinesUs />
+                {/* <div className="mt-10">
                 <FunFact />
-                </div>
+                </div> */}
                 <OurTeam />
 
         </section>

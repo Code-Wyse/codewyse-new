@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="260px" viewBox="0 0 280 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>background-march10</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="280" height="260" rx="8"></rect>
+    </defs>
+    <g id="3.0-About-(release-2.0)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About---HistoryHighlights-Reference-" transform="translate(-959.000000, -124.000000)">
+            <g id="background-march10" transform="translate(959.000000, 124.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+                <circle id="Oval" fill="#0A1A1F" mask="url(#mask-2)" cx="290.5" cy="121.5" r="218.5"></circle>
+                <path d="M487.870718,16.4410306 C435.169265,-13.6346951 336.869891,-60.8629436 281.422253,-36.03269 C275.278407,-33.2813872 260.272901,-16.8108213 258.132833,-14.2092541 C215.570952,37.5309662 231.950031,115.313213 247.759924,169.003519 C254.085435,190.484919 264.443692,209.63859 271.135384,231.008754 C279.394589,257.384825 312.232167,308.945741 345.507805,326.212364 C411.280328,360.341518 488.205838,375.465937 561.518046,362.254685 C564.994009,361.628298 662.714315,345.311524 672.205646,325.407814 C681.356867,306.217327 678.329893,263.768879 676.452745,246.434207 C670.069714,187.489606 645.238323,74.6602143 584.517363,43.5095177 C561.39408,31.6469519 533.246274,35.5144967 508.66139,27.1167986 L487.870718,16.4410306 Z" id="Path-6" stroke="#000000" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

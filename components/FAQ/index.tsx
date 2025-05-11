@@ -63,7 +63,7 @@ const FAQ = () => {
 
               <a
                 href="#"
-                className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[40%] gap-4 hover:bg-primaryho"
+                className="flex hidden items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[40%] gap-4 hover:bg-primaryho"
               >
                 <span className="duration-300 group-hover:pr-2">Know More</span>
                 <svg

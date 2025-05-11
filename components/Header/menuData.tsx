@@ -7,23 +7,30 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/",
   },
+    {
+    id: 2,
+    title: "About",
+    newTab: false,
+    path: "/about-us",
+  },
   {
     id: 2,
     title: "Services",
     newTab: false,
-    path: "/#services",
+    path: "/services",
   },
   {
     id: 2,
     title: "Projects",
     newTab: false,
-    path: "/#project",
+    path: "/projects",
   },
+
   {
     id: 2,
-    title: "Launch Kits",
+    title: "Career",
     newTab: false,
-    path: "/#launchkits",
+    path: "/careers",
   },
   {
     id: 3,

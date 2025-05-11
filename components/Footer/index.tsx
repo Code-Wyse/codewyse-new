@@ -93,28 +93,28 @@ const Footer = () => {
 
                   <ul>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/services"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Services
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/projects"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Projects
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -124,14 +124,14 @@ const Footer = () => {
                         Careers
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Launch Kits
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </motion.div>
 
@@ -166,14 +166,14 @@ const Footer = () => {
                         About Us
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Press & media
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
                         href="/blog"

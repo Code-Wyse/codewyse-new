@@ -7771,3 +7771,151 @@ header.section-header {
 
 
 
+
+
+  
+
+.new_class:after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    border-top: 2px dashed #18b28d;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+.new_class:before {
+    content: "";
+    width: -webkit-calc(100% + 30px);
+    width: -moz-calc(100% + 30px);
+    width: 90%;
+    height: 1px;
+    background: #18b28d;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.new_class{
+  position: relative;
+}
+
+span.slider__date.for-hr{
+        text-align: center;
+
+    z-index: 2;
+    padding: 5px 30px;
+    background: #fff;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+span.slider__date.for-hr strong {
+   font-size: 1.2em; 
+}
+
+/* font-size: 1.2em; */
+
+.numbered-grid li {
+    max-width: 50%;
+    width: 100%;
+        position: relative;
+
+    
+}
+.numbered-grid__number
+ {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 1.0625;
+    color: #f3f5f7;
+    position: absolute;
+    top: -60px;
+    left: 30px;
+}
+.numbered-grid__content {
+    position: relative;
+    z-index: 2;
+}
+.numbered-grid li h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 32px;
+}
+.numbered-grid li p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+
+.team {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+    .services .team-hero-wrapper {
+        left: -15%;
+            position: absolute;
+
+    }
+
+
+    .team-curve {
+    position: absolute;
+    left: -72%;
+}
+    .services .team__hero {
+        width: 625px;
+    }
+    .team__hero {
+    z-index: 10;
+    position: relative;
+    left: 180px;
+
+}
+.team__content {
+    flex: 0 0 50%;
+    margin-left: auto;
+    position: relative;
+    z-index: 100;
+}
+
+.team__title {
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+
+
+
+.services .team__btn {
+    padding: 13px 36px;
+}
+
+.team__btn {
+    font-family: "Proxima Nova Rg";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    padding: 20px 35px;
+    border: 3px solid #16a684;
+    border-radius: 8px;
+    display: inline-block;
+}
