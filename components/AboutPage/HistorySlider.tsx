@@ -26,7 +26,10 @@ const slides: Slide[] = [
         // date: 'NOV 2008',
         background: '/images/about-us/2009-bg.svg',
         content: (
-            <p>
+            <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>
                 <a href="/teams/vicki-iverson">Vicki Iverson</a> starts a freelance hustle in iPhone app development.
             </p>
         ),
@@ -37,7 +40,10 @@ const slides: Slide[] = [
         // date: 'SEP 2009',
         background: '/images/about-us/2009-2bg.svg',
         content: (
-            <p>
+            <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>
                 <a href="/teams/vicki-iverson">Vicki Iverson</a> and{' '}
                 <a href="/teams/matt-strentse">Matt Strentse</a> partner to officially found Iversoft, a mobile
                 development agency, in their Toronto dining room.
@@ -51,7 +57,31 @@ const slides: Slide[] = [
         background: '/images/about-us/2009-3bg.svg',
         content: (
             <>
-                <p>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
+                <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
+                <Image
+                    src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
+                    alt="Solitaire App Icon"
+                    width={105}
+                    height={105}
+                    className='text-start items-start'
+                />
+            </>
+        ),
+    },
+    {
+        month: 'NOV',
+        year: '2009',
+        // date: 'NOV 2009',
+        background: '/images/about-us/2009-4bg.svg',
+        content: (
+            <>
+                <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
                 <Image
                     src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
                     alt="Solitaire App Icon"
@@ -68,24 +98,10 @@ const slides: Slide[] = [
         background: '/images/about-us/2009-4bg.svg',
         content: (
             <>
-                <p>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
-                <Image
-                    src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
-                    alt="Solitaire App Icon"
-                    width={105}
-                    height={105}
-                />
-            </>
-        ),
-    },
-    {
-        month: 'NOV',
-        year: '2009',
-        // date: 'NOV 2009',
-        background: '/images/about-us/2009-4bg.svg',
-        content: (
-            <>
-                <p>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
+                <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
                 <Image
                     src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
                     alt="Solitaire App Icon"
@@ -102,11 +118,11 @@ export default function HistorySlider() {
     const settings = {
         dots: false,
         arrows: true,
-        infinite: true,
+        infinite: false,
         speed: 600,
-        slidesToShow: 3,
+        slidesToShow: 3.5,
         slidesToScroll: 1,
-        centerMode: true,
+        centerMode: false,
         responsive: [
             {
                 breakpoint: 768,
@@ -119,7 +135,7 @@ export default function HistorySlider() {
 
     return (
         <section className="section--history pt-20 pb-10" id="history">
-            <div className="container">
+            <div className="container overflow-hidden">
                 <div className="mt-3 pb-15">
                 <h2 className='text-center text-4xl font-bold'>Historical Highlights</h2>
                 </div>
@@ -147,18 +163,18 @@ export default function HistorySlider() {
                                     <br />
                                     <strong>{slide.year}</strong>
                                 </span>
-                                <div className="main_divv z-10 relative w-[280px] h-[260px] mt-5">
-                                    <div className="main_image w-[280px] h-[260px]">
+                                <div className="main_divv z-10 relative w-full h-auto lg:w-[350px] lg:h-[350px] mt-5">
+                                    <div className="main_image w-full h-auto lg:w-[350px] lg:h-[350px]">
                                         <Image
                                             alt='bg Image'
                                             src={slide.background}
-                                            width={280}
-                                            height={260}
+                                            width={350}
+                                            height={350}
 
                                         />
                                     </div>
 
-                                <div className='absolute top-15 px-4 items-start text-start  z-30 w-full overflow-hidden text-white  left-0 right-0'>{slide.content}</div>
+                                <div className='absolute top-0 bottom-0 flex-col px-8 flex justify-center items-start text-start  z-30 w-full overflow-hidden text-white  left-0 right-0 '>{slide.content}</div>
                                 </div>
                             </div>
                         </div>

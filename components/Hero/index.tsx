@@ -10,13 +10,24 @@ const Hero = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+   const openCalendly = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/codewyse/30min?primary_color=3ba196',
+      });
+    } else {
+      console.warn('Calendly script not loaded yet.');
+    }
+  };
 
   return (
     <>
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" md:w-1/2">
+            <div className=" w-full md:w-1/2">
             <NewSectionHeader
             headerInfo={{
               title: "Build Smarter. Launch Faster. Scale Fearlessly.",
@@ -28,7 +39,7 @@ const Hero = () => {
               {/* <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
                   
               </h4> */}
-              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white text-[28px] ">
+              <h1 className="mb-5 pr-0 text-[22px] lg:pr-16 font-bold text-black dark:text-white lg:text-[28px] ">
                   Custom Web & Mobile App Development Powered by AI, Blockchain & Automation.
               </h1>
               <p>
@@ -63,6 +74,7 @@ const Hero = () => {
                     /> */}
                     <button
                       aria-label="get started button"
+                      onClick={openCalendly}
                       className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                     >
                       Book a Call

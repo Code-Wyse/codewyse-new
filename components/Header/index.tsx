@@ -27,17 +27,28 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  const openCalendly = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/codewyse/30min?primary_color=3ba196',
+      });
+    } else {
+      console.warn('Calendly script not loaded yet.');
+    }
+  };
+
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full py-7 ${
-        stickyMenu
+      className={`fixed left-0 top-0 z-99999 w-full py-7 ${stickyMenu
           ? "bg-white py-4! shadow-sm transition duration-100 dark:bg-black"
           : ""
-      }`}
+        }`}
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
-          <Link  href="/">
+          <Link href="/">
             <Image
               src="/images/logo/logo.png"
               alt="logo"
@@ -55,7 +66,7 @@ const Header = () => {
           </Link >
 
           {/* <!-- Hamburger Toggle BTN --> */}
-          {/* <button
+          <button
             aria-label="hamburger Toggler"
             className="block xl:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
@@ -91,16 +102,15 @@ const Header = () => {
                 ></span>
               </span>
             </span>
-          </button> */}
+          </button>
           {/* <!-- Hamburger Toggle BTN --> */}
         </div>
 
         {/* Nav Menu Start   */}
         <div
-          className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
-            navigationOpen &&
+          className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${navigationOpen &&
             "navbar visible! mt-4 h-auto max-h-[400px] rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
-          }`}
+            }`}
         >
           <nav>
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
@@ -163,6 +173,7 @@ const Header = () => {
 
             <Link
               href="#"
+              onClick={openCalendly}
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
               Book a Call

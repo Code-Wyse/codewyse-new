@@ -27,7 +27,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="animate_top w-1/2 lg:w-1/4"
+                className="animate_top w-full lg:w-1/4"
               >
                 <a href="/" className="relative">
                   <Image
@@ -68,7 +68,7 @@ const Footer = () => {
                   </span>
               </motion.div>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
+              <div className="flex w-full flex-wrap lg:flex-nowrap gap-20  px-4 lg:px-0 lg:gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
                 <motion.div
                   variants={{
                     hidden: {
@@ -85,7 +85,7 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top"
+                  className="animate_top sm:w-[25%]"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Quick Links
@@ -151,7 +151,7 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top"
+                  className="animate_top sm:w-[25%]"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Quick Links
@@ -279,9 +279,9 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <ul className="flex items-center gap-8">
+              <ul className="flex items-center gap-2 lg:gap-8">
                 <li>
-                  <Link  href="/privacy-policy" className="hover:text-primary">
+                  <Link  href="/privacy-policy" className="hover:text-primary ">
                     Privacy Policy
                   </Link >
                 </li>

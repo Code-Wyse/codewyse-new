@@ -1,0 +1,86 @@
+// components/CoreValues.tsx
+import Image from "next/image";
+import "../../app/style.css";
+
+
+
+type CoreValue = {
+  title: string;
+  imageSrc: string;
+  imageAlt: string;
+  description: string | any;
+};
+
+const coreValues: CoreValue[] = [
+  {
+    title: "Mobile App Development",
+    imageSrc: "/images/mobile-development-services.png",
+    imageAlt: "Empower People",
+    description:
+      "Mobile-first since 2009. We create products that are easier for you to scale and maintain, while working flawlessly on the world’s most ubiquitous device – our phones.",
+  },
+  {
+    title: "Web Development",
+    imageSrc: "/images/web-development-services.png",
+    imageAlt: "Do The Right Thing",
+    description:
+      "We can build your site from scratch or optimize the software you’re currently using. With seamless API integration and a simplified backend, you have all the features and none of the hassle.",
+  },
+  {
+    title: "User Experience & Interface Design",
+    imageSrc: "/images/ui-ux-services.png",
+    imageAlt: "Balance",
+    description: (
+      <>
+        The way information is presented can completely change how you feel about it. That’s why our team of UX/UI experts meticulously craft stunning visuals and exceptional user experiences.
+      </>
+    ),
+  },
+  {
+    title: "Quality Assurance",
+    imageSrc: "/images/qa-services.png",
+    imageAlt: "Client",
+    description:
+      "Iversoft prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+  },
+ 
+];
+
+const ServicesGridSection = () => {
+  return (
+    <section className="section--core-values">
+      <div className="container">
+        {/* <h2 className="text-center">Our Services</h2> */}
+        <div className="development__row flex gap-4">
+          {coreValues.map((value, index) => (
+            <div key={index} className="development__card--wrapper " style={{
+                width: '22%',
+
+            }}>
+              <div className="development__card">
+                <h4 className="card-title">
+                {value.title}
+                </h4>
+                <div className="card-img">
+                  <Image
+                    src={value.imageSrc}
+                    alt={value.imageAlt}
+                    width={300}
+                    height={200}
+                    layout="responsive"
+                  />
+                </div>
+                <div className="development-card__content">
+                  <h4 className="card-title">{value.title}</h4>
+                  <p className="development-card__text">{value.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesGridSection;

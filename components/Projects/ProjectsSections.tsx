@@ -14,7 +14,8 @@ import RecentsWorkSlides from '../RecentWorks/RecentsWorkSlides';
 
 function ProjectsSections() {
     return (
-        <section id="project" className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+        <section id="project" className="mx-auto  px-4 md:px-8 xl:px-0">
+            <div className="container">
             <div className="flex flex-col  ">
                 {/* <SectionHeader
                     headerInfo={{
@@ -44,15 +45,15 @@ function ProjectsSections() {
                         whileInView="visible"
                         transition={{ duration: 1, delay: 0.1 }}
                         viewport={{ once: true }}
-                        className="animate_top mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-20 xl:px-0"
+                        className="animate_top mx-auto mt-15  px-4 md:px-8 xl:mt-20 xl:px-0"
                     >
                         {/* <!-- Slider main container --> */}
                         <div className="swiper testimonial-01 mb-15 pb-25">
                             {/* <!-- Additional required wrapper --> */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {RecentsWordData.map((work) => (
                                     <SwiperSlide key={work?.id}>
-                                        <RecentsWorkSlides work={work} />
+                                        <RecentsWorkSlides  roundedClass2='px-5 py-2' roundedClass='px-5 py-2' NewClass='bottom-3 ' work={work} />
                                     </SwiperSlide>
                                 ))}
                                 </div>
@@ -60,7 +61,7 @@ function ProjectsSections() {
                         </div>
                     </motion.div>
                 </div>
-                <div className="flex justify-center pb-4">
+                <div className="flex hidden justify-center pb-4">
                     <button
                         aria-label="get started button"
                         className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
@@ -68,6 +69,7 @@ function ProjectsSections() {
                         View All
                     </button>
                 </div>
+            </div>
             </div>
         </section>
     )

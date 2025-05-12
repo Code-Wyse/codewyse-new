@@ -28,11 +28,11 @@ const AboutSection: React.FC = () => {
   }}
     >
         <div
-          className="is-layout-flex wp-container-3 gap-20 wp-block-columns"
-          style={{ display: 'flex', flexWrap: 'wrap' }}
+          className="is-layout-flex wp-container-3 gap-10 wp-block-columns"
+          style={{ display: 'flex', flexWrap: 'nowrap' }}
         >
           {/* Left Column - Image */}
-          <div className="is-layout-flow wp-block-column" style={{ flexBasis: '40%' }}>
+          <div className="is-layout-flow wp-block-column" style={{ flexBasis: '30%' }}>
             <figure className="wp-block-image size-large">
               <Image
                 className="wp-image-7165"
@@ -53,19 +53,13 @@ const AboutSection: React.FC = () => {
             }}>How it all Started</h2>
 
             <p>
-              Since 2009 Iversoft had been a mobile-first technology leader. From building the first Solitaire game
-              available on iOS to mobile apps for superstars like Michael Bublé and Billy Talent to some of the first
-              digital tradeshow kiosks for Audi to now – we have always been a mobile-first technology leader.
+              CodeWyse was founded with a clear vision: to empower businesses through intelligent, user-centric digital solutions. What began as a small team of passionate developers has grown into a full-service technology partner trusted by startups and enterprises alike. From crafting bespoke web and mobile applications to building secure, scalable platforms, we’ve always focused on delivering real-world impact through technology.
             </p>
 
             {/* Extra content shown only when expanded */}
             {expanded && (
               <p>
-                Today, Iversoft focuses on partnering with organizations to solve the most daunting business and customer
-                engagement challenges with data-driven strategy and cutting-edge technology. Modern businesses can reach
-                clients, excite customers, offer services and grow their business faster than ever, from anywhere – but
-                only if their technology and infrastructure are built to support it. Iversoft is the partner of choice for
-                companies that want to streamline, mobilize and grow their business.
+                Today, CodeWyse partners with organizations across industries to tackle complex challenges using strategy-led development, modern tech stacks, and a commitment to quality. Our clients count on us to build products that enhance efficiency, engage users, and scale with confidence. Whether you're launching an MVP or transforming a legacy system, CodeWyse is your dedicated partner in digital innovation.
               </p>
             )}
 

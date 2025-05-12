@@ -11,10 +11,10 @@ import AboutSection from "@/components/AboutPage/AboutSection";
 import WhatDefinesUs from "@/components/AboutPage/WhatDefinesUs";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy : Codewyse",
+    title: "About Us : Codewyse",
 
     // other metadata
-    description: "Privacy Policy : Codewyse"
+    description: "About Us : Codewyse"
 };
 
 const page = () => {

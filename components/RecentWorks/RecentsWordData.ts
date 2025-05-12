@@ -6,8 +6,8 @@ export const RecentsWordData: RecentWork[] = [
   {
     id: 1,
     featured: {
-      name1: "App",
-      name2: "Technology"
+      name1: "Flutter",
+      name2: "Nest.js"
     },
     image: '/images/work/portfolio_sec1.png',
     buttonUrl: "hello/",
@@ -15,28 +15,46 @@ export const RecentsWordData: RecentWork[] = [
   {
     id: 2,
     featured: {
-      name1: "App",
-      name2: "Technology"
+      name1: "Flutter",
+      name2: "laravel"
     },
-    image: '/images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec2.png',
     buttonUrl: "hello/",
   },
   {
     id: 3,
     featured: {
-      name1: "App",
-      name2: "Technology"
+      name1: "Flutter",
+      name2: "Node.js"
     },
-    image: '/images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec3.png',
     buttonUrl: "hello/",
   },
   {
     id: 4,
     featured: {
-      name1: "App",
-      name2: "Technology"
+      name1: "Web 3.0",
+      name2: "Gsap"
     },
-    image: '/images/work/portfolio_sec1.png',
+    image: '/images/work/portfolio_sec4.png',
+    buttonUrl: "hello/",
+  },
+    {
+    id: 5,
+    featured: {
+      name1: "WP",
+      name2: "Custom"
+    },
+    image: '/images/work/portfolio_sec5.png',
+    buttonUrl: "hello/",
+  },
+      {
+    id: 6,
+    featured: {
+      name1: "WP",
+      name2: "Custom"
+    },
+    image: '/images/work/portfolio_sec6.png',
     buttonUrl: "hello/",
   }
   

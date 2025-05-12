@@ -10,26 +10,26 @@ type TeamMember = {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Mike Cannon-Brookes",
-    position: "CO-FOUNDER & CO-CEO",
+    name: "Chad Fernandez",
+    position: "CO-FOUNDER & CEO",
     image: "/images/aboutus/Mike.jpg",
     hoverImage: "/images/aboutus/Mike-hover.jpg",
   },
   {
-    name: "Scott Farquhar",
-    position: "CO-FOUNDER & CO-CEO",
+    name: "Akash Ahmed",
+    position: "ERP Consultant",
     image: "/images/aboutus/Scott.jpg",
     hoverImage: "/images/aboutus/Scott-hover.jpg",
   },
   {
-    name: "Anu Bharadwaj",
-    position: "PRESIDENT",
+    name: "Ziyam Aslam",
+    position: "Backend Developer - Laravel",
     image: "/images/aboutus/Anu.jpg",
     hoverImage: "/images/aboutus/Anu-hover.jpg",
   },
   {
-    name: "Joe Binz",
-    position: "CHIEF FINANCIAL OFFICER",
+    name: "Waleed Qureshi",
+    position: "Ui/Ux Designer ",
     image: "/images/aboutus/Joe-Binz-color-background.png",
     hoverImage: "/images/aboutus/Joe-Binz-hover-background.png",
   },

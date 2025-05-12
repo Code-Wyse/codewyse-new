@@ -37,7 +37,7 @@ const PricingSection: React.FC = () => {
 
                 <div className="relative flex flex-col lg:flex-row items-center lg:items-stretch gap-8">
                     {/* Starter Plan */}
-                    <div className="relative w-[33%]">
+                    <div className="relative w-[100%] lg:w-[33%]">
                         <div className="h-full relative flex flex-col gap-5 lg:gap-8 z-10 p-8 rounded-lg bg-base-100">
                             <div className="flex justify-between items-center gap-4">
                                 <p className="text-lg lg:text-xl font-bold">Starter</p>
@@ -106,7 +106,7 @@ const PricingSection: React.FC = () => {
                         </div>
                     </div>
                     {/* {All in } */}
-                    <div className="relative w-[33%]">
+                    <div className="relative w-[100%] lg:w-[33%]">
                         <div className="h-full relative flex flex-col gap-5 lg:gap-8 z-10 p-8 rounded-lg bg-base-100">
                             <div className="flex justify-between items-center gap-4">
                                 <p className="text-lg lg:text-xl font-bold">Starter</p>
@@ -176,7 +176,7 @@ const PricingSection: React.FC = () => {
                     </div>
 
                     {/* ship-bundle  */}
-                    <div className="relative w-[33%]">
+                    <div className="relative w-[100%] lg:w-[33%]">
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                             <span className="badge text-xs p-2 border-white rounded-full text-white text-accent-content bg-[#38a297] font-semibold border-0 bg-accent">
                                 BUNDLE

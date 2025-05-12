@@ -27,7 +27,7 @@ export default async function ProjectDetails({ params, searchParams }) {
             width={900}
             height={370}
             alt="banner"
-            className="object-cover object-center !h-[370px] w-full rounded-[8px]"
+            className="object-cover object-center !h-[580px] w-full rounded-[8px]"
           />
           <div className="mt-10">
             <SectionHeader headerInfo={{ title: "Our Recent Work", subtitle: "", description: "" }} />
@@ -41,12 +41,12 @@ export default async function ProjectDetails({ params, searchParams }) {
         </div>
 
         {/* Process & Tabs */}
-        <div className="flex justify-between mt-20 gap-10">
-          <div className="w-[50%]">
+        <div className="flex lg:flex-row flex-col  justify-between mt-20 gap-10">
+          <div className="lg:w-[50%] w-[100%]">
             <h4 className="mb-5 pr-16 text-4xl font-bold text-black dark:text-white">The process</h4>
             <p>{project.process}</p>
           </div>
-          <div className="w-[50%]">
+          <div className="lg:w-[50%] w-[100%]">
             <ProjectTabs tabs={project.tabs} />
           </div>
         </div>

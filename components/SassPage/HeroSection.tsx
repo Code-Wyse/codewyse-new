@@ -7,7 +7,7 @@ import React from 'react'
 function HeroSection() {
     return (
         <section
-            className="max-w-7xl  mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-40 pb-20 lg:pb-24">
+            className="max-w-7xl pt-30  mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 lg:py-8 lg:py-40 pb-20 lg:pb-24">
             <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start"><a
                 href="#"
                 target="_blank" className=" -mb-4 md:-mb-6 group" title="View ShipFast on Product Hunt"><svg

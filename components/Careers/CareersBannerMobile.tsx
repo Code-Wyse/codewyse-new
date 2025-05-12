@@ -4,17 +4,17 @@ import Image from 'next/image';
 
 const CareersBannerMobile = () => {
   return (
-    <section className="banner--careers-mobile banner banner--careers" id="mobile-banner">
+    <section className="banner--careers-mobile mt-10 banner banner--careers" id="mobile-banner">
       <div className="container">
         <div style={{ paddingTop: '45px' }}>
           <div className="banner__content">
-            <nav className="nav nav--breadcrumbs" id="breadcrumbs">
+            {/* <nav className="nav nav--breadcrumbs" id="breadcrumbs">
               <span>
                 <span className="breadcrumb_last" aria-current="page">
                   Careers
                 </span>
               </span>
-            </nav>
+            </nav> */}
           </div>
           <div className="banner__image-wrapper flex-container">
             <Image

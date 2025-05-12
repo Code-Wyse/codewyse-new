@@ -4,7 +4,7 @@ import Image from 'next/image';
 import '../../app/style.css';
 
 
-const NewAboutBanner = () => {
+const PojectBannerSection = () => {
   return (
     <section className="banner pt-10 banner--about" id="banner">
       <div className="container">
@@ -17,22 +17,20 @@ const NewAboutBanner = () => {
                 </span>
               </span>
             </nav> */}
-            <h1 className='text-[2.5rem] font-semibold  leading-[50px] pb-6'>
-              CodeWyse is a results-driven software development company that helps businesses grow through smart, scalable digital solutions
+            <h1 className='text-[4.5rem] font-bold leading-[70px] pb-7'>
+              Check Out <br /> Our Work
             </h1>
             <p>
-              How? It all starts with people. We believe technology is only valuable when it truly serves the people who use it. That’s why we prioritize the needs of our clients and their end users in every project. By combining this human-centered approach with a passionate, forward-thinking team, CodeWyse delivers custom software, mobile apps, and emerging tech solutions that empower organizations — and simplify the way they work.
-            </p>
+              We seek out clients with interesting and complex challenges. Click through some of our favourite projects to learn how we meet those challenges and create meaningful, enjoyable experiences for our clients and their users.</p>
           </div>
           <div className="grid__col--md-6 w-[100%] lg:w-[45%] w-full banner__content">
             <Image
-              className="banner__imag !rounded-[20px]"
+              className="banner__image"
               src="/images/about-header.png"
               alt="About Iversoft"
               width={600}
               height={400}
-              
-              
+              priority
             />
           </div>
         </div>
@@ -41,4 +39,4 @@ const NewAboutBanner = () => {
   );
 };
 
-export default NewAboutBanner;
+export default PojectBannerSection;

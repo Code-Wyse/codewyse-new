@@ -3,6 +3,7 @@ import React from "react";
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
+import ServicesGridSection from "../services/ServicesGridSection";
 
 const Feature = () => {
   return (
@@ -19,22 +20,25 @@ const Feature = () => {
             }}
           />
           {/* <!-- Section Title End --> */}
-
-          <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5">
+            {/* grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5 */}
+          <div className="mt-12.5 "> 
             {/* <!-- Features item Start --> */}
 
-            {featuresData.map((feature, key) => (
+            <ServicesGridSection />
+
+
+            {/* {featuresData.map((feature, key) => (
               <SingleFeature feature={feature} key={key} />
-            ))}
+            ))} */}
             {/* <!-- Features item End --> */}
           </div>
-          <div className="flex items-center justify-center mt-5">
+          {/* <div className="flex items-center justify-center mt-5">
             <button
               aria-label="get started button"
               className="flex rounded-full bg-primary pointer px-7.5 py-2.5 text-white duration-300 ease-in-out  hover:bg-primaryho">
               Book a Call
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 

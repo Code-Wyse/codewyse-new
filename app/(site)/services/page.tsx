@@ -1,4 +1,4 @@
-import CoreValues from '@/components/Careers/CoreValue'
+import CoreNewValue from '@/components/services/CoreNewValue'
 import OurProcessSection from '@/components/services/OurProcessSection'
 import TeamSection from '@/components/services/TeamSection'
 import React from 'react'
@@ -6,11 +6,11 @@ import React from 'react'
 
 function page() {
     return (
-        <section className="pt-[50px] pb-10">
+        <section className="pt-[50px] pb-10 new_bgg">
 
-<CoreValues />
-<OurProcessSection />
-<TeamSection />
+            <CoreNewValue />
+            <OurProcessSection />
+            <TeamSection />
         </section>
     )
 }

@@ -2,6 +2,19 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+
+ const openCalendly = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/codewyse/30min?primary_color=3ba196',
+      });
+    } else {
+      console.warn('Calendly script not loaded yet.');
+    }
+  };
 
 const About = () => {
   return (
@@ -238,8 +251,9 @@ const About = () => {
               <p>
               Your product deserves a world-class team. Let CodeWyse turn your vision into scalable, secure, and stunning software.
                   </p>
-                <a
-                  href="#"
+                <Link
+                  href="javascript:;"
+                  onClick={openCalendly}
                   className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[40%] gap-4 hover:bg-primaryho"
                 >
                   Book a Call
@@ -251,7 +265,7 @@ const About = () => {
                   >
                     <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </motion.div>
             <motion.div

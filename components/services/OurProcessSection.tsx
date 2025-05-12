@@ -4,11 +4,11 @@ import '../../app/style.css';
 
 
 const hiringSteps = [
-  { number: 1, title: "Discovery Align Goals", imgSrc: "/images/process-1.svg" },
-  { number: 2, title: "Pre-ProductionResearch & Blueprint", imgSrc: "/images/process-2.svg", reverse: true },
-  { number: 3, title: "Production Design / Develop / Test", imgSrc: "/images/process-3.svg" },
-  { number: 4, title: "Support Continued Monitoring", imgSrc: "/images/process-4.svg", reverse: true },
-  { number: 5, title: "Acceptance", imgSrc: "/images/process-5.svg" },
+  { number: 1, title: "Discovery Align Goals", imgSrc: "/images/services-process-1.svg" },
+  { number: 2, title: "Pre-ProductionResearch & Blueprint", imgSrc: "/images/services-process-2.svg", reverse: true },
+  { number: 3, title: "Production Design / Develop / Test", imgSrc: "/images/services-process-3.svg" },
+  { number: 4, title: "Launch Deployment", imgSrc: "/images/services-process-4.svg", reverse: true },
+  { number: 5, title: "Support Continued Monitoring", imgSrc: "/images/services-process-5.svg" },
 ];
 
 const OurProcessSection = () => {
@@ -24,6 +24,7 @@ const OurProcessSection = () => {
                 fontSize: '2.3rem',
                 fontWeight: 'bold'
             }}>Our  Process</h3>
+            <p className="w-1/2 mx-auto">Communication is the foundation of our process. You’ll always know what we’re doing, why, and what comes next. We put the needs of our clients and their customers at the centre of everything we do.</p>
           </div>
 
           <div className="process__row">

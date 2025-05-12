@@ -4236,7 +4236,7 @@ body {
 }
 
 div#hs-eu-cookie-confirmation {
-    font-family: proxima-nova !important;
+    
     background: #fff !important;
     color: #0a0a0a !important
 }
@@ -6804,7 +6804,7 @@ p.service-text.development-card__text {
 }
 
 .process-content__heading {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 0
 }
 
@@ -7891,7 +7891,7 @@ span.slider__date.for-hr strong {
 }
 
 .team__title {
-    font-family: "Proxima Nova Rg";
+    /* font-family: "Proxima Nova Rg"; */
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -7908,7 +7908,7 @@ span.slider__date.for-hr strong {
 }
 
 .team__btn {
-    font-family: "Proxima Nova Rg";
+    /* font-family: "Proxima Nova Rg"; */
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -7918,4 +7918,104 @@ span.slider__date.for-hr strong {
     border: 3px solid #16a684;
     border-radius: 8px;
     display: inline-block;
+}
+
+
+@media only screen and (max-width:767px) {
+    .numbered-grid li{
+        max-width: 100%;
+    }
+    .is-layout-flex {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .content--revealer, .is-layout-flow {
+        width: 100% !important;
+            flex-basis: 100% !important;
+    }
+    .banner--careers .banner__footer
+{
+    padding: 0 !important;
+    margin: -30px 0 0 0;
+
+}
+.numbered-grid li{
+    padding: 0;
+}
+.process__row {
+    padding: 30px 40px;
+}
+.process-content__heading {
+    font-size: 13px;
+}
+.team {
+    position: unset;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__content {
+    position: unset;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.services .team-hero-wrapper {
+    position: unset !important;
+    width: 100%;
+    margin: 40px 0 100px 0;
+}
+
+.services .team__hero {
+    width: 100%;
+    position: unset;
+    display: block;
+    height: 200px;
+}
+
+.team-curve {
+    position: unset;
+    display: none;
+}
+
+
+
+section.section-team.services {
+    padding: 0 !important;
+}
+}
+
+.new_bgg {
+    position: relative;
+}
+.new_bgg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 310px;
+    background: url(../public/images/service-line-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 472px;
+    width: 277px;
+}
+
+
+/* testing */
+
+
+.slick-track .slick-slide:nth-child(1) .new_class::before {
+    display: none;
+}
+
+.slick-track .slick-slide:nth-child(1) .new_class::after {
+       content: "";
+    width: 50%;
+    height: 4px;
+    border-top: 2px dashed #18b28d;
+    position: absolute;
+    top: 20px;
+        left: 20px;
+
 }
