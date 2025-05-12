@@ -49,16 +49,19 @@ const AboutSection: React.FC = () => {
             <h2 style={{
                 fontSize: '2.625rem',
                 lineHeight: 'normal',
-                fontWeight: 'bold'
-            }}>How it all Started</h2>
+                fontWeight: 'bold',
+                padding:'0 0 10px 0',
+            }}>How it all Started </h2>
 
             <p>
-              CodeWyse was founded with a clear vision: to empower businesses through intelligent, user-centric digital solutions. What began as a small team of passionate developers has grown into a full-service technology partner trusted by startups and enterprises alike. From crafting bespoke web and mobile applications to building secure, scalable platforms, we’ve always focused on delivering real-world impact through technology.
+              CodeWyse was founded with a clear vision: to empower businesses through intelligent, user-centric digital solutions. What began as a small team of passionate developers has grown into a full-service technology partner trusted by startups and enterprises alike. From crafting bespoke web and mobile applications to building secure, scalable platforms, we’ve always focused on delivering real-world impact through technology. 
             </p>
 
             {/* Extra content shown only when expanded */}
             {expanded && (
-              <p>
+              <p style={{
+                padding:'10px 0 0 0'
+              }}>
                 Today, CodeWyse partners with organizations across industries to tackle complex challenges using strategy-led development, modern tech stacks, and a commitment to quality. Our clients count on us to build products that enhance efficiency, engage users, and scale with confidence. Whether you're launching an MVP or transforming a legacy system, CodeWyse is your dedicated partner in digital innovation.
               </p>
             )}

@@ -174,14 +174,14 @@ const Footer = () => {
                         Press & media
                       </a>
                     </li> */}
-                    <li>
+                    {/* <li>
                       <Link
                         href="/blog"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Blog
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
                         href="/support"
