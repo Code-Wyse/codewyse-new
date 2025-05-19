@@ -18,7 +18,7 @@ function RecentWork() {
             <div className="flex flex-col  ">
                 <SectionHeader
                     headerInfo={{
-                        title: "🚀 Our Recent Work",
+                        title: "Our Recent Work",
                         subtitle: "",
                         description: ``,
                     }}

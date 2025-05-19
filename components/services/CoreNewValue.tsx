@@ -9,7 +9,7 @@ type CoreValue = {
 };
 
 const coreValues: CoreValue[] = [
-  {
+ {
     title: "Mobile App Development",
     imageSrc: "/images/mobile-development-services.png",
     imageAlt: "Empower People",
@@ -40,7 +40,42 @@ const coreValues: CoreValue[] = [
     description:
       "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
   },
- 
+  {
+    title: "Blockchain & Smart Contracts",
+    imageSrc: "/images/blockchain-icon.png",
+    imageAlt: "Client",
+    description:
+      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+  },
+    {
+    title: "Product Strategy & MVP Development",
+    imageSrc: "/images/prod-mvp-icon.png",
+    imageAlt: "Client",
+    description:
+      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+  },
+     {
+    title: "Scalable Architecture & DevOps",
+    imageSrc: "/images/scalable-architechture.png",
+    imageAlt: "Client",
+    description:
+      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+  },
+       {
+    title: "API Integrations & Platform Extensions",
+    imageSrc: "/images/api-integration-icon.png",
+    imageAlt: "Client",
+    description:
+      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+  },
+         {
+    title: "Security & Compliance by Design",
+    imageSrc: "/images/security-icon.png",
+    imageAlt: "Client",
+    description:
+      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+  },
+
 ];
 
 const CoreNewValue = () => {

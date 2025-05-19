@@ -38,8 +38,8 @@ const AboutSection: React.FC = () => {
                 className="wp-image-7165"
                 src="/images/about-us/all-started-1024x1024.png"
                 alt="About background"
-                width={186}
-                height={186}
+                width={286}
+                height={286}
               />
             </figure>
           </div>
