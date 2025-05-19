@@ -6416,7 +6416,6 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* gap: 35px; */
     justify-content: space-between;
     height: 400px;
     position: relative;
@@ -6426,7 +6425,7 @@ a {
 
 .card-title {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
     margin-bottom: 15px !important
 }
@@ -6480,7 +6479,7 @@ a {
 
 .card-title {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
     margin-bottom: 0 !important
 }
@@ -6491,13 +6490,17 @@ a {
     align-items: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 22px;
     text-align: center;
     color: #000;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7
+}
+
+.val-crd-img {
+    width: 75% !important;
 }
 
 p.service-text.development-card__text {
@@ -6529,9 +6532,8 @@ p.service-text.development-card__text {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 35px;
     /* justify-content: space-between; */
-    height: 325px !important;
+    height: 290px !important;
     position: relative;
     align-items: center
 }
@@ -7849,12 +7851,12 @@ span.slider__date.for-hr strong {
 .numbered-grid li h3 {
     margin-top: 16px;
     margin-bottom: 16px;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 32px;
 }
 .numbered-grid li p {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 

@@ -77,7 +77,7 @@ const CoreValues = () => {
                 <h4 className="card-title">
                 {value.title}
                 </h4>
-                <div className="card-img">
+                <div className="card-img val-crd-img">
                   <Image
                     src={value.imageSrc}
                     alt={value.imageAlt}
