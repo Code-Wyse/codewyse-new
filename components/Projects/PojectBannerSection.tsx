@@ -27,7 +27,7 @@ const PojectBannerSection = () => {
             <Image
               className="banner__image"
               src="/images/about-header.png"
-              alt="About Iversoft"
+              alt="About Codewyse"
               width={600}
               height={400}
               priority

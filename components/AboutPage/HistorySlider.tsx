@@ -21,8 +21,8 @@ type Slide = {
 
 const slides: Slide[] = [
     {
-        month: 'NOV',
-        year: '2008',
+        month: 'JULY',
+        year: '2023',
         // date: 'NOV 2008',
         background: '/images/about-us/2009-bg.svg',
         content: (
@@ -30,13 +30,14 @@ const slides: Slide[] = [
                 fontSize: '1.375rem',
                 fontWeight: '400'
             }}>
-                <a href="/teams/vicki-iverson">Vicki Iverson</a> starts a freelance hustle in iPhone app development.
+                Codewyse is founded by a group of passionate tech professionals, united by a vision to create transformative digital solutions—ranging from custom software and web platforms to AI-powered systems.
+
             </p>
         ),
     },
     {
-        month: 'SEP',
-        year: '2009',
+        month: 'OCT',
+        year: '2023',
         // date: 'SEP 2009',
         background: '/images/about-us/2009-2bg.svg',
         content: (
@@ -44,15 +45,15 @@ const slides: Slide[] = [
                 fontSize: '1.375rem',
                 fontWeight: '400'
             }}>
-                <a href="/teams/vicki-iverson">Vicki Iverson</a> and{' '}
-                <a href="/teams/matt-strentse">Matt Strentse</a> partner to officially found Iversoft, a mobile
-                development agency, in their Toronto dining room.
+               Codewyse kicks off operations, expanding its team and infrastructure to support a growing portfolio of international clients and cutting-edge AI ventures.
+
+
             </p>
         ),
     },
     {
-        month: 'NOV',
-        year: '2009',
+        month: 'APR',
+        year: '2024',
         // date: 'NOV 2009',
         background: '/images/about-us/2009-3bg.svg',
         content: (
@@ -60,20 +61,20 @@ const slides: Slide[] = [
                 <p style={{
                 fontSize: '1.375rem',
                 fontWeight: '400'
-            }}>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
-                <Image
-                    src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
+            }}>Codewyse secures the Vnexia project – an AI-powered Health & Safety Monitoring System aimed at revolutionizing safety protocols in industrial environments.</p>
+                {/* <Image
+                    src="https://assets.Codewyse.ca/editor/images/shared_folder/appicon-nov09.png"
                     alt="Solitaire App Icon"
                     width={105}
                     height={105}
                     className='text-start items-start'
-                />
+                /> */}
             </>
         ),
     },
     {
-        month: 'NOV',
-        year: '2009',
+        month: 'MAY',
+        year: '2024',
         // date: 'NOV 2009',
         background: '/images/about-us/2009-4bg.svg',
         content: (
@@ -81,19 +82,20 @@ const slides: Slide[] = [
                 <p style={{
                 fontSize: '1.375rem',
                 fontWeight: '400'
-            }}>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
-                <Image
-                    src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
+            }}>Codewyse wins the Yeah Store project, focused on building a Frontend Generator integrated with multiple product sources for instant e-commerce deployment.
+</p>
+                {/* <Image
+                    src="https://assets.Codewyse.ca/editor/images/shared_folder/appicon-nov09.png"
                     alt="Solitaire App Icon"
                     width={105}
                     height={105}
-                />
+                /> */}
             </>
         ),
     },
     {
-        month: 'NOV',
-        year: '2009',
+        month: 'AUG',
+        year: '2024',
         // date: 'NOV 2009',
         background: '/images/about-us/2009-4bg.svg',
         content: (
@@ -101,16 +103,85 @@ const slides: Slide[] = [
                 <p style={{
                 fontSize: '1.375rem',
                 fontWeight: '400'
-            }}>The first <strong>Iversoft Solitaire game</strong> launches in the App Store.</p>
-                <Image
-                    src="https://assets.iversoft.ca/editor/images/shared_folder/appicon-nov09.png"
+            }}>Yeah Store goes live – an advanced Frontend Generator enabling users to instantly deploy storefronts by integrating products from sources like Alibaba, CJ Dropshipping, and Walmart.
+</p>
+                {/* <Image
+                    src="https://assets.Codewyse.ca/editor/images/shared_folder/appicon-nov09.png"
                     alt="Solitaire App Icon"
                     width={105}
                     height={105}
-                />
+                /> */}
             </>
         ),
     },
+
+    {
+        month: 'SEPT',
+        year: '2024',
+        // date: 'NOV 2009',
+        background: '/images/about-us/2009-4bg.svg',
+        content: (
+            <>
+                <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>Launch of Vnexia – a breakthrough in AI-powered Health & Safety Monitoring, using machine vision and predictive analytics to improve industrial safety in real time.
+</p>
+                {/* <Image
+                    src="https://assets.Codewyse.ca/editor/images/shared_folder/appicon-nov09.png"
+                    alt="Solitaire App Icon"
+                    width={105}
+                    height={105}
+                /> */}
+            </>
+        ),
+    },
+
+
+    {
+        month: 'DEC',
+        year: '2024',
+        // date: 'NOV 2009',
+        background: '/images/about-us/2009-4bg.svg',
+        content: (
+            <>
+                <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>Codewyse enters Web 3.0 with the launch of <b>Tordao</b> – a decentralized platform that redefines digital ownership, identity, and blockchain interaction.</p>
+                {/* <Image
+                    src="https://assets.Codewyse.ca/editor/images/shared_folder/appicon-nov09.png"
+                    alt="Solitaire App Icon"
+                    width={105}
+                    height={105}
+                /> */}
+            </>
+        ),
+    },
+
+    
+    {
+        month: 'APR',
+        year: '2025',
+        // date: 'NOV 2009',
+        background: '/images/about-us/2009-4bg.svg',
+        content: (
+            <>
+                <p style={{
+                fontSize: '1.375rem',
+                fontWeight: '400'
+            }}>A landmark moment for Codewyse – celebrating a year of innovation in AI, e-commerce, and Web 3.0. New global partnerships and developer tools set the stage for the next era of digital transformation.
+</p>
+                {/* <Image
+                    src="https://assets.Codewyse.ca/editor/images/shared_folder/appicon-nov09.png"
+                    alt="Solitaire App Icon"
+                    width={105}
+                    height={105}
+                /> */}
+            </>
+        ),
+    },
+
     // ...more slides (add as needed)
 ];
 

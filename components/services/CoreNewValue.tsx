@@ -38,7 +38,7 @@ const coreValues: CoreValue[] = [
     imageSrc: "/images/qa-services.png",
     imageAlt: "Client",
     description:
-      "Iversoft prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
   },
  
 ];

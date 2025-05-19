@@ -21,8 +21,8 @@ const WhatDefinesUs = () => {
               <p>
                 Many companies claim to be transparent — it’s easy to say. But you can just keep
                 reading our website to see that we live it. Between our{' '}
-                <Link href="/iversoft-services/">Services</Link> page and{' '}
-                <Link href="/iversoft-faq/">FAQ</Link>, we’ve tried to anticipate your questions and
+                <Link href="/Codewyse-services/">Services</Link> page and{' '}
+                <Link href="/Codewyse-faq/">FAQ</Link>, we’ve tried to anticipate your questions and
                 provide straightforward answers.
               </p>
               <p>

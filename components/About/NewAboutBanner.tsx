@@ -28,7 +28,7 @@ const NewAboutBanner = () => {
             <Image
               className="banner__imag !rounded-[20px]"
               src="/images/about-header.png"
-              alt="About Iversoft"
+              alt="About Codewyse"
               width={600}
               height={400}
               
