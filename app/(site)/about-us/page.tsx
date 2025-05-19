@@ -24,12 +24,12 @@ const page = () => {
                 <NewAboutBanner />
                 <Brands />
                 <AboutSection />
-                {/* <HistorySlider /> */}
+                <HistorySlider />
                 <WhatDefinesUs />
                 {/* <div className="mt-10">
                 <FunFact />
                 </div> */}
-                {/* <OurTeam /> */}
+                <OurTeam />
 
         </section>
     );

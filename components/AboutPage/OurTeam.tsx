@@ -11,13 +11,31 @@ type TeamMember = {
 const teamMembers: TeamMember[] = [
   {
     name: "Chad Fernandez",
-    position: "CO-FOUNDER & CEO",
+    position: "CEO & CO-FOUNDER ",
     image: "/images/aboutus/Mike.jpg",
     hoverImage: "/images/aboutus/Mike-hover.jpg",
   },
   {
+    name: "Jason Wang",
+    position: "CTO",
+    image: "/images/aboutus/json-cto.jpg",
+    hoverImage: "/images/aboutus/json-cto-hover.jpg",
+  },
+    {
+    name: "Usama Ashraf",
+    position: "COO & Co-Founder",
+    image: "/images/aboutus/Erika.jpg",
+    hoverImage: "/images/aboutus/Erika-hover.jpg",
+  },
+  {
+    name: "Usama Rao",
+    position: "Project Manager",
+    image: "/images/aboutus/Kevin-Egan_leadership.jpg",
+    hoverImage: "/images/aboutus/Kevin-Egan_leadership-hover.jpg",
+  },
+  {
     name: "Akash Ahmed",
-    position: "ERP Consultant",
+    position: "Team Lead",
     image: "/images/aboutus/Scott.jpg",
     hoverImage: "/images/aboutus/Scott-hover.jpg",
   },
@@ -28,41 +46,61 @@ const teamMembers: TeamMember[] = [
     hoverImage: "/images/aboutus/Anu-hover.jpg",
   },
   {
+    name: "Abdul Sami",
+    position: "Fronted Developer",
+    image: "/images/aboutus/sami-bhai.jpg",
+    hoverImage: "/images/aboutus/sami-bhai-hover.jpg",
+  },
+ {
+    name: "Amjad Awan",
+    position: "Fronted Developer",
+    image: "/images/aboutus/frontend-dev.jpg",
+    hoverImage: "/images/aboutus/frontend-dev-hover.jpg",
+  },
+  
+  {
+    name: "Amanullah Khan",
+    position: "Backend Developer",
+    image: "/images/aboutus/Amy.jpg",
+    hoverImage: "/images/aboutus/Amy-hover.jpg",
+  },
+  {
+    name: "Asad ",
+    position: "WP Plugin Developer",
+    image: "/images/aboutus/ZeynepOzdemir_leadership.jpg",
+    hoverImage: "/images/aboutus/ZeynepOzdemir_leadership-hover.jpg",
+  },
+  {
+    name: "Syed Aun",
+    position: "QA Analyst",
+    image: "/images/aboutus/RajeevRajan.jpg",
+    hoverImage: "/images/aboutus/RajeevRajan_hover.jpg",
+  },
+    {
+    name: "Ali Imran",
+    position: "QA Analyst",
+    image: "/images/aboutus/ali-qa.jpg",
+    hoverImage: "/images/aboutus/ali-qa-hover.jpg",
+  },
+  {
     name: "Waleed Qureshi",
     position: "Ui/Ux Designer ",
     image: "/images/aboutus/Joe-Binz-color-background.png",
     hoverImage: "/images/aboutus/Joe-Binz-hover-background.png",
   },
   {
-    name: "Kevin Egan",
-    position: "CHIEF SALES OFFICER",
-    image: "/images/aboutus/Kevin-Egan_leadership.jpg",
-    hoverImage: "/images/aboutus/Kevin-Egan_leadership-hover.jpg",
+    name: "Waleed Ali",
+    position: "Backend Developer",
+    image: "/images/aboutus/waleed_ali.jpg",
+    hoverImage: "/images/aboutus/waleed_ali-hover.jpg",
   },
-  {
-    name: "Erika Fisher",
-    position: "CHIEF ADMINISTRATIVE OFFICER & CHIEF LEGAL OFFICER",
-    image: "/images/aboutus/Erika.jpg",
-    hoverImage: "/images/aboutus/Erika-hover.jpg",
+   {
+    name: "Faisal Khan",
+    position: "Backend Developer",
+    image: "/images/aboutus/faisal-be.jpg",
+    hoverImage: "/images/aboutus/faisal-be-hover.jpg",
   },
-  {
-    name: "Amy Glancey",
-    position: "CHIEF OF STAFF",
-    image: "/images/aboutus/Amy.jpg",
-    hoverImage: "/images/aboutus/Amy-hover.jpg",
-  },
-  {
-    name: "Zeynep Ozdemir",
-    position: "CHIEF MARKETING OFFICER",
-    image: "/images/aboutus/ZeynepOzdemir_leadership.jpg",
-    hoverImage: "/images/aboutus/ZeynepOzdemir_leadership-hover.jpg",
-  },
-  {
-    name: "Rajeev Rajan",
-    position: "CHIEF TECHNOLOGY OFFICER",
-    image: "/images/aboutus/RajeevRajan.jpg",
-    hoverImage: "/images/aboutus/RajeevRajan_hover.jpg",
-  },
+      
 ];
 
 const OurTeam = () => {

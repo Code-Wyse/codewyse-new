@@ -6,6 +6,8 @@ type Tab = {
   id: string;
   title: string;
   content: string;
+  bold: string;
+  list: any;
 };
 
 type Props = {
@@ -25,11 +27,10 @@ export default function ProjectTabs({ tabs }: Props) {
             key={tab.id}
             onClick={() => setCurrentTab(tab.id)}
             aria-label={`Go to ${tab.title} tab`}
-            className={`flex rounded-full px-7.5 py-2.5 text-white duration-300 ease-in-out ${
-              currentTab === tab.id
+            className={`flex rounded-full px-7.5 py-2.5 text-white duration-300 ease-in-out ${currentTab === tab.id
                 ? "bg-black dark:bg-btndark"
                 : "bg-gray-500 hover:bg-blackho dark:hover:bg-blackho"
-            }`}
+              }`}
           >
             {tab.title}
           </button>
@@ -46,6 +47,12 @@ export default function ProjectTabs({ tabs }: Props) {
               {tab.title}
             </h2>
             <p>{tab.content}</p>
+            <p><b>{tab.bold}</b></p>
+            <ul className="list-disc list-inside space-y-1">
+              {tab?.list.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
