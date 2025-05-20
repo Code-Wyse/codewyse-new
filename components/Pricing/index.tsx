@@ -227,7 +227,7 @@ const Pricing = () => {
           <div className="flex items-center justify-center mt-5">
           <a
                 href="/saas"
-                className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[20%] gap-4 hover:bg-primaryho"
+                className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[90%] lg:w-[20%] gap-4 hover:bg-primaryho"
               >
                 <span className="duration-300 group-hover:pr-2">Explore More</span>
                 <svg

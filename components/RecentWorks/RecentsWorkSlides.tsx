@@ -10,7 +10,7 @@ const RecentsWorkSlides = ({ work, NewClass="", roundedClass="",roundedClass2=""
 
   return (
     <div
-      className="relative   rounded-[42px] p-0 w-[100%] h-[100%] lg:w-[350px] lg:h-[300px] overflow-hidden shadow-xl"
+      className="relative   rounded-[42px] p-0 w-[100%] h-auto lg:w-[350px] lg:h-[300px] overflow-hidden shadow-xl"
     >
       {/* Tags */}
       <div className="absolute top-4 right-3 flex gap-1 z-10">

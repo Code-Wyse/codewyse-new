@@ -15,7 +15,7 @@ const OurProcessSection = () => {
   return (
     <section className="section-process section-service-process">
       <div className="container">
-        <div className="process">
+        <div className="process mb-5">
 
           
 
@@ -24,7 +24,7 @@ const OurProcessSection = () => {
                 fontSize: '2.3rem',
                 fontWeight: 'bold'
             }}>Our  Process</h3>
-            <p className="w-1/2 mx-auto">Communication is the foundation of our process. You’ll always know what we’re doing, why, and what comes next. We put the needs of our clients and their customers at the centre of everything we do.</p>
+            <p className="lg:w-1/2 w-full mb-5 mx-auto">Communication is the foundation of our process. You’ll always know what we’re doing, why, and what comes next. We put the needs of our clients and their customers at the centre of everything we do.</p>
           </div>
 
           <div className="process__row">

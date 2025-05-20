@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const WhatDefinesUs = () => {
   return (
-    <section className=" pt-15 pb-10 section--numbered" id="about-grid">
+    <section className="pt-15 pb-10 section--numbered overflow-hidden" id="about-grid">
       <div className="container">
         <h2 className='pb-20 lg:text-4xl !text-4xl' style={{
             fontSize: '3.375rem',
@@ -14,7 +14,7 @@ const WhatDefinesUs = () => {
     flexWrap: 'wrap',
     margin: '0 -60px',
         }}>
-          <li className='lg:w-[50] !w-full'>
+          <li className='lg:w-[50%] !w-full'>
             <span className="numbered-grid__number">1.</span>
             <div className="numbered-grid__content">
               <h3>Transparency</h3>
@@ -35,7 +35,7 @@ const WhatDefinesUs = () => {
             </div>
           </li>
 
-          <li className='lg:w-[50] !w-full'>
+          <li className='lg:w-[50%] !w-full'>
             <span className="numbered-grid__number">2.</span>
             <div className="numbered-grid__content">
               <h3>Integrity</h3>
@@ -54,7 +54,7 @@ const WhatDefinesUs = () => {
             </div>
           </li>
 
-          <li className='lg:w-[50] !w-full'>
+          <li className='lg:w-[50%] !w-full'>
             <span className="numbered-grid__number">3.</span>
             <div className="numbered-grid__content">
               <h3>Passion</h3>
@@ -78,7 +78,7 @@ const WhatDefinesUs = () => {
             </div>
           </li>
 
-          <li className='lg:w-[50] !w-full'>
+          <li className='lg:w-[50%] !w-full'>
             <span className="numbered-grid__number">4.</span>
             <div className="numbered-grid__content">
               <h3>Excellence</h3>

@@ -7943,7 +7943,7 @@ span.slider__date.for-hr strong {
 
 }
 .numbered-grid li{
-    padding: 0;
+    padding: 60px;
 }
 .process__row {
     padding: 30px 40px;
@@ -7955,6 +7955,9 @@ span.slider__date.for-hr strong {
     position: unset;
     display: flex;
     flex-wrap: wrap;
+}
+.new_bgg::after{
+    display: none !important;
 }
 
 .team__content {
