@@ -14,6 +14,7 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import RecentWork from "@/components/RecentWorks/RecentWork";
 import CookieConsent from "@/components/Cookies/CookieConsent";
+import OurProcessSection from "@/components/services/OurProcessSection";
 
 export const metadata: Metadata = {
   title: "Codewyse",
@@ -30,7 +31,8 @@ export default function Home() {
       {/* <ServicesGridSection /> */}
       <Feature />
       <About />
-      <FeaturesTab />
+      {/* <FeaturesTab /> */}
+      <OurProcessSection />
       <RecentWork />
       <FunFact />
       <Integration />

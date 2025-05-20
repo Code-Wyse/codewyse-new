@@ -5,7 +5,7 @@ import '../../app/style.css';
 
 const hiringSteps = [
   { number: 1, title: "Discovery Align Goals", imgSrc: "/images/services-process-1.svg" },
-  { number: 2, title: "Pre-ProductionResearch & Blueprint", imgSrc: "/images/services-process-2.svg", reverse: true },
+  { number: 2, title: "Pre-Production Research & Blueprint", imgSrc: "/images/services-process-2.svg", reverse: true },
   { number: 3, title: "Production Design / Develop / Test", imgSrc: "/images/services-process-3.svg" },
   { number: 4, title: "Launch Deployment", imgSrc: "/images/services-process-4.svg", reverse: true },
   { number: 5, title: "Support Continued Monitoring", imgSrc: "/images/services-process-5.svg" },

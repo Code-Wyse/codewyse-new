@@ -42,7 +42,7 @@ const About = () => {
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2 rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/about/about-light-01.jpg"
+                src="/images/about/about-light-01.png"
                 alt="About"
                 className="dark:hidden"
                 fill
@@ -287,7 +287,7 @@ const About = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2 rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/about/about-light-02.jpg"
+                src="/images/about/about-light-02.png"
                 alt="About"
                 className="dark:hidden"
                 fill
