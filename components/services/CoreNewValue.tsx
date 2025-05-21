@@ -82,7 +82,9 @@ const CoreNewValue = () => {
   return (
     <section className="section--core-values">
       <div className="container">
-        <h2 className="text-center">Our Services</h2>
+        <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+              Our Services
+              </h2>
         <div className="development__row">
           {coreValues.map((value, index) => (
             <div key={index} className="development__card--wrapper">

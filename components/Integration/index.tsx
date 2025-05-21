@@ -9,9 +9,12 @@ const Integration = () => {
       <section>
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Section Title Start --> */}
+          <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                 INTEGRATIONS
+              </h2>
           <SectionHeader
             headerInfo={{
-              title: `INTEGRATIONS`,
+              
               subtitle: `Seamless Connectivity with Leading Platforms`,
               description: `From payments and analytics to CRM and cloud services, CodeWyse delivers the essential integrations your web and mobile apps need to perform at scale—securely and efficiently.`,
             }}

@@ -208,7 +208,9 @@ export default function HistorySlider() {
         <section className="section--history pt-20 pb-10" id="history">
             <div className="container overflow-hidden">
                 <div className="mt-3 pb-15">
-                <h2 className='text-center text-4xl font-bold'>Historical Highlights</h2>
+                 <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                Historical Highlights
+              </h2>
                 </div>
                 <Slider {...settings}>
                     {slides.map((slide, index) => (

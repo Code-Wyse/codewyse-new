@@ -415,3 +415,12 @@ p.text-xs.opacity-60.uppercase.font-semibold {
 .new_class{
   position: relative;
 }
+
+/* tesintg */
+#testimonials h2:after, .banner h1:after, .banner h2:after, .content--revealer__toggle i, .modals__intro h2:after, .numbered-grid h3:after, .popup--team-card h3:after, .repeatable-sections__content h2:after, .results-stats__value, .section--accent h2:after, .section--accent-top h2:after, .section--benefits h2:after, .section--careers h2:after, .section--clients h2:after, .section--history h2:after, .section--logos h2:after, .section--modals h3:after, .section--modals ul li:before, .section--more h2:after, .section--numbered h2:after, .section--outro h2:after, .section--related h2:after, .section--slider h2:after, .section--values h2:after, .section--values h3:after, .splash h2:after, .stagger__content h4:after, .title--parts .title__part:after, .title--parts+h3:after, .title--parts:after, .toolbox h2:after {
+    color: #18b28d;
+}
+.process__subtitle__header:after {
+    content: ".";
+    color: #18b28d !important;
+}

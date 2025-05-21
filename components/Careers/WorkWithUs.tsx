@@ -19,9 +19,12 @@ const WorkWithUs = () => {
           </div>
 
           <div className="process__header">
-            <h2 className="process__title exclamation text-center" id="work-with-us" style={{ paddingTop: "15px" }}>
+            <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[22px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+Work With Us
+              </h2>
+            {/* <h2 className="process__title exclamation text-center" id="work-with-us" style={{ paddingTop: "15px" }}>
               Work With Us
-            </h2>
+            </h2> */}
             <p className="process__text text-center">We’re always looking for kind, talented people to join the team!</p>
           </div>
 

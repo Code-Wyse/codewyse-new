@@ -120,8 +120,10 @@ const CulturePerksSection = () => {
         height={80}
       /> */}
       <div className="container">
-        <h2 className='text-center'>Our Culture + Perks</h2>
-        <ol className="numbered-grid flex flex-wrap">
+<h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+Our Culture + Perks
+              </h2>
+                      <ol className="numbered-grid flex flex-wrap">
           {perks.map((perk, idx) => (
             <li key={idx} className='lg:w-[30%] w-[100%] '>
               <div className="numbered-grid__img">

@@ -4,10 +4,10 @@ const WhatDefinesUs = () => {
   return (
     <section className="pt-15 pb-10 section--numbered overflow-hidden" id="about-grid">
       <div className="container">
-        <h2 className='pb-20 lg:text-4xl !text-4xl' style={{
-            fontSize: '3.375rem',
-            fontWeight: '700'
-        }}>What Defines Us</h2>
+       <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px] mb-10 !text-start font-bold text-black  dark:text-white lg:text-[28px] ">
+              What Defines Us
+
+              </h2>
         <ol className="numbered-grid" style={{
              listStyle: 'none',
     display: 'flex',

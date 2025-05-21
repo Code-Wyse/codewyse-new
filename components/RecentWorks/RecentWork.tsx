@@ -16,9 +16,11 @@ function RecentWork() {
     return (
         <section id="project" className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
             <div className="flex flex-col  ">
+                <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                 Our Recent Work
+              </h2>
                 <SectionHeader
                     headerInfo={{
-                        title: "Our Recent Work",
                         subtitle: "",
                         description: ``,
                     }}

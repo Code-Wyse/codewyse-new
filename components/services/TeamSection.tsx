@@ -33,7 +33,10 @@ const TeamSection: React.FC = () => {
           </div>
 
           <div className="team__content">
-            <h2 className="team__title pb-3">Dedicated Teams</h2>
+            <h2 className="mb-5 pr-0 process__subtitle__header w-full  !text-start text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+              Dedicated Teams
+              </h2>
+            {/* <h2 className="team__title pb-3">Dedicated Teams</h2> */}
             <p className="team__text">
               Maximize value with team members whose skill-sets are tailored to the needs of your project. Our model includes: Lower costs, greater flexibility, and expert collaboration for successful software development every single time.
             </p>

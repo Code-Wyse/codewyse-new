@@ -18,9 +18,11 @@ const Testimonial = () => {
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
+             <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                 TESTIMONIALS
+              </h2>
             <SectionHeader
               headerInfo={{
-                title: `TESTIMONIALS`,
                 subtitle: `What Our Clients Say About CodeWyse`,
                 description: `We're proud to be a trusted development partner for startups and established businesses alike. Here's what some of our clients have to say:`,
               }}

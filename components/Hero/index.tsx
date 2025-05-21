@@ -39,9 +39,9 @@ const Hero = () => {
               {/* <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
                   
               </h4> */}
-              <h1 className="mb-5 pr-0 text-[22px] lg:pr-16 font-bold text-black dark:text-white lg:text-[28px] ">
-                  Custom Web & Mobile App Development Powered by AI, Blockchain & Automation.
-              </h1>
+              <h2 className="mb-5 pr-0 process__subtitle__header text-[22px] lg:pr-16 font-bold text-black !text-start dark:text-white lg:text-[28px] ">
+                  Custom Web & Mobile App Development Powered by AI, Blockchain & Automation
+              </h2>
               <p>
                 At CodeWyse, we engineer scalable digital products for startups and enterprises using future-ready tech—so you can launch confidently and grow without limits.<br /><br />
                 {/* ✅ RPA & AI Automation<br />

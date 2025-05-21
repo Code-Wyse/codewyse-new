@@ -10,9 +10,11 @@ const Pricing = () => {
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
+            <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                 LAUNCH KITS
+              </h2>
             <SectionHeader
               headerInfo={{
-                title: `LAUNCH KITS`,
                 subtitle: `Flexible Options for Every Stage of Your SaaS Journey`,
                 description: `Choose from our expertly crafted boilerplates to match your startup’s needs—from rapid MVP launches to fully customized, production-ready SaaS platforms. One-time pricing, no recurring fees.`,
               }}
