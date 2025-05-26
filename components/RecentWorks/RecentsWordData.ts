@@ -10,7 +10,7 @@ export const RecentsWordData: RecentWork[] = [
       name2: "Nest.js"
     },
     image: '/images/work/portfolio_sec1.png',
-    buttonUrl: "hello/",
+    buttonUrl: "/project-details/vnexia/",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const RecentsWordData: RecentWork[] = [
       name2: "laravel"
     },
     image: '/images/work/portfolio_sec2.png',
-    buttonUrl: "hello/",
+    buttonUrl: "/project-details/ensure-ups/",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const RecentsWordData: RecentWork[] = [
       name2: "Node.js"
     },
     image: '/images/work/portfolio_sec3.png',
-    buttonUrl: "hello/",
+    buttonUrl: "/project-details/trifits/",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const RecentsWordData: RecentWork[] = [
       name2: "Gsap"
     },
     image: '/images/work/portfolio_sec4.png',
-    buttonUrl: "hello/",
+    buttonUrl: "/project-details/tordao/",
   },
     {
     id: 5,
@@ -46,7 +46,7 @@ export const RecentsWordData: RecentWork[] = [
       name2: "Custom"
     },
     image: '/images/work/portfolio_sec5.png',
-    buttonUrl: "hello/",
+    buttonUrl: "/project-details/junohouseclub/",
   },
       {
     id: 6,
@@ -55,7 +55,7 @@ export const RecentsWordData: RecentWork[] = [
       name2: "Custom"
     },
     image: '/images/work/portfolio_sec6.png',
-    buttonUrl: "hello/",
+    buttonUrl: "/project-details/crazzypizza/",
   }
   
   // {

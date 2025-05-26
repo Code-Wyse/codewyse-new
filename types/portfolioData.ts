@@ -149,7 +149,7 @@ export const projectData: Project[] = [
   },
 
   {
-    slug: "junoHouseClub",
+    slug: "junohouseclub",
     semititle: 'Juno House Club',
     title: "Technologies Used: WordPress (Custom Theme Development), PHP, SCSS, JavaScript",
     description: "A fully custom-coded WordPress website tailored for Juno House — a private women’s club — reflecting elegance, empowerment, and modern luxury. No page builders were used; everything was handcrafted for performance, flexibility, and brand precision.",
