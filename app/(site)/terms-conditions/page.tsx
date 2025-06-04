@@ -35,29 +35,76 @@ const page = () => {
 
           {/* Section 2 */}
           <div>
-            <h2 className="text-2xl font-semibold mb-2">2. Intellectual Property Rights</h2>
+            <h2 className="text-2xl font-semibold mb-2">2. Scope of Agreement</h2>
             <p>
-              Other than the content you own, under these Terms, [Your Company Name] and/or its licensors own
-              all the intellectual property rights and materials contained in this Website.
+             This agreement becomes effective on the date you first engage with our services, submit an inquiry, or purchase a product from CodeWyse. These terms apply to all users, clients, and visitors.
             </p>
           </div>
 
           {/* Section 3 */}
           <div>
-            <h2 className="text-2xl font-semibold mb-2">3. Restrictions</h2>
+            <h2 className="text-2xl font-semibold mb-2">3. Product Licensing and Use  </h2>
             <p>
-              You are specifically restricted from all of the following: publishing any Website material in any media,
-              selling or commercializing Website material, using this Website in any way that impacts user access, etc.
+             CodeWyse may offer software products such as boilerplates or pre-built modules (e.g., authentication systems, payment gateways, CMS setups). These are licensed to you under a single-use, perpetual license model unless otherwise stated.
             </p>
           </div>
 
           {/* Section 4 */}
           <div>
-            <h2 className="text-2xl font-semibold mb-2">4. Limitation of Liability</h2>
+            <h2 className="text-2xl font-semibold mb-2">You may:</h2>
             <p>
-              In no event shall [Your Company Name], nor any of its officers, directors and employees,
-              be held liable for anything arising out of or in any way connected with your use of this Website.
+            - Use the software for commercial and personal projects.  <br/>
+- Customize and integrate modules as needed for your project.
             </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">You may not:</h2>
+            <p>
+- Resell, redistribute, or sublicense the software without explicit written permission.  <br/>
+- Use our modules in a way that violates applicable laws or regulations.
+
+            </p>
+            <p>CodeWyse retains the right to revoke access or licensing if misuse, redistribution, or violations occur.</p>
+          </div>
+
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">4. Refund Policy  </h2>
+            <p>Due to the nature of digital assets and source code, all sales of CodeWyse software products are *final*. No refunds or exchanges will be provided once access or files have been delivered.</p>
+          </div>
+
+                    <div>
+            <h2 className="text-2xl font-semibold mb-2"> 5. Service Disclaimer</h2>
+            <p>While we aim to deliver high-performance solutions, CodeWyse does not guarantee that any software, site, or service we build will be free from errors or interruptions. All offerings are provided "as is" without warranties of any kind.</p>
+          </div>
+
+              <div>
+            <h2 className="text-2xl font-semibold mb-2"> 6. Limitation of Liability </h2>
+            <p>CodeWyse will not be liable for any indirect, incidental, or consequential damages, including but not limited to lost profits, business disruption, or data loss. In any case, our total liability is limited to the amount paid by you directly to CodeWyse for the product or service in question.</p>
+          </div>
+
+
+              <div>
+            <h2 className="text-2xl font-semibold mb-2"> 7. Client Responsibilities </h2>
+            <p>You are solely responsible for any content, data, or third-party integrations you provide. CodeWyse is not liable for outcomes caused by user-generated content or external system changes (e.g., API deprecations).</p>
+          </div>
+
+             <div>
+            <h2 className="text-2xl font-semibold mb-2"> 8. Price Changes   </h2>
+            <p>We may update the pricing of our products and services at any time as our offerings evolve. Early purchases are honored at the price paid, and any discounts offered are valid at the time of purchase only.</p>
+          </div>
+
+
+                       <div>
+            <h2 className="text-2xl font-semibold mb-2">9. Governing Law and Jurisdiction</h2>
+            <p>These Terms and Conditions are governed by the laws of [Your Jurisdiction – e.g., Canada, UAE, etc.]. Any disputes shall be resolved in the courts of that jurisdiction.</p>
+          </div>
+
+                 <div>
+            <h2 className="text-2xl font-semibold mb-2"> 10. Independent Relationship </h2>
+            <p>You agree that no partnership, joint venture, employment, or agency relationship exists between you and CodeWyse. You may not represent yourself as an agent or affiliate of CodeWyse without written permission.</p>
+            <p>For questions regarding our terms or if you require a custom licensing agreement, please contact us at: <a href="mailto:hello@codewyse.io">hello@codewyse.io</a></p>
           </div>
 
           {/* Add more sections as needed */}

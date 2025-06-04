@@ -56,7 +56,44 @@ export const RecentsWordData: RecentWork[] = [
     },
     image: '/images/work/portfolio_sec6.png',
     buttonUrl: "/project-details/crazzypizza/",
-  }
+  },
+    {
+    id: 7,
+    featured: {
+      name1: "WP",
+      name2: "Custom"
+    },
+    image: '/images/project/Kuwait-Swat/project-folder/SWAT.png',
+    buttonUrl: "/project-details/kseic/",
+  },
+      {
+    id: 8,
+    featured: {
+      name1: "Node.js",
+      name2: "Vue.js"
+    },
+    image: '/images/project/YeahStore/project-folder/YS.png',
+    buttonUrl: "/project-details/yeah-store/",
+  },
+    {
+    id: 9,
+    featured: {
+      name1: "WP",
+      name2: "Custom"
+    },
+    image: '/images/project/DJ/project-folder/DJ.png',
+    buttonUrl: "/project-details/dj/",
+  },
+
+   {
+    id: 10,
+    featured: {
+      name1: "WP",
+      name2: "Custom"
+    },
+    image: '/images/project/MR-Traders/project-folder/MM.png',
+    buttonUrl: "/project-details/mm/",
+  },
   
   // {
   //   id: 2,

@@ -11,28 +11,29 @@ type CoreValue = {
   description: string | any;
 };
 
+
 const coreValues: CoreValue[] = [
-  {
+ {
     title: "Mobile App Development",
     imageSrc: "/images/mobile-development-services.png",
     imageAlt: "Empower People",
     description:
-      "Mobile-first since 2009. We create products that are easier for you to scale and maintain, while working flawlessly on the world’s most ubiquitous device – our phones.",
+      "We specialize in mobile-first solutions, crafting scalable, maintainable apps optimized for iOS and Android platforms. Our mobile applications are designed for performance, user experience, and future-proofing, enabling seamless user engagement and powerful backend support across industries.",
   },
   {
     title: "Web Development",
     imageSrc: "/images/web-development-services.png",
     imageAlt: "Do The Right Thing",
     description:
-      "We can build your site from scratch or optimize the software you’re currently using. With seamless API integration and a simplified backend, you have all the features and none of the hassle.",
+      "From simple websites to complex web platforms, our web development services cover frontend, backend, and full-stack solutions. We build responsive, scalable, and secure websites using modern technologies to ensure fast performance, intuitive UI, and excellent user experience.",
   },
   {
-    title: "User Experience & Interface Design",
+    title: "UI & UX",
     imageSrc: "/images/ui-ux-services.png",
     imageAlt: "Balance",
     description: (
       <>
-        The way information is presented can completely change how you feel about it. That’s why our team of UX/UI experts meticulously craft stunning visuals and exceptional user experiences.
+        We design visually appealing, user-centric interfaces that drive engagement and conversion. By blending creativity with usability, our UX/UI designs ensure intuitive navigation, optimized workflows, and brand consistency across web and mobile platforms, enhancing the user journey at every touchpoint.
       </>
     ),
   },
@@ -41,44 +42,44 @@ const coreValues: CoreValue[] = [
     imageSrc: "/images/qa-services.png",
     imageAlt: "Client",
     description:
-      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "Our QA process ensures every product is thoroughly tested for functionality, performance, and security. We conduct manual and automated testing throughout the development lifecycle, delivering bug-free, reliable digital solutions that meet the highest standards of quality and user satisfaction.",
   },
   {
     title: "Blockchain & Smart Contracts",
     imageSrc: "/images/blockchain-icon.png",
     imageAlt: "Client",
     description:
-      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "We develop decentralized applications and secure smart contracts using Ethereum, Solidity, and other blockchain technologies. Our services ensure transparency, trust, and automation for industries like finance, supply chain, and healthcare through custom blockchain development and smart contract implementation.",
   },
     {
     title: "Product Strategy & MVP Development",
     imageSrc: "/images/prod-mvp-icon.png",
     imageAlt: "Client",
     description:
-      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "From idea to launch, we help you validate your concept and build a lean Minimum Viable Product (MVP). Our team aligns product features with market needs, providing technical direction, wireframes, and a scalable foundation to turn your vision into a successful product.",
   },
      {
     title: "Scalable Architecture & DevOps",
     imageSrc: "/images/scalable-architechture.png",
     imageAlt: "Client",
     description:
-      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "We design scalable system architectures and implement DevOps practices to streamline deployment and operations. From CI/CD pipelines to cloud infrastructure, we ensure your digital products are agile, robust, and ready for scale with minimal downtime and maximum efficiency.",
   },
        {
-    title: "API Integrations & Platform Extensions",
+    title: "Integrations",
     imageSrc: "/images/api-integration-icon.png",
     imageAlt: "Client",
     description:
-      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "We integrate third-party APIs and build custom platform extensions to enhance functionality and interoperability. Our services ensure seamless data exchange, improved performance, and automation by connecting your systems to popular tools and platforms like Stripe, Salesforce, Shopify, and more.",
   },
          {
     title: "Security & Compliance by Design",
     imageSrc: "/images/security-icon.png",
     imageAlt: "Client",
     description:
-      "Codewyse prioritizes QA from project outset. Quality assurance goes beyond testing, playing a crucial role in preventing surprises, aligning with budget and deadlines.",
+      "Security is embedded in every stage of development. We ensure your product meets industry compliance standards (like GDPR, HIPAA, SOC2) through secure coding practices, threat modeling, encryption, and access control—providing peace of mind for both you and your users.",
   },
- 
+
 ];
 
 const ServicesGridSection = () => {

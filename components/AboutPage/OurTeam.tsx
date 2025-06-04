@@ -109,13 +109,16 @@ const OurTeam = () => {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center relative mb-12">
-        <SectionHeader
+          <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                Our people
+              </h2>
+        {/* <SectionHeader
                     headerInfo={{
                         title: "Our people",
                         subtitle: "",
                         description: ``,
                     }}
-                />
+                /> */}
           {/* <h2 className="text-[50px] text-[#253858] font-bold">Our people</h2> */}
           <p className="mx-auto mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3">
             This is our team, a lot of smiling happy people who work hard to empower your teams.

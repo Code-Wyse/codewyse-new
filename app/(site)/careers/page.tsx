@@ -9,10 +9,10 @@ import WorkWithUs from "@/components/Careers/WorkWithUs";
 import CareersBannerMobile from "@/components/Careers/CareersBannerMobile";
 
 export const metadata: Metadata = {
-  title: "Terms And Condition : Codewyse",
+  title: "Careers : Codewyse",
 
   // other metadata
-  description: "Terms And Condition : Codewyse"
+  description: "Careers : Codewyse"
 };
 
 const page = () => {

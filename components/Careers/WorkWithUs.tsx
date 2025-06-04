@@ -48,7 +48,10 @@ Work With Us
           </div>
 
           <div className="process__subtitle__header">
-            <h3 className="process__subtitle">Our Hiring Process</h3>
+            <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                Our Hiring Process
+              </h2>
+            {/* <h3 className="process__subtitle">Our Hiring Process</h3> */}
           </div>
 
           <div className="process__row">

@@ -46,12 +46,15 @@ const AboutSection: React.FC = () => {
 
           {/* Right Column - Text */}
           <div className="is-layout-flow wp-block-column" style={{ flexBasis: '60%' }}>
-            <h2 style={{
+            {/* <h2 style={{
                 fontSize: '2.625rem',
                 lineHeight: 'normal',
                 fontWeight: 'bold',
                 padding:'0 0 10px 0',
-            }}>How it all Started </h2>
+            }}>How it all Started </h2> */}
+                        <h2 className="mb-5 pr-0 process__subtitle__header w-full  !text-start text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
+                How it all Started
+              </h2>
 
             <p>
               CodeWyse was founded with a clear vision: to empower businesses through intelligent, user-centric digital solutions. What began as a small team of passionate developers has grown into a full-service technology partner trusted by startups and enterprises alike. From crafting bespoke web and mobile applications to building secure, scalable platforms, we’ve always focused on delivering real-world impact through technology. 

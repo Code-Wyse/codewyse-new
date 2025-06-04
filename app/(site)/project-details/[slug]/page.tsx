@@ -3,9 +3,8 @@
 import { projectData } from "@/types/portfolioData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import SectionHeader from "@/components/Common/SectionHeader";
-import ImageGrid from "@/components/project-details/ImageGrid";
 import ProjectTabs from "@/components/project-details/ProjectTabs";
+import PortFolioSlider from "@/components/Portfolio_slider/PortFolioSlider";
 
 // statically generate all slugs
 export function generateStaticParams() {
@@ -30,9 +29,8 @@ export default async function ProjectDetails({ params, searchParams }) {
             className="object-cover object-center !h-[580px] w-full rounded-[8px]"
           />
           <div className="mt-10">
-            <SectionHeader headerInfo={{ title: project.semititle, subtitle: "", description: "" }} />
 
-            <h4 className="mx-auto text-center mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-full">
+            <h4 className="mx-auto text-center mb-4 text-[18px] lg:text-[28px] text-center font-bold text-black dark:text-white md:w-4/5 xl:w-full">
               {project.title}
             </h4>
             <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] text-center">
@@ -44,9 +42,9 @@ export default async function ProjectDetails({ params, searchParams }) {
         {/* Process & Tabs */}
         <div className="flex lg:flex-row flex-col  justify-between mt-20 gap-10">
           <div className="lg:w-[50%] w-[100%]">
-            <h4 className="mb-5 pr-16 text-4xl font-bold text-black dark:text-white">{project.processtitle}</h4>
+            <h4 className="mb-5 pr-16 text-[18px] text-start lg:text-[28px] font-bold text-black dark:text-white">{project.processtitle}</h4>
             <p>{project.process}</p>
-            <h4 className="mb-5 pr-16 text-4xl font-bold text-black dark:text-white">{project.processtitle2}</h4>
+            <h4 className="mb-5 mt-5 pr-16 text-[18px] text-start lg:text-[28px] font-bold text-black dark:text-white">{project.processtitle2}</h4>
             <p>{project.process2}</p>
           </div>
           <div className="lg:w-[50%] w-[100%]">
@@ -56,7 +54,7 @@ export default async function ProjectDetails({ params, searchParams }) {
 
         {/* Image Grid */}
         <div className="mt-10">
-          <ImageGrid />
+           <PortFolioSlider portfolio={project.portfolio} />
         </div>
 
         {/* Last Section */}
@@ -71,7 +69,7 @@ export default async function ProjectDetails({ params, searchParams }) {
             />
           </div>
           <div className="w-[50%] flex flex-col">
-            <h4 className="mx-auto text-start mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-full">
+            <h4 className="mx-auto text-start mb-4 text-[18px] text-center lg:text-[28px] font-bold text-black  dark:text-white md:w-4/5 xl:w-full">
               {project.logndescTitle}
             </h4>
 
@@ -82,11 +80,15 @@ export default async function ProjectDetails({ params, searchParams }) {
             ))}
           </div>
         </div>
+        {/* portfolio -images */}
+
+
+
 
         <div className="mt-10">
           <div className="w-full mx-auto">
-            <h4 className="mx-auto text-center mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-full">
-              Hear From The Cleint 
+            <h4 className="mx-auto text-center mb-4 text-[18px] text-center font-bold text-black lg:text-[28px] dark:text-white md:w-4/5 xl:w-full">
+              Hear From The Cleint
             </h4>
             <div className="rounded-lg bg-white p-9 pt-7.5 shadow-solid-9 dark:border dark:border-strokedark dark:bg-blacksection dark:shadow-none">
               <div className="mb-7.5 flex justify-between border-b border-stroke pb-6 dark:border-strokedark">
