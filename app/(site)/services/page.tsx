@@ -1,7 +1,16 @@
 import CoreNewValue from '@/components/services/CoreNewValue'
 import OurProcessSection from '@/components/services/OurProcessSection'
 import TeamSection from '@/components/services/TeamSection'
+import { Metadata } from 'next';
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Services : Codewyse",
+
+  // other metadata
+  description: "Services : Codewyse"
+};
+
 
 
 function page() {

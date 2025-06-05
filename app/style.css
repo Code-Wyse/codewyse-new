@@ -6490,8 +6490,8 @@ a {
     align-items: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 13px;
+    line-height: 22px;
     text-align: center;
     color: #000;
     overflow: hidden;
@@ -8026,10 +8026,10 @@ section.section-team.services {
 
 }
 
-@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {
   .banner__footer {
         position: absolute;
-        top: 33vh;
+        top: 44vh;
         left: 0;
         right: 0;
         margin: 10px auto;
