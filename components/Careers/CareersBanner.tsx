@@ -23,7 +23,7 @@ const CareersBanner = () => {
           </div>
           <div className="banner__image-wrapper">
             <Image
-              className="banner__image banner__image--desktop"
+              className="banner__image banner__image--desktop !rounded-[20px]"
               src="/images/careers-header_full.png"
               alt="Banner desktop"
               width={1070}

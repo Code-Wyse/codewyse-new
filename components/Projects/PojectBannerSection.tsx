@@ -25,7 +25,10 @@ const PojectBannerSection = () => {
           </div>
           <div className="grid__col--md-6 w-[100%] lg:w-[45%] w-full banner__content">
             <Image
-              className="banner__image"
+            style={{
+              borderRadius: '28px',
+            }}
+              className="banner__image rounded-lg"
               src="/images/about-header.png"
               alt="About Codewyse"
               width={600}
