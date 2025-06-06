@@ -19,7 +19,7 @@ const Testimonial = () => {
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
              <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
-                 TESTIMONIALS
+                 Testimonials
               </h2>
             <SectionHeader
               headerInfo={{

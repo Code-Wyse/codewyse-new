@@ -54,7 +54,7 @@ const FAQ = () => {
                 OUR FAQS
               </span> */}
                    <h2 className="mb-5 pr-0 process__subtitle__header w-full  !text-start text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
-                OUR FAQS
+                Our FAQS
               </h2>
               <h2 className="relative mt-2 mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
                 Frequently Asked

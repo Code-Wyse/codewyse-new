@@ -10,7 +10,7 @@ const Integration = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Section Title Start --> */}
           <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
-                 INTEGRATIONS
+                 Integrations
               </h2>
           <SectionHeader
             headerInfo={{
