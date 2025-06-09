@@ -41,14 +41,14 @@ const PortFolioSlider: React.FC<Props> = ({ portfolio }) => {
           <div className="swiper testimonial-01 mb-15 pb-25">
             <Swiper
               spaceBetween={30}
-              slidesPerView={4}
+              slidesPerView={3}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               pagination={{ clickable: true }}
               modules={[Autoplay, Pagination]}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 640: { slidesPerView: 2 },
-                1024: { slidesPerView: 4 },
+                1024: { slidesPerView: 3 },
               }}
             >
               {portfolio.map((item) => (

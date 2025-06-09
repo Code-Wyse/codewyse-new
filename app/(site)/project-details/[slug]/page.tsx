@@ -58,14 +58,14 @@ export default async function ProjectDetails({ params, searchParams }) {
         </div>
 
         {/* Last Section */}
-        <div className="mt-10 mb-4 flex justify-between gap-10 ">
+        <div className="mt-10 mb-4 flex justify-between align-items-center gap-10 ">
           <div className="w-[50%] h-[400px]">
             <Image
               src={project.lastImage}
               width={633}
               height={200}
               alt="last"
-              className="h-full object-cover rounded-[20px]"
+              className="h-full object-contain rounded-[20px]"
             />
           </div>
           <div className="w-[50%] flex flex-col">

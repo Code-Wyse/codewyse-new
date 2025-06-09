@@ -84,7 +84,7 @@ const coreValues: CoreValue[] = [
 
 const ServicesGridSection = () => {
   return (
-    <section className="section--core-values">
+    <section className="section--core-values !p-0">
       <div className="container">
         {/* <h2 className="text-center">Our Services</h2> */}
         <div className="development__row flex gap-4">

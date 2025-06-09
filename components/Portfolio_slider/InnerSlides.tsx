@@ -10,8 +10,8 @@ const InnerSlides: React.FC<Props> = ({ image }) => {
     <div className="w-full  h-[530px]">
       <Image
         src={image}
-        height={500}
-        width={380}
+          height={500}
+          width={480}
         className="w-full h-full object-cover rounded-lg"
         alt="portfolio"
       />
