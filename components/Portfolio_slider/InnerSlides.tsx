@@ -3,17 +3,17 @@ import React from 'react';
 
 interface Props {
   image: string;
+  mobile?: boolean;
 }
 
-const InnerSlides: React.FC<Props> = ({ image }) => {
+const InnerSlides: React.FC<Props> = ({ image,mobile }) => {
   return (
-    <div className="w-full  h-[530px]">
+    <div className={`${mobile ? 'w-[380px] h-[640px]' : 'w-[480px] h-[500px]'} relative   rounded-xl overflow-hidden `}>
       <Image
         src={image}
-          height={500}
-          width={480}
-        className="w-full h-full object-cover rounded-lg"
         alt="portfolio"
+        fill
+        className={`${mobile ? 'object-cover ' : "object-contain"}  rounded-xl`}
       />
     </div>
   );

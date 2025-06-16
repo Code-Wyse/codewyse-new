@@ -20,9 +20,11 @@ type PortfolioItem = {
 
 interface Props {
   portfolio: PortfolioItem[];
+  perView?: number;
+  mobile?: boolean;
 }
 
-const PortFolioSlider: React.FC<Props> = ({ portfolio }) => {
+const PortFolioSlider: React.FC<Props> = ({ portfolio,perView,mobile }) => {
   return (
     <section id="project" className="mx-auto mt-15 max-w-c-1315 px-4 md:px-8 xl:px-0">
       <div className="flex flex-col">
@@ -41,19 +43,19 @@ const PortFolioSlider: React.FC<Props> = ({ portfolio }) => {
           <div className="swiper testimonial-01 mb-15 pb-25">
             <Swiper
               spaceBetween={30}
-              slidesPerView={3}
+              slidesPerView={perView? perView : 3}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               pagination={{ clickable: true }}
               modules={[Autoplay, Pagination]}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1024: { slidesPerView: perView? perView : 3 },
               }}
             >
               {portfolio.map((item) => (
                 <SwiperSlide key={item.id}>
-                  <InnerSlides image={item.image} />
+                  <InnerSlides mobile={mobile} image={item.image} />
                 </SwiperSlide>
               ))}
             </Swiper>

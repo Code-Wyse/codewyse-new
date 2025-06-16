@@ -54,7 +54,7 @@ export default async function ProjectDetails({ params, searchParams }) {
 
         {/* Image Grid */}
         <div className="mt-10">
-           <PortFolioSlider portfolio={project.portfolio} />
+           <PortFolioSlider mobile={project?.mobile} portfolio={project.portfolio} perView={project?.perView} />
         </div>
 
         {/* Last Section */}

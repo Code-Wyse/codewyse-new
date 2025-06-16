@@ -32,6 +32,9 @@ export type Project = {
   designation: string;
   reviewimage: any;
   portfolio: Portforlio[];
+  perView?: number;
+  mobile?: boolean;
+  
 };
 
 export const projectData: Project[] = [
@@ -175,6 +178,8 @@ export const projectData: Project[] = [
         ],
       },
     ],
+    perView: 4,
+    mobile: true,
     lastImage: "/images/project-details/last-portfolio_img.jpg",
     logndescTitle: ' Results ',
     longDescription: [
@@ -433,6 +438,8 @@ export const projectData: Project[] = [
         ],
       },
     ],
+    perView: 4,
+    mobile: true,
     lastImage: "/images/project-details/last-portfolio_img.jpg",
     logndescTitle: ' Results ',
     longDescription: [
@@ -476,6 +483,8 @@ export const projectData: Project[] = [
     description: "AI-powered health & safety monitoring platform with a real-time mobile app and web dashboard built to ensure workplace compliance and rapid incident response.",
     bannerImage: "/images/project/vnexia/mobile-show-case/VNEXIA.jpg",
     processtitle: 'The Challenge',
+    perView: 4,
+    mobile: true,
     process:
       "Vnexia aimed to digitize health and safety operations using AI — enabling real-time worker monitoring, risk detection, and reporting across industrial sites. The challenge was to engineer a platform that is fast, secure, scalable, and intuitive for both field workers and safety managers.",
     processtitle2: 'Our Solution',
@@ -616,23 +625,23 @@ export const projectData: Project[] = [
      portfolio: [
       {
         id: 1,
-        image: "/images/project/vnexia/laptop-mockup/1.png",
+        image: "/images/project/Kuwait-Swat/laptop-mockup/1.png",
       },
       {
         id: 2,
-        image: "/images/project/vnexia/laptop-mockup/2.png",
+        image: "/images/project/Kuwait-Swat/laptop-mockup/2.png",
       },
       {
         id: 3,
-        image: "/images/project/vnexia/laptop-mockup/3.png",
+        image: "/images/project/Kuwait-Swat/laptop-mockup/3.png",
       },
       {
         id: 4,
-        image: "/images/project/vnexia/laptop-mockup/4.png",
+        image: "/images/project/Kuwait-Swat/laptop-mockup/4.png",
       },
       {
         id: 5,
-        image: "/images/project/vnexia/laptop-mockup/5.png",
+        image: "/images/project/Kuwait-Swat/laptop-mockup/5.png",
       },
     ]
   },
@@ -645,6 +654,8 @@ export const projectData: Project[] = [
     description: "Yeah Store is a frontend generation tool that allows users to import products from major online marketplaces with ease. By simply selecting categories and product quantity, users can instantly generate visually appealing product pages for their eCommerce store.",
     bannerImage: "/images/project/YeahStore/front/CRM-Graphic-YS.jpg",
     processtitle: 'The Challenge',
+    perView: 4,
+    mobile: true,
     process:
       "Online retailers often struggle with building quick and attractive storefronts that stay updated with trending products across marketplaces. Manually curating products and designing storefronts takes time and limits scalability.",
     processtitle2: 'Our Solution',
@@ -821,7 +832,7 @@ export const projectData: Project[] = [
     process2: "We developed a fully custom WordPress theme tailored to DEventri's brand. Advanced Custom Fields Pro (ACF) was integrated for flexible content blocks, ensuring that the team could update service sections, photo galleries, and testimonials without technical skills. The final result was a responsive, elegant website that positions DEventri as a leader in luxury event planning.",
     tabs: [
       {
-        id: "Custom Theme Design",
+        id: "Theme Design",
         title: "Custom Theme Design",
         content: "The theme was designed from scratch to mirror luxury aesthetics — with animation, layered visuals, and elegant typography.",
         bold: 'Highlights:',
@@ -834,7 +845,7 @@ export const projectData: Project[] = [
         ],
       },
       {
-        id: "WordPress CMS Integration",
+        id: "CMS Integration",
         title: "WordPress CMS Integration",
         content: "The backend was designed to be non-technical team–friendly using ACF and custom post types.",
         bold: 'Key Features:',
