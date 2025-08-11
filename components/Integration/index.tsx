@@ -10,13 +10,13 @@ const Integration = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Section Title Start --> */}
           <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
-                 Integrations
+                 Automation
               </h2>
           <SectionHeader
             headerInfo={{
               
-              subtitle: `Seamless Connectivity with Leading Platforms`,
-              description: `From payments and analytics to CRM and cloud services, CodeWyse delivers the essential integrations your web and mobile apps need to perform at scale—securely and efficiently.`,
+              subtitle: `Optimize Operations with Intelligent Workflows`,
+              description: `From marketing and sales to support and DevOps, CodeWyse empowers startups and enterprises with powerful automation solutions—driving efficiency, accuracy, and scale without the manual hassle.`,
             }}
           />
 
@@ -64,7 +64,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="/images/brand/brand-07.svg"
+                  src="/images/shape/automation-icon1.png"
                   alt="Brand"
                 />
               </div>
@@ -111,7 +111,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="/images/brand/brand-08.svg"
+                  src="/images/shape/automation-icon2.png"
                   alt="Brand"
                 />
               </div>
@@ -160,7 +160,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="/images/brand/brand-09.svg"
+                  src="/images/shape/automation-icon3.png"
                   alt="Brand"
                 />
               </div>
@@ -228,7 +228,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="/images/brand/brand-10.svg"
+                  src="/images/shape/automation-icon4.png"
                   alt="Brand"
                 />
               </div>
@@ -277,7 +277,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="/images/brand/brand-11.svg"
+                  src="/images/shape/automation-icon5.png"
                   alt="Brand"
                 />
               </div>
@@ -326,7 +326,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="/images/brand/brand-12.svg"
+                  src="/images/shape/automation-icon6.png"
                   alt="Brand"
                 />
               </div>

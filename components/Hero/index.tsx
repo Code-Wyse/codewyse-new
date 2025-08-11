@@ -111,13 +111,13 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-700/444 w-full rounded-xl overflow-hidden">
+                <div className=" relative  w-full rounded-xl ">
                   <Image
                     className="object-contain dark:hidden"
                     src="/images/banner-sec/main-banner-sec_img.png"
                     alt="Hero"
-                      width={450}
-                      height={500}
+                     width={600}
+                     height={400}
                   />
                   {/* <Image
                     className="hidden shadow-solid-l dark:block"

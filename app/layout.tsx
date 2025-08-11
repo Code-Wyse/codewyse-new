@@ -37,18 +37,18 @@ export default function RootLayout({
         ></script>
         </head>
       <body className={`dark:bg-black ${inter.className}`}>
-        <ThemeProvider
+        {/* <ThemeProvider
           enableSystem={false}
           attribute="class"
           defaultTheme="light"
-        >
+        > */}
           <Lines />
           <Header />
           <ToasterContext />
           {children}
           <Footer />
           <ScrollToTop />
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
