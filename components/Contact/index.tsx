@@ -182,7 +182,8 @@ const Contact = () => {
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Our Loaction
                 </h3>
-                <p>357 Bay St., Toronto, ON M5H 4A6</p>
+                <p>30 N Gould St Ste R
+Sheridan, WY 82801</p>
               </div>
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">

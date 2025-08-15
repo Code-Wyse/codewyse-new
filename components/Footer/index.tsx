@@ -64,8 +64,7 @@ const Footer = () => {
                   <b>Email:</b> hello@codewyse.io<br /></a>
                   <span className="text-itemtitle font-medium text-black dark:text-white">
                   <b>Hours:</b> Mon–Fri, 9am–6pm EST<br />
-                  <b>Location:</b> Remote-first | Serving clients worldwide
-                  </span>
+                  <b>Location:</b> 30 N Gould St Ste R Sheridan, WY 82801</span>
               </motion.div>
 
               <div className="flex w-full flex-wrap lg:flex-nowrap gap-20  px-4 lg:px-0 lg:gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
