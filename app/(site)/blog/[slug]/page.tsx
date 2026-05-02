@@ -80,7 +80,7 @@ export default async function BlogSlugPage({ params }: any) {
   const isMdx = (post as any).source === "mdx" && typeof post.body === "string";
   const url = `${SITE_URL}/blog/${post.slug}/`;
 
-  const articleJsonLd: Record<string, unknown> = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
@@ -122,17 +122,16 @@ export default async function BlogSlugPage({ params }: any) {
     ],
   };
 
-  const faqJsonLd = post.faqs?.length
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: post.faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      }
-    : null;
+  const hasFaqs = !!post.faqs?.length;
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: (post.faqs ?? []).map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
 
   return (
     <>
@@ -144,7 +143,7 @@ export default async function BlogSlugPage({ params }: any) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      {faqJsonLd && (
+      {hasFaqs && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
