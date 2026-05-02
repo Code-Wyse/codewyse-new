@@ -36,7 +36,11 @@ function extractInlineJsonLd(source) {
 }
 
 function extractObjectLiteral(source, identifier) {
-  const startRe = new RegExp(`(?:const|let|var)\\s+${identifier}\\s*=\\s*\\{`);
+  // Match `const <id>` or `const <id>: <Type>` followed by `= {`
+  // Type annotation may contain generics, unions, brackets — anything except `=`.
+  const startRe = new RegExp(
+    `(?:const|let|var)\\s+${identifier}\\s*(?::\\s*[^=]+)?=\\s*\\{`
+  );
   const startMatch = source.match(startRe);
   if (!startMatch) return null;
   const startIdx = startMatch.index + startMatch[0].length - 1;

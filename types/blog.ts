@@ -6,14 +6,22 @@ export type Author = {
   _ref?: number | string;
 };
 
+export type Faq = {
+  q: string;
+  a: string;
+};
+
 export type Blog = {
   _id: number;
   title: string;
-  slug?: any;
+  slug?: string;
   metadata?: string;
-  body?: string;
+  body?: React.ReactNode;
   mainImage?: any;
   author?: Author;
+  category?: string;
+  readTime?: string;
   tags?: string[];
   publishedAt?: string;
+  faqs?: Faq[];
 };

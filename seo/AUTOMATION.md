@@ -130,13 +130,28 @@ But the safest stance is still: **read the post before merging.** Even a 60-seco
 - **Guest post outreach** — automated outreach is the fastest path to a domain blacklist.
 - **Founder LinkedIn posting** — inauthentic + ToS risk.
 
-## Roadmap (Phase 2, when you're ready)
+## Filesystem-driven blog (shipped)
+
+Drafter MDX files in `markdown/blog/*.mdx` now render automatically — no manual `blogData.tsx` edits needed once a PR is merged. The chain:
+
+1. Drafter writes `markdown/blog/<slug>.mdx` (frontmatter + body).
+2. `lib/blogPosts.ts` is a server-side loader that:
+   - Reads every MDX file in `markdown/blog/` at build time.
+   - Parses frontmatter with `gray-matter`.
+   - Merges with hand-curated entries from `components/Blog/blogData.tsx`.
+   - Sorts by `date` desc.
+   - Dedupes — if an MDX file and a static entry share a slug, MDX wins.
+3. `app/(site)/blog/page.tsx` and `app/(site)/blog/[slug]/page.tsx` both call the loader.
+4. MDX bodies render through `next-mdx-remote/rsc` (works with `output: 'export'`).
+
+Static entries in `blogData.tsx` are still supported — useful for hand-curated cornerstone posts.
+
+## Roadmap (Phase 3, when you're ready)
 
 - **Google Search Console keyword harvester** (monthly) — pulls queries where you rank 5–20 and prepends them to `seo/keyword-queue.md`. Needs a Google service-account JSON in secrets.
 - **Content refresh** (monthly) — re-runs the drafter on posts older than 6 months and opens a "refresh" PR.
 - **Image optimizer** (per PR) — converts new PNG/JPG additions in `public/images/` to WebP/AVIF and rewrites the `<Image src>`.
 - **Indexing API ping** (post-deploy) — calls Google's Indexing API on changed URLs after every Amplify build.
-- **Filesystem-driven blog** — refactor `components/Blog/blogData.tsx` to read frontmatter from `markdown/blog/*.mdx` so merged drafter PRs go live with zero manual tsx edits.
 
 Ping me to wire any of these up.
 
