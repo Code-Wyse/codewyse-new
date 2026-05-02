@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { projectData } from "@/types/portfolioData";
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://codewyse.io";
 
 export default function sitemap(): MetadataRoute.Sitemap {
