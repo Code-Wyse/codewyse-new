@@ -1,6 +1,12 @@
 // Static JSON-LD validator. Scans .tsx files under app/ for inline JSON-LD
-// blocks and (a) parses each as JSON and (b) requires @context + @type.
-// Fails CI if any block is invalid.
+// blocks and verifies each declares the required @context and @type fields,
+// and has balanced braces.
+//
+// We deliberately do NOT try to parse the JS object literal as JSON — many
+// blocks use template literals like `${SITE_URL}/#organization` which are
+// valid JS but invalid JSON, and a brittle conversion just causes false
+// failures. Schema correctness against schema.org is verified separately by
+// Google's Rich Results Test once deployed.
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -18,13 +24,10 @@ async function* walk(dir) {
 }
 
 const ERRORS = [];
-
-function pushError(file, msg) {
+const pushError = (file, msg) =>
   ERRORS.push(`${path.relative(ROOT, file)}: ${msg}`);
-}
 
 function extractInlineJsonLd(source) {
-  // Matches `JSON.stringify(<identifier>)` so we know which const holds the JSON-LD.
   const re = /__html:\s*JSON\.stringify\(([A-Za-z_][A-Za-z0-9_]*)\)/g;
   const ids = new Set();
   let m;
@@ -33,27 +36,57 @@ function extractInlineJsonLd(source) {
 }
 
 function extractObjectLiteral(source, identifier) {
-  // Find `const <id> = { ... };` and return the object body.
-  const re = new RegExp(
-    `const\\s+${identifier}\\s*=\\s*(\\{[\\s\\S]*?\\n\\});`,
-    "m"
-  );
-  const m = source.match(re);
-  return m ? m[1] : null;
+  const startRe = new RegExp(`(?:const|let|var)\\s+${identifier}\\s*=\\s*\\{`);
+  const startMatch = source.match(startRe);
+  if (!startMatch) return null;
+  const startIdx = startMatch.index + startMatch[0].length - 1;
+
+  let depth = 0;
+  let inString = null;
+  let i = startIdx;
+
+  for (; i < source.length; i++) {
+    const c = source[i];
+    const prev = source[i - 1];
+
+    if (inString) {
+      if (c === inString && prev !== "\\") inString = null;
+      continue;
+    }
+    if (c === '"' || c === "'" || c === "`") {
+      inString = c;
+      continue;
+    }
+    if (c === "{") depth++;
+    else if (c === "}") {
+      depth--;
+      if (depth === 0) return source.slice(startIdx, i + 1);
+    }
+  }
+  return null;
 }
 
-function looseJsonParse(literal) {
-  // Convert TS/JS object literal (single quotes, unquoted keys) into JSON.
-  // This is a best-effort parse — if it fails we report the issue but don't
-  // crash CI on legitimate dynamic interpolations.
-  let s = literal
-    .replace(/\/\/.*$/gm, "")
-    .replace(/,\s*([}\]])/g, "$1");
-  // unquoted keys -> quoted
-  s = s.replace(/([{,]\s*)([A-Za-z_@][A-Za-z0-9_-]*)(\s*:)/g, '$1"$2"$3');
-  // single-quoted strings -> double-quoted (naive; skip if contains escape)
-  s = s.replace(/'([^'\\]*)'/g, '"$1"');
-  return JSON.parse(s);
+function checkBalancedBraces(literal) {
+  let depth = 0;
+  let inString = null;
+  for (let i = 0; i < literal.length; i++) {
+    const c = literal[i];
+    const prev = literal[i - 1];
+    if (inString) {
+      if (c === inString && prev !== "\\") inString = null;
+      continue;
+    }
+    if (c === '"' || c === "'" || c === "`") {
+      inString = c;
+      continue;
+    }
+    if (c === "{") depth++;
+    else if (c === "}") {
+      depth--;
+      if (depth < 0) return false;
+    }
+  }
+  return depth === 0 && inString === null;
 }
 
 async function main() {
@@ -66,15 +99,16 @@ async function main() {
         pushError(file, `JSON-LD object \`${id}\` referenced but definition not found.`);
         continue;
       }
-      let obj;
-      try {
-        obj = looseJsonParse(literal);
-      } catch (e) {
-        pushError(file, `JSON-LD \`${id}\` failed to parse: ${e.message}`);
+      if (!checkBalancedBraces(literal)) {
+        pushError(file, `JSON-LD \`${id}\` has unbalanced braces or unterminated string.`);
         continue;
       }
-      if (!obj["@context"]) pushError(file, `JSON-LD \`${id}\` missing \`@context\`.`);
-      if (!obj["@type"]) pushError(file, `JSON-LD \`${id}\` missing \`@type\`.`);
+      if (!/["']@context["']\s*:/.test(literal)) {
+        pushError(file, `JSON-LD \`${id}\` missing required field \`@context\`.`);
+      }
+      if (!/["']@type["']\s*:/.test(literal)) {
+        pushError(file, `JSON-LD \`${id}\` missing required field \`@type\`.`);
+      }
     }
   }
 
@@ -83,7 +117,7 @@ async function main() {
     for (const e of ERRORS) console.error(`  - ${e}`);
     process.exit(1);
   }
-  console.log("All inline JSON-LD blocks validated.");
+  console.log("All inline JSON-LD blocks passed structural validation.");
 }
 
 main().catch((err) => {
