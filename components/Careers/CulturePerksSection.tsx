@@ -44,7 +44,7 @@ const perks = [
     img: 'award-winning-team.svg',
     alt: 'Award Winning Team',
     title: 'A Commitment to Diversity, Equity, and Inclusion',
-    text: 'At Codewyse, we believe in the power of diversity, equity, and inclusion... [shortened for readability]',
+    text: 'At Codewyse, we believe diverse teams build better products. We hire across backgrounds, experiences and geographies, and we work hard to maintain an environment where every engineer, designer and product thinker can do their best work — and grow with us.',
   },
   {
     img: 'sick-leave.svg',

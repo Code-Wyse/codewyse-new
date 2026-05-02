@@ -13,13 +13,13 @@ const Feature = () => {
         <div className="container">
           {/* <!-- Section Title Start --> */}
           <h2 className="mb-5 pr-0 process__subtitle__header w-full  text-[18px]  font-bold text-black  dark:text-white lg:text-[28px] ">
-                 What Makes CodeWyse Different
+                 Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Development Services
               </h2>
           <SectionHeader
             headerInfo={{
-              
-              subtitle: "Your innovation partner for web, mobile, and emerging tech solutions.",
-              description: `We don’t just build apps—we build future-ready platforms that solve real business problems.`,
+
+              subtitle: "Your software partner for custom web apps, mobile apps, AI & ML, SaaS, MVPs and CRMs.",
+              description: `We don't just build apps — we ship production-grade web, mobile, AI/ML and CRM products that solve real business problems and scale.`,
             }}
           />
           {/* <!-- Section Title End --> */}

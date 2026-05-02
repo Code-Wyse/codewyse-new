@@ -1,0 +1,46 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./out",
+      "url": [
+        "http://localhost/index.html",
+        "http://localhost/services/index.html",
+        "http://localhost/about-us/index.html",
+        "http://localhost/projects/index.html",
+        "http://localhost/blog/index.html"
+      ],
+      "numberOfRuns": 2,
+      "settings": {
+        "preset": "desktop"
+      }
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.8 }],
+        "categories:seo": ["error", { "minScore": 0.95 }],
+        "categories:accessibility": ["warn", { "minScore": 0.9 }],
+        "categories:best-practices": ["warn", { "minScore": 0.9 }],
+        "uses-responsive-images": "warn",
+        "uses-optimized-images": "warn",
+        "uses-text-compression": "warn",
+        "modern-image-formats": "warn",
+        "unused-javascript": "warn",
+        "render-blocking-resources": "warn",
+        "color-contrast": "warn",
+        "tap-targets": "warn",
+        "meta-description": "error",
+        "document-title": "error",
+        "html-has-lang": "error",
+        "image-alt": "error",
+        "link-text": "warn",
+        "robots-txt": "error",
+        "canonical": "error",
+        "structured-data": "warn"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

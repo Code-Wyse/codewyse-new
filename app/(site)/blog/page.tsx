@@ -3,10 +3,32 @@ import BlogItem from "@/components/Blog/BlogItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Blog page for Solid Pro"
+  title: "Blog — Web, Mobile, AI & ML, SaaS and CRM Insights",
+  description:
+    "Codewyse blog: insights, guides and news on custom web apps, mobile development, AI & ML, generative AI, SaaS, MVPs and CRM systems.",
+  keywords: [
+    "web development blog",
+    "mobile development blog",
+    "AI ML blog",
+    "SaaS blog",
+    "CRM blog",
+    "Next.js blog",
+    "React blog",
+  ],
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog — Web, Mobile, AI & ML, SaaS and CRM Insights",
+    description:
+      "Insights and guides on custom web apps, mobile, AI & ML, SaaS and CRM development.",
+    url: "/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — Web, Mobile, AI & ML, SaaS and CRM Insights",
+    description:
+      "Insights and guides on custom web apps, mobile, AI & ML, SaaS and CRM development.",
+  },
 };
 
 const BlogPage = async () => {

@@ -1,9 +1,77 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
+
+const CONTACT_ENDPOINT = "https://formsubmit.co/ajax/info@codewyse.io";
 
 const Contact = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [consent, setConsent] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+  };
+
+  const handleContactSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (submitting) return;
+
+    if (!form.name || !form.email || !form.message) {
+      toast.error("Please fill in name, email and message.");
+      return;
+    }
+    if (!consent) {
+      toast.error("Please accept the terms to send your message.");
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const res = await fetch(CONTACT_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `New Contact Message — ${form.name}`,
+          _template: "table",
+          _captcha: "false",
+          form_type: "Contact",
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          phone: form.phone,
+          message: form.message,
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || (data && data.success === "false")) {
+        throw new Error(data?.message || "Failed to send message.");
+      }
+
+      toast.success("Message sent! We'll get back to you soon.");
+      setForm({ name: "", email: "", subject: "", phone: "", message: "" });
+      setConsent(false);
+    } catch (err: any) {
+      toast.error(err?.message || "Could not send. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   /**
    * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
    * Reason: To fix rehydration error
@@ -60,19 +128,24 @@ const Contact = () => {
                 Send a message
               </h2>
 
-              <form
-                action="https://formbold.com/s/unique_form_id"
-                method="POST"
-              >
+              <form onSubmit={handleContactSubmit}>
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
                     placeholder="Full name"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
                     type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
                     placeholder="Email address"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -81,12 +154,18 @@ const Contact = () => {
                 <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
+                    name="subject"
+                    value={form.subject}
+                    onChange={handleChange}
                     placeholder="Subject"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
-                    type="text"
+                    type="tel"
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleChange}
                     placeholder="Phone number"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -94,6 +173,10 @@ const Contact = () => {
 
                 <div className="mb-11.5 flex">
                   <textarea
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    required
                     placeholder="Message"
                     rows={4}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
@@ -105,6 +188,8 @@ const Contact = () => {
                     <input
                       id="default-checkbox"
                       type="checkbox"
+                      checked={consent}
+                      onChange={(e) => setConsent(e.target.checked)}
                       className="peer sr-only"
                     />
                     <span className="border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700 group mt-2 flex h-5 min-w-[20px] items-center justify-center rounded-sm peer-checked:bg-primary">
@@ -134,10 +219,12 @@ const Contact = () => {
                   </div>
 
                   <button
+                    type="submit"
                     aria-label="send message"
-                    className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
+                    disabled={submitting}
+                    className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark disabled:opacity-60"
                   >
-                    Send Message
+                    {submitting ? "Sending..." : "Send Message"}
                     <svg
                       className="fill-white"
                       width="14"

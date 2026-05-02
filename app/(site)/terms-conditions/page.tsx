@@ -3,10 +3,11 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms And Condition : Codewyse",
-
-  // other metadata
-  description: "Terms And Condition : Codewyse"
+  title: "Terms & Conditions",
+  description:
+    "Read the Codewyse terms and conditions for engaging our web, mobile, AI & ML, SaaS and CRM development services.",
+  alternates: { canonical: "/terms-conditions" },
+  robots: { index: true, follow: true },
 };
 
 const page = () => {

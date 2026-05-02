@@ -34,14 +34,14 @@ const Footer = () => {
                     width={60}
                     height={80}
                     src="/images/logo/logo.png"
-                    alt="Logo"
+                    alt="Codewyse — custom web, mobile, AI & ML and CRM development"
                     className="dark:hidden"
                   />
                   <Image
                     width={60}
                     height={80}
                     src="/images/logo/logo.png"
-                    alt="Logo"
+                    alt="Codewyse — custom web, mobile, AI & ML and CRM development"
                     className="hidden dark:block"
                   />
                 </a>
@@ -51,7 +51,7 @@ const Footer = () => {
                 </p>
 
                 <p className="mb-10 mt-5">
-                Custom web and mobile development using AI, RPA, and blockchain. Let's turn your vision into a scalable product.
+                Codewyse builds custom web apps, mobile apps, AI &amp; ML solutions, SaaS platforms, MVPs and CRM systems on Next.js, React and Node.js — for startups and enterprises worldwide.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">

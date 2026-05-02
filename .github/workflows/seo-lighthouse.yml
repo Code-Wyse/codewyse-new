@@ -1,0 +1,39 @@
+name: SEO Lighthouse CI
+
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    # Every Monday 06:00 UTC, against the live site
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install
+        run: npm ci || npm install
+
+      - name: Build (static export)
+        run: npm run build
+
+      - name: Lighthouse CI (against built static output)
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

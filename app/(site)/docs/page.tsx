@@ -2,10 +2,23 @@ import SidebarLink from "@/components/Docs/SidebarLink";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Docs Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Docs page for Solid Pro"
+  title: "Documentation — Codewyse",
+  description:
+    "Codewyse documentation: guides and references for our web, mobile, AI & ML, SaaS and CRM development workflows.",
+  alternates: { canonical: "/docs" },
+  openGraph: {
+    title: "Documentation — Codewyse",
+    description:
+      "Guides and references for Codewyse web, mobile, AI & ML, SaaS and CRM workflows.",
+    url: "/docs",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Documentation — Codewyse",
+    description:
+      "Guides and references for Codewyse web, mobile, AI & ML, SaaS and CRM workflows.",
+  },
 };
 
 export default function DocsPage() {

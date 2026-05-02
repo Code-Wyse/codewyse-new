@@ -4,10 +4,23 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Blog details page for Solid Pro"
+  title: "Blog Article — Codewyse Insights",
+  description:
+    "In-depth Codewyse article on custom web apps, mobile apps, AI & ML, SaaS and CRM development best practices.",
+  alternates: { canonical: "/blog/blog-details" },
+  openGraph: {
+    title: "Blog Article — Codewyse Insights",
+    description:
+      "Codewyse insights on web, mobile, AI & ML, SaaS and CRM development.",
+    url: "/blog/blog-details",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog Article — Codewyse Insights",
+    description:
+      "Codewyse insights on web, mobile, AI & ML, SaaS and CRM development.",
+  },
 };
 
 const SingleBlogPage = async () => {

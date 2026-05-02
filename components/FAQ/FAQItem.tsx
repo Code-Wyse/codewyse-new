@@ -1,3 +1,4 @@
+"use client";
 import { JSX } from "react";
 
 type FaqData = {
@@ -50,13 +51,13 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
             </svg>
           )}
         </button>
-        <p
+        <div
           className={`border-t border-stroke px-6 py-5 dark:border-strokedark lg:px-9 lg:py-7.5 ${
             activeFaq === id ? "block" : "hidden"
           }`}
         >
           {typeof ans === "function" ? ans() : <p>{ans}</p>}
-        </p>
+        </div>
       </div>
     </>
   );

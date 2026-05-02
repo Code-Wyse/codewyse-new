@@ -30,10 +30,10 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-              Partner with CodeWyse & Accelerate Your Digital Growth
+              Hire Codewyse for Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Development
               </h2>
               <p>
-              Streamline your development, launch faster, and scale smarter with our expert web and mobile app solutions. Let’s turn your ideas into high-performing digital products.
+              Ship a custom web app, mobile app, AI &amp; ML feature, SaaS product or CRM faster with a senior team that has done it before. Book a free 30-minute consultation and let&rsquo;s scope your project.
               </p>
             </motion.div>
             <motion.div

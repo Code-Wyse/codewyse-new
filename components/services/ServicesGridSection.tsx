@@ -13,73 +13,65 @@ type CoreValue = {
 
 
 const coreValues: CoreValue[] = [
- {
+  {
+    title: "Custom Web App Development",
+    imageSrc: "/images/web-development-services.png",
+    imageAlt: "Custom web app development services — Codewyse",
+    description:
+      "Custom web apps and SaaS platforms built on Next.js, React and Node.js — fast, SEO-ready, secure and built to scale from MVP to millions of users.",
+  },
+  {
     title: "Mobile App Development",
     imageSrc: "/images/mobile-development-services.png",
-    imageAlt: "Empower People",
+    imageAlt: "iOS and Android mobile app development — Codewyse",
     description:
-      "We specialize in mobile-first solutions, crafting scalable, maintainable apps optimized for iOS and Android platforms. Our mobile applications are designed for performance, user experience, and future-proofing, enabling seamless user engagement and powerful backend support across industries.",
+      "iOS, Android and cross-platform mobile app development with React Native, Flutter, Swift and Kotlin — native-grade UX, App Store and Google Play delivery.",
   },
   {
-    title: "Web Development",
-    imageSrc: "/images/web-development-services.png",
-    imageAlt: "Do The Right Thing",
-    description:
-      "From simple websites to complex web platforms, our web development services cover frontend, backend, and full-stack solutions. We build responsive, scalable, and secure websites using modern technologies to ensure fast performance, intuitive UI, and excellent user experience.",
-  },
-  {
-    title: "UI & UX",
+    title: "AI & ML Development",
     imageSrc: "/images/ui-ux-services.png",
-    imageAlt: "Balance",
+    imageAlt: "AI and machine learning development — Codewyse",
     description: (
       <>
-        We design visually appealing, user-centric interfaces that drive engagement and conversion. By blending creativity with usability, our UX/UI designs ensure intuitive navigation, optimized workflows, and brand consistency across web and mobile platforms, enhancing the user journey at every touchpoint.
+        Generative AI, LLM integration, RAG pipelines, recommendation engines and predictive ML — production AI &amp; ML features that move the metrics inside your web and mobile apps.
       </>
     ),
   },
   {
-    title: "Quality Assurance",
-    imageSrc: "/images/qa-services.png",
-    imageAlt: "Client",
+    title: "Custom CRM Development",
+    imageSrc: "/images/api-integration-icon.png",
+    imageAlt: "Custom CRM development — Codewyse",
     description:
-      "Our QA process ensures every product is thoroughly tested for functionality, performance, and security. We conduct manual and automated testing throughout the development lifecycle, delivering bug-free, reliable digital solutions that meet the highest standards of quality and user satisfaction.",
+      "Tailor-made CRM systems that fit your sales, support and operations workflows — with integrations to HubSpot, Salesforce, Zoho, Stripe and Twilio.",
   },
   {
-    title: "Blockchain & Smart Contracts",
-    imageSrc: "/images/blockchain-icon.png",
-    imageAlt: "Client",
-    description:
-      "We develop decentralized applications and secure smart contracts using Ethereum, Solidity, and other blockchain technologies. Our services ensure transparency, trust, and automation for industries like finance, supply chain, and healthcare through custom blockchain development and smart contract implementation.",
-  },
-    {
-    title: "Product Strategy & MVP Development",
+    title: "SaaS & MVP Development",
     imageSrc: "/images/prod-mvp-icon.png",
-    imageAlt: "Client",
+    imageAlt: "SaaS and MVP development — Codewyse",
     description:
-      "From idea to launch, we help you validate your concept and build a lean Minimum Viable Product (MVP). Our team aligns product features with market needs, providing technical direction, wireframes, and a scalable foundation to turn your vision into a successful product.",
+      "Production-ready SaaS and MVP development with auth, billing, multi-tenancy and AI features — go from idea to paying users in weeks, not months.",
   },
-     {
-    title: "Scalable Architecture & DevOps",
+  {
+    title: "Cloud, DevOps & Scalable Architecture",
     imageSrc: "/images/scalable-architechture.png",
-    imageAlt: "Client",
+    imageAlt: "Cloud DevOps and scalable architecture — Codewyse",
     description:
-      "We design scalable system architectures and implement DevOps practices to streamline deployment and operations. From CI/CD pipelines to cloud infrastructure, we ensure your digital products are agile, robust, and ready for scale with minimal downtime and maximum efficiency.",
+      "Cloud-native architecture on AWS, GCP and Azure with CI/CD, containers and observability — fast, resilient and cost-efficient at any scale.",
   },
-       {
-    title: "Integrations",
+  {
+    title: "API Development & Integrations",
     imageSrc: "/images/api-integration-icon.png",
-    imageAlt: "Client",
+    imageAlt: "API development and integrations — Codewyse",
     description:
-      "We integrate third-party APIs and build custom platform extensions to enhance functionality and interoperability. Our services ensure seamless data exchange, improved performance, and automation by connecting your systems to popular tools and platforms like Stripe, Salesforce, Shopify, and more.",
+      "REST and GraphQL API development plus integrations with Stripe, PayPal, Salesforce, HubSpot, Firebase, Algolia, OpenAI and more.",
   },
-         {
-    title: "Security & Compliance by Design",
+  {
+    title: "Security & Compliance",
     imageSrc: "/images/security-icon.png",
-    imageAlt: "Client",
+    imageAlt: "Security and compliance by design — Codewyse",
     description:
-      "Security is embedded in every stage of development. We ensure your product meets industry compliance standards (like GDPR, HIPAA, SOC2) through secure coding practices, threat modeling, encryption, and access control—providing peace of mind for both you and your users.",
+      "Security-first engineering with encryption, RBAC, threat modeling and compliance for GDPR, HIPAA, SOC2 and PCI — embedded into every build.",
   },
-
 ];
 
 const ServicesGridSection = () => {

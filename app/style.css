@@ -7070,14 +7070,6 @@ p.service-text.development-card__text {
     width: 25px
 }
 
-.banner__sub-footer {
-    margin-top: 50px
-}
-
-.banner--careers .banner__footer {
-    padding-top: 50px
-}
-
 .development__card--wrapper:nth-child(2n) .card-title {
     max-width: 100%
 }
@@ -7752,7 +7744,7 @@ header.section-header {
    
       .banner__footer {
         position: absolute;
-        top: 39vh;
+        top: 36vh;
         left: 0;
         right: 0;
         margin: 10px auto;
@@ -7998,12 +7990,12 @@ section.section-team.services {
     content: '';
     display: block;
     position: absolute;
-    top: 37%;
-    left: 310px;
-    background: url(../public/images/service-line-arrow.svg);
+    top: 49%;
+    left: 6%;
+    background: url(/_next/static/media/service-line-arrow.9b4dd014.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 472px;
+    height: 473px;
     width: 277px;
 }
 
@@ -8029,7 +8021,7 @@ section.section-team.services {
 @media only screen and (min-width: 1400px) and (max-width: 2000px) {
   .banner__footer {
         position: absolute;
-        top: 44vh;
+        
         left: 0;
         right: 0;
         margin: 10px auto;

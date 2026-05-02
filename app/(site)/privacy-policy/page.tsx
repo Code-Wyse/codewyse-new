@@ -3,10 +3,11 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy : Codewyse",
-
-  // other metadata
-  description: "Privacy Policy : Codewyse"
+  title: "Privacy Policy",
+  description:
+    "Read the Codewyse privacy policy: how we collect, use and protect your data across our web, mobile, AI & ML, SaaS and CRM services.",
+  alternates: { canonical: "/privacy-policy" },
+  robots: { index: true, follow: true },
 };
 
 const page = () => {

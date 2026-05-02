@@ -2,6 +2,7 @@
 
 import { projectData } from "@/types/portfolioData";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Image from "next/image";
 import ProjectTabs from "@/components/project-details/ProjectTabs";
 import PortFolioSlider from "@/components/Portfolio_slider/PortFolioSlider";
@@ -9,6 +10,40 @@ import PortFolioSlider from "@/components/Portfolio_slider/PortFolioSlider";
 // statically generate all slugs
 export function generateStaticParams() {
   return projectData.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const project = projectData.find((p) => p.slug === params.slug);
+  if (!project) {
+    return {
+      title: "Project Not Found",
+      robots: { index: false, follow: false },
+    };
+  }
+  const title = `${project.title} — Case Study`;
+  const description =
+    project.description?.toString().slice(0, 160) ||
+    `${project.title} — a custom web, mobile, AI & ML, SaaS or CRM project delivered by Codewyse.`;
+  const url = `/project-details/${project.slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${title} | Codewyse`,
+      description,
+      url,
+      type: "article",
+      images: typeof project.bannerImage === "string"
+        ? [{ url: project.bannerImage, width: 1200, height: 630, alt: project.title }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Codewyse`,
+      description,
+    },
+  };
 }
 
 // no explicit type annotation on the props!

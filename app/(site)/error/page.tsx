@@ -2,10 +2,9 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Error Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Error page for Solid Pro"
+  title: "Page Not Found",
+  description: "The page you are looking for could not be found on Codewyse.",
+  robots: { index: false, follow: false },
 };
 
 const ErroPage = () => {

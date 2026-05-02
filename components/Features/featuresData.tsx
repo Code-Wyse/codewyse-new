@@ -4,58 +4,58 @@ const featuresData: Feature[] = [
   {
     id: 1,
     icon: "/images/icon/icon-01.svg",
-    title: "Full-Stack Web Development",
+    title: "Custom Web App Development",
     description:
-      "From elegant frontends to scalable backends, we create responsive, high-performance web applications tailored to your business goals.",
+      "Custom web apps and SaaS platforms built on Next.js, React and Node.js — fast, SEO-friendly and built to scale from MVP to millions of users.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
-    title: "Custom Mobile App Development",
+    title: "Mobile App Development (iOS & Android)",
     description:
-      "iOS, Android, and cross-platform solutions—designed to perform beautifully and integrate seamlessly with your workflows.",
+      "Native and cross-platform mobile app development with React Native, Flutter, Swift and Kotlin — shipped to the App Store and Google Play.",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-    title: "AI & Automation (RPA) Integration",
+    title: "AI & ML Development",
     description:
-      "We implement intelligent process automation and AI-driven features that reduce operational costs and increase efficiency across industries.",
+      "Generative AI, LLM integration, computer vision and predictive ML models — production AI features your users will actually pay for.",
   },
   {
     id: 4,
     icon: "/images/icon/icon-04.svg",
-    title: "Blockchain & Smart Contracts",
+    title: "Custom CRM Development",
     description:
-      "From decentralized apps (dApps) to secure data exchange systems, we architect blockchain solutions for transparency and trust.",
+      "Tailor-made CRM systems for sales, support and operations, with deep integrations into HubSpot, Salesforce, Stripe, Twilio and your existing stack.",
   },
   {
     id: 5,
     icon: "/images/icon/icon-05.svg",
-    title: "Product Strategy & MVP Development",
+    title: "SaaS & MVP Development",
     description:
-      "Launch faster with our lean product development approach. We help validate your idea and get your MVP to market efficiently.",
+      "Production-ready SaaS and MVP development with auth, billing, multi-tenant architecture and AI features — launch in weeks, not months.",
   },
   {
     id: 6,
     icon: "/images/icon/icon-06.svg",
-    title: "Scalable Architecture & DevOps",
+    title: "Cloud, DevOps & Scalable Architecture",
     description:
-      "Whether you’re scaling from 100 to 1 million users, our cloud-native, containerized infrastructure ensures your product is always ready to grow.",
+      "Cloud-native architecture on AWS, GCP and Azure with CI/CD, containers and Kubernetes — your custom web apps and mobile apps stay fast at any scale.",
   },
   {
     id: 7,
     icon: "/images/icon/icon-06.svg",
-    title: "API Integrations & Platform Extensions",
+    title: "API Development & Integrations",
     description:
-      "Connect to CRMs, ERPs, payment gateways, or any 3rd-party system—our team builds seamless integrations that extend your capabilities.",
+      "REST and GraphQL APIs plus integrations with CRMs, ERPs and payment gateways like Stripe, PayPal, Firebase and Algolia.",
   },
   {
     id: 8,
     icon: "/images/icon/icon-06.svg",
-    title: "Security & Compliance by Design",
+    title: "Security & Compliance (HIPAA, SOC2, GDPR)",
     description:
-      "We embed privacy, encryption, and regulatory compliance into every solution we build—from day one.",
+      "Security-first engineering for fintech, healthcare and e-commerce — encryption, access control, threat modeling and compliance from day one.",
   },
 ];
 

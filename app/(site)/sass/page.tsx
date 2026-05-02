@@ -11,10 +11,33 @@ import TestimonialsSection from "@/components/SassPage/TestimonialsSection";
 import BoostAppSection from "@/components/SassPage/BoostAppSection";
 
 export const metadata: Metadata = {
-  title: "Launch Your Startup in Days, Not Weeks | Codewyse",
-
-  // other metadata
-  description: "The NextJS boilerplate with all the stuff you need to get your product in front of customers. From idea to production in 5 minutes."
+  title: "SaaS & MVP Development — Launch Your Startup in Days, Not Weeks",
+  description:
+    "Codewyse delivers production-ready SaaS and MVP development on Next.js, React and Node.js — go from idea to launch fast with built-in auth, payments, AI features and CRM integrations.",
+  keywords: [
+    "SaaS development",
+    "MVP development",
+    "Next.js boilerplate",
+    "startup development",
+    "AI SaaS",
+    "build a SaaS",
+    "launch MVP",
+    "React SaaS",
+  ],
+  alternates: { canonical: "/sass" },
+  openGraph: {
+    title: "SaaS & MVP Development — Launch Your Startup in Days, Not Weeks",
+    description:
+      "Production-ready SaaS and MVP development on Next.js, React and Node.js by Codewyse.",
+    url: "/sass",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SaaS & MVP Development — Launch Your Startup in Days, Not Weeks",
+    description:
+      "Production-ready SaaS and MVP development on Next.js, React and Node.js by Codewyse.",
+  },
 };
 
 const page = () => {

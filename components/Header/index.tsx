@@ -6,11 +6,13 @@ import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useAppointment } from "@/app/context/AppointmentContext";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
+  const { open: openAppointment } = useAppointment();
 
   const pathUrl = usePathname();
 
@@ -27,18 +29,6 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
-  const openCalendly = (e: React.MouseEvent) => {
-    e.preventDefault();
-
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/codewyse/30min?primary_color=3ba196',
-      });
-    } else {
-      console.warn('Calendly script not loaded yet.');
-    }
-  };
-
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${stickyMenu
@@ -51,14 +41,14 @@ const Header = () => {
           <Link href="/">
             <Image
               src="/images/logo/logo.png"
-              alt="logo"
+              alt="Codewyse — custom web, mobile, AI & ML and CRM development"
               width={50}
               height={30}
               className="hidden dark:block"
             />
             <Image
               src="/images/logo/logo.png"
-              alt="logo"
+              alt="Codewyse — custom web, mobile, AI & ML and CRM development"
               width={50}
               height={40}
               className="dark:hidden"
@@ -171,13 +161,13 @@ const Header = () => {
               GitHub Repo 🌟
             </Link> */}
 
-            <Link
-              href="#"
-              onClick={openCalendly}
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+            <button
+              type="button"
+              onClick={openAppointment}
+              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho cursor-pointer"
             >
               Book a Call
-            </Link>
+            </button>
           </div>
         </div>
       </div>

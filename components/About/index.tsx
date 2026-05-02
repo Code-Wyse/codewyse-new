@@ -3,20 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
- const openCalendly = (e: React.MouseEvent) => {
-    e.preventDefault();
-
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/codewyse/30min?primary_color=3ba196',
-      });
-    } else {
-      console.warn('Calendly script not loaded yet.');
-    }
-  };
+import { useAppointment } from "@/app/context/AppointmentContext";
 
 const About = () => {
+  const { open: openAppointment } = useAppointment();
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
@@ -43,13 +33,13 @@ const About = () => {
             >
               <Image
                 src="/images/about/about-light-01.png"
-                alt="About"
+                alt="Codewyse custom web, mobile, AI and CRM development team"
                 className="dark:hidden"
                 fill
               />
               <Image
                 src="/images/about/about-dark-01.png"
-                alt="About"
+                alt="Codewyse custom web, mobile, AI and CRM development team"
                 className="hidden dark:block"
                 fill
               />
@@ -76,13 +66,13 @@ const About = () => {
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   New
                 </span>{" "}
-                Web & Mobile Development for Visionary Brands
+                Custom Web Apps, Mobile Apps and AI &amp; ML Development for Visionary Brands
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              Idea to Launch — CodeWyse Builds, Optimizes & Scales Your Software
+                Idea to Launch — Codewyse Builds Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Systems
               </h2>
               <p>
-              We help startups and growing companies turn bold ideas into functional, beautiful software products. Whether you need a full-stack team or just expert support, we’re your dev partner from concept to completion.
+                We help startups and enterprises turn bold ideas into production-grade <strong>custom web apps, mobile apps, AI &amp; ML solutions, SaaS products and CRM systems</strong>. Whether you need a full <strong>Next.js / React / Node.js</strong> team or specialist <strong>AI engineers</strong>, Codewyse is your software development partner from concept to launch and beyond.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -93,9 +83,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Full-Cycle Web & Mobile Development
+                  Custom Web App &amp; Mobile App Development
                   </h3>
-                  <p>We design, develop, and deploy high-performance applications using modern frameworks like Next.js, React Native, Flutter, and Node.js.</p>
+                  <p>End-to-end design, development and deployment of high-performance custom web apps and iOS / Android mobile apps using Next.js, React, React Native, Flutter and Node.js.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -106,9 +96,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Scalable Architecture & Clean Code
+                  AI &amp; Machine Learning Engineering
                   </h3>
-                  <p>Our apps are built to scale—with optimized performance, maintainability, and future-proof technology choices.</p>
+                  <p>From generative AI features and LLM integration to predictive ML models and intelligent automation, we ship AI &amp; ML capabilities that move your business metrics.</p>
                 </div>
                 
               </div>
@@ -120,9 +110,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Dedicated Product Teams
+                  Custom CRM Development &amp; Automation
                   </h3>
-                  <p>Work with a handpicked team of senior developers, UI/UX designers, and project leads dedicated to your success.</p>
+                  <p>Tailor-made CRMs that fit your sales, support and operations workflows — with deep integrations into HubSpot, Salesforce, Stripe, Twilio, and your existing tools.</p>
                 </div>
                 
               </div>
@@ -134,9 +124,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Seamless Integrations & API Connectivity
+                  SaaS &amp; MVP Development for Startups
                   </h3>
-                  <p>We connect your app to CRMs, ERPs, third-party APIs, and payment systems like Stripe, Firebase, Algolia, and more.</p>
+                  <p>Production-ready SaaS platforms and MVPs with auth, payments, multi-tenant architecture and AI features baked in — go from idea to paying users fast.</p>
                 </div>
                 
               </div>
@@ -148,9 +138,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Agile Delivery & Transparent Pricing
+                  E-commerce, Fintech &amp; Healthcare Software
                   </h3>
-                  <p>Choose between Time & Material or Project-Based pricing—flexible models designed to align with your goals and timelines.</p>
+                  <p>Industry-grade builds for e-commerce, fintech and healthcare — secure, compliant (HIPAA, SOC2, PCI) and scaled on cloud-native infrastructure.</p>
                 </div>
                 
               </div>
@@ -183,10 +173,10 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
-              From MVP to Market
+              From MVP to Market — Web, Mobile, AI &amp; CRM
               </h4>
               <h2 className="relative mt-7.5 mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              Everything You Need to Launch Faster & Smarter
+              Everything You Need to Launch a Custom Web App, Mobile App, AI Product or CRM
               </h2>
               <div className="mt-7.5 flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
@@ -196,9 +186,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Custom Web Platforms
+                  Custom Web Apps &amp; SaaS Platforms
                   </h3>
-                  <p>Business dashboards, SaaS products, internal tools—fully tailored to your needs.</p>
+                  <p>Business dashboards, SaaS products, internal tools and customer portals — built on Next.js and Node.js, fully tailored to your workflow.</p>
                 </div>
                 
               </div>
@@ -210,9 +200,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Mobile Apps (iOS & Android)
+                  Mobile App Development (iOS &amp; Android)
                   </h3>
-                  <p>Cross-platform, native-like apps built using React Native or Flutter.</p>
+                  <p>Cross-platform and native mobile apps built with React Native, Flutter and Swift / Kotlin — shipped to the App Store and Google Play.</p>
                 </div>
                 
               </div>
@@ -224,9 +214,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Beautiful UI/UX
+                  AI &amp; ML Solutions and Custom CRMs
                   </h3>
-                  <p>Pixel-perfect design that keeps users engaged.</p>
+                  <p>Generative AI, LLM integrations, recommendation engines, and tailor-made CRM systems that fit your sales and operations.</p>
                 </div>
                 
               </div>
@@ -238,23 +228,23 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  End-to-End Support
+                  End-to-End Product Engineering
                   </h3>
-                  <p>Discovery, design, development, QA, deployment, and post-launch support.</p>
+                  <p>Discovery, UX/UI design, full-stack development, QA, DevOps and post-launch support — one accountable team from idea to scale.</p>
                 </div>
                 
               </div>
               <div >
               <h2 className="relative mt-7.5 mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                  Let’s Build Something Great
+                  Let&rsquo;s Build Your Web App, Mobile App, AI Product or CRM
                   </h2>
               <p>
-              Your product deserves a world-class team. Let CodeWyse turn your vision into scalable, secure, and stunning software.
+              Your product deserves a world-class team. Let Codewyse turn your vision into a scalable, secure custom web app, mobile app, AI &amp; ML solution, SaaS platform or CRM system.
                   </p>
-                <Link
-                  href="javascript:;"
-                  onClick={openCalendly}
-                  className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[80%] lg:w-[40%] gap-4 hover:bg-primaryho"
+                <button
+                  type="button"
+                  onClick={() => openAppointment()}
+                  className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out mt-4 w-[80%] lg:w-[40%] gap-4 hover:bg-primaryho cursor-pointer"
                 >
                   Book a Call
                   <svg
@@ -265,7 +255,7 @@ const About = () => {
                   >
                     <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
                   </svg>
-                </Link>
+                </button>
               </div>
             </motion.div>
             <motion.div
@@ -288,13 +278,13 @@ const About = () => {
             >
               <Image
                 src="/images/about/about-light-02.png"
-                alt="About"
+                alt="Codewyse custom web, mobile, AI and CRM development team"
                 className="dark:hidden"
                 fill
               />
               <Image
                 src="/images/about/about-dark-02.svg"
-                alt="About"
+                alt="Codewyse custom web, mobile, AI and CRM development team"
                 className="hidden dark:block"
                 fill
               />

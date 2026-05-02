@@ -57,7 +57,7 @@ const AboutSection: React.FC = () => {
               </h2>
 
             <p>
-              CodeWyse was founded with a clear vision: to empower businesses through intelligent, user-centric digital solutions. What began as a small team of passionate developers has grown into a full-service technology partner trusted by startups and enterprises alike. From crafting bespoke web and mobile applications to building secure, scalable platforms, we’ve always focused on delivering real-world impact through technology. 
+              Codewyse was founded to help businesses ship better software faster. What began as a small team of passionate engineers has grown into a global <strong>custom web app, mobile app, AI &amp; ML and CRM development</strong> partner trusted by startups and enterprises. From bespoke Next.js web platforms and React Native mobile apps to generative AI features and tailor-made CRM systems, we focus on real business impact, not vanity tech.
             </p>
 
             {/* Extra content shown only when expanded */}
@@ -65,7 +65,7 @@ const AboutSection: React.FC = () => {
               <p style={{
                 padding:'10px 0 0 0'
               }}>
-                Today, CodeWyse partners with organizations across industries to tackle complex challenges using strategy-led development, modern tech stacks, and a commitment to quality. Our clients count on us to build products that enhance efficiency, engage users, and scale with confidence. Whether you're launching an MVP or transforming a legacy system, CodeWyse is your dedicated partner in digital innovation.
+                Today, Codewyse partners with organizations across SaaS, fintech, healthcare, e-commerce and EdTech to deliver custom web apps, mobile apps, AI &amp; ML solutions, SaaS products and CRM systems. Whether you're launching an MVP, integrating AI into an existing product, or modernizing a legacy CRM, Codewyse is your end-to-end software partner.
               </p>
             )}
 
