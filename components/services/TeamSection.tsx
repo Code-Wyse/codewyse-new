@@ -40,7 +40,7 @@ const TeamSection: React.FC = () => {
             <p className="team__text">
               Maximize value with team members whose skill-sets are tailored to the needs of your project. Our model includes: Lower costs, greater flexibility, and expert collaboration for successful software development every single time.
             </p>
-            <a className="mt-5 team__btn" href="/Codewyse-dedicated-team/">
+            <a className="mt-5 team__btn" href="/support/">
               Learn More
             </a>
           </div>

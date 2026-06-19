@@ -38,7 +38,7 @@ const About = () => {
                 fill
               />
               <Image
-                src="/images/about/about-dark-01.png"
+                src="/images/about/about-light-01.png"
                 alt="Codewyse custom web, mobile, AI and CRM development team"
                 className="hidden dark:block"
                 fill

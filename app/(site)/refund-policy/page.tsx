@@ -135,6 +135,10 @@ const page = () => {
                 <a href="tel:+923353909432">+92 335 3909 432</a>
               </li>
               <li>Office (Pakistan): 184 Alma 1, Emaar DHA, Islamabad</li>
+              <li>
+                Phone (USA): <a href="tel:+18886802233">+1 888 680 2233</a>
+              </li>
+              <li>Office (USA): 30 N Gould St Ste R, Sheridan, WY 82801</li>
             </ul>
           </div>
         </div>
