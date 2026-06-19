@@ -58,13 +58,19 @@ const Footer = () => {
                 Contact Us
                 </p>
                 <a
-                  href="#"
+                  href="mailto:info@codewyse.io"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  <b>Email:</b> hello@codewyse.io<br /></a>
+                  <b>Email:</b> info@codewyse.io<br /></a>
+                <a
+                  href="tel:+923353909432"
+                  className="text-itemtitle font-medium text-black dark:text-white"
+                >
+                  <b>Phone:</b> +92 335 3909 432<br /></a>
                   <span className="text-itemtitle font-medium text-black dark:text-white">
-                  <b>Hours:</b> Mon–Fri, 9am–6pm EST<br />
-                  <b>Location:</b> 30 N Gould St Ste R Sheridan, WY 82801</span>
+                  <b>Hours:</b> Mon–Fri, 9am–6pm<br />
+                  <b>Pakistan Office:</b> 184 Alma 1, Emaar DHA, Islamabad<br />
+                  <b>USA Office:</b> 30 N Gould St Ste R, Sheridan, WY 82801</span>
               </motion.div>
 
               <div className="flex w-full flex-wrap lg:flex-nowrap gap-20  px-4 lg:px-0 lg:gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -287,6 +293,16 @@ const Footer = () => {
                 <li>
                   <Link  href="/terms-conditions" className="hover:text-primary">
                     Terms of Service
+                  </Link >
+                </li>
+                <li>
+                  <Link  href="/refund-policy" className="hover:text-primary">
+                    Refund Policy
+                  </Link >
+                </li>
+                <li>
+                  <Link  href="/service-delivery-policy" className="hover:text-primary">
+                    Service Delivery
                   </Link >
                 </li>
                 <li>

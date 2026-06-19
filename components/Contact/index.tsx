@@ -267,25 +267,30 @@ const Contact = () => {
 
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
+                  Pakistan Office
                 </h3>
-                <p>30 N Gould St Ste R
-Sheridan, WY 82801</p>
+                <p>184 Alma 1, Emaar DHA,
+Islamabad, Pakistan</p>
+                <p className="mt-2">
+                  <a href="tel:+923353909432">+92 335 3909 432</a>
+                </p>
               </div>
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Email Address
+                  USA Office
                 </h3>
-                <p>
-                  <a href="mailto:info@codewyse.io">info@codewyse.io</a>
+                <p>30 N Gould St Ste R
+Sheridan, WY 82801</p>
+                <p className="mt-2">
+                  <a href="tel:+18886802233">+1 888 680 2233</a>
                 </p>
               </div>
               <div>
                 <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Phone Number
+                  Email Address
                 </h4>
                 <p>
-                  <a href="tel:+18886802233">+1 888 680 2233</a>
+                  <a href="mailto:info@codewyse.io">info@codewyse.io</a>
                 </p>
               </div>
             </motion.div>
