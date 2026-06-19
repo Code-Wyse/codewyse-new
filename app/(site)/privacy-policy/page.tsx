@@ -131,7 +131,7 @@ const page = () => {
             <p>If you have any questions about this Privacy Policy or our data practices, contact us at:</p>
             <ul><li>
               <a href="mailto:info@codewyse.io">info@codewyse.io</a></li>
-              <li><a href="www.codewyse.io">*www.codewyse.io</a></li></ul>
+              <li><a href="https://www.codewyse.io">www.codewyse.io</a></li></ul>
           </div>
 
           {/* Add more sections as needed */}

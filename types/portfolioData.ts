@@ -869,7 +869,7 @@ export const projectData: Project[] = [
         ],
       },
     ],
-    lastImage: "/images/project/Dj/result-illustration/1.png",
+    lastImage: "/images/project/DJ/result-illustration/1.png",
     logndescTitle: ' Results ',
     longDescription: [
       "Bounce rate reduced by 35% after redesign",

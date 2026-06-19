@@ -62,15 +62,12 @@ const Footer = () => {
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
                   <b>Email:</b> info@codewyse.io<br /></a>
-                <a
-                  href="tel:+923353909432"
-                  className="text-itemtitle font-medium text-black dark:text-white"
-                >
-                  <b>Phone:</b> +92 335 3909 432<br /></a>
                   <span className="text-itemtitle font-medium text-black dark:text-white">
                   <b>Hours:</b> Mon–Fri, 9am–6pm<br />
                   <b>Pakistan Office:</b> 184 Alma 1, Emaar DHA, Islamabad<br />
-                  <b>USA Office:</b> 30 N Gould St Ste R, Sheridan, WY 82801</span>
+                  Phone: <a href="tel:+923353909432">+92 335 3909 432</a><br />
+                  <b>USA Office:</b> 30 N Gould St Ste R, Sheridan, WY 82801<br />
+                  Phone: <a href="tel:+18886802233">+1 888 680 2233</a></span>
               </motion.div>
 
               <div className="flex w-full flex-wrap lg:flex-nowrap gap-20  px-4 lg:px-0 lg:gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -107,7 +104,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="/services"
+                        href="/services/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Services
@@ -115,7 +112,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="/projects"
+                        href="/projects/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Projects
@@ -123,7 +120,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="careers/"
+                        href="/careers/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Careers
@@ -165,7 +162,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <Link
-                        href="/about-us"
+                        href="/about-us/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         About Us
@@ -189,7 +186,7 @@ const Footer = () => {
                     </li> */}
                     <li>
                       <Link
-                        href="/support"
+                        href="/support/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Contact
@@ -286,27 +283,27 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-2 lg:gap-8">
                 <li>
-                  <Link  href="/privacy-policy" className="hover:text-primary ">
+                  <Link  href="/privacy-policy/" className="hover:text-primary ">
                     Privacy Policy
                   </Link >
                 </li>
                 <li>
-                  <Link  href="/terms-conditions" className="hover:text-primary">
+                  <Link  href="/terms-conditions/" className="hover:text-primary">
                     Terms of Service
                   </Link >
                 </li>
                 <li>
-                  <Link  href="/refund-policy" className="hover:text-primary">
+                  <Link  href="/refund-policy/" className="hover:text-primary">
                     Refund Policy
                   </Link >
                 </li>
                 <li>
-                  <Link  href="/service-delivery-policy" className="hover:text-primary">
+                  <Link  href="/service-delivery-policy/" className="hover:text-primary">
                     Service Delivery
                   </Link >
                 </li>
                 <li>
-                  <Link  href="/support" className="hover:text-primary">
+                  <Link  href="/support/" className="hover:text-primary">
                     Client Support
                   </Link >
                 </li>
