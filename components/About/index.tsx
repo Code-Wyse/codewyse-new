@@ -69,7 +69,7 @@ const About = () => {
                 Custom Web Apps, Mobile Apps and AI &amp; ML Development for Visionary Brands
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Idea to Launch — Codewyse Builds Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Systems
+                Idea to Launch: Codewyse Builds Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Systems
               </h2>
               <p>
                 We help startups and enterprises turn bold ideas into production-grade <strong>custom web apps, mobile apps, AI &amp; ML solutions, SaaS products and CRM systems</strong>. Whether you need a full <strong>Next.js / React / Node.js</strong> team or specialist <strong>AI engineers</strong>, Codewyse is your software development partner from concept to launch and beyond.
@@ -112,7 +112,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                   Custom CRM Development &amp; Automation
                   </h3>
-                  <p>Tailor-made CRMs that fit your sales, support and operations workflows — with deep integrations into HubSpot, Salesforce, Stripe, Twilio, and your existing tools.</p>
+                  <p>Tailor-made CRMs that fit your sales, support and operations workflows, with deep integrations into HubSpot, Salesforce, Stripe, Twilio, and your existing tools.</p>
                 </div>
                 
               </div>
@@ -126,7 +126,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                   SaaS &amp; MVP Development for Startups
                   </h3>
-                  <p>Production-ready SaaS platforms and MVPs with auth, payments, multi-tenant architecture and AI features baked in — go from idea to paying users fast.</p>
+                  <p>Production-ready SaaS platforms and MVPs with auth, payments, multi-tenant architecture and AI features baked in. Go from idea to paying users fast.</p>
                 </div>
                 
               </div>
@@ -140,7 +140,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                   E-commerce, Fintech &amp; Healthcare Software
                   </h3>
-                  <p>Industry-grade builds for e-commerce, fintech and healthcare — secure, compliant (HIPAA, SOC2, PCI) and scaled on cloud-native infrastructure.</p>
+                  <p>Industry-grade builds for e-commerce, fintech and healthcare, secure, compliant (HIPAA, SOC2, PCI) and scaled on cloud-native infrastructure.</p>
                 </div>
                 
               </div>
@@ -173,7 +173,7 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
-              From MVP to Market — Web, Mobile, AI &amp; CRM
+              From MVP to Market: Web, Mobile, AI &amp; CRM
               </h4>
               <h2 className="relative mt-7.5 mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
               Everything You Need to Launch a Custom Web App, Mobile App, AI Product or CRM
@@ -188,7 +188,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                   Custom Web Apps &amp; SaaS Platforms
                   </h3>
-                  <p>Business dashboards, SaaS products, internal tools and customer portals — built on Next.js and Node.js, fully tailored to your workflow.</p>
+                  <p>Business dashboards, SaaS products, internal tools and customer portals, built on Next.js and Node.js, fully tailored to your workflow.</p>
                 </div>
                 
               </div>
@@ -202,7 +202,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                   Mobile App Development (iOS &amp; Android)
                   </h3>
-                  <p>Cross-platform and native mobile apps built with React Native, Flutter and Swift / Kotlin — shipped to the App Store and Google Play.</p>
+                  <p>Cross-platform and native mobile apps built with React Native, Flutter and Swift / Kotlin, shipped to the App Store and Google Play.</p>
                 </div>
                 
               </div>
@@ -230,7 +230,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                   End-to-End Product Engineering
                   </h3>
-                  <p>Discovery, UX/UI design, full-stack development, QA, DevOps and post-launch support — one accountable team from idea to scale.</p>
+                  <p>Discovery, UX/UI design, full-stack development, QA, DevOps and post-launch support, one accountable team from idea to scale.</p>
                 </div>
                 
               </div>

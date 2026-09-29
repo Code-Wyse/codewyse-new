@@ -28,7 +28,7 @@ const Hero = () => {
             }}
           />
               <h1 className="mb-5 pr-0 process__subtitle__header text-[22px] lg:pr-16 font-bold text-black !text-start dark:text-white lg:text-[28px] ">
-                  Codewyse — Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Development
+                  Codewyse: Custom Web Apps, Mobile Apps, AI &amp; ML and CRM Development
               </h1>
               <p>
                 Codewyse builds <strong>custom web apps, mobile apps, AI &amp; ML solutions, SaaS platforms, MVPs and CRM systems</strong> for startups and enterprises worldwide. Engineered on <strong>Next.js, React, React Native and Node.js</strong>, our products are built to scale from day one.<br /><br />
@@ -96,7 +96,7 @@ const Hero = () => {
                   <Image
                     className="object-contain dark:hidden"
                     src="/images/banner-sec/main-banner-sec_img.png"
-                    alt="Codewyse — custom web apps, mobile apps, AI & ML and CRM development"
+                    alt="Codewyse: custom web apps, mobile apps, AI & ML and CRM development"
                      width={600}
                      height={400}
                   />

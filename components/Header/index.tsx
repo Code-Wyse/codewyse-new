@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
+import AfricaHeader from "@/components/Africa/AfricaHeader";
+import { useRegion } from "@/lib/useRegion";
 import menuData from "./menuData";
 import { useAppointment } from "@/app/context/AppointmentContext";
 
@@ -15,6 +17,8 @@ const Header = () => {
   const { open: openAppointment } = useAppointment();
 
   const pathUrl = usePathname();
+  const region = useRegion();
+  const isHome = pathUrl === "/";
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -29,8 +33,12 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  // African visitors get the Africa header on the home page.
+  if (isHome && region === "africa") return <AfricaHeader />;
+
   return (
     <header
+      data-region-global={isHome ? "" : undefined}
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${stickyMenu
           ? "bg-white py-4! shadow-sm transition duration-100 dark:bg-black"
           : ""
@@ -41,14 +49,14 @@ const Header = () => {
           <Link href="/">
             <Image
               src="/images/logo/logo.png"
-              alt="Codewyse — custom web, mobile, AI & ML and CRM development"
+              alt="Codewyse: custom web, mobile, AI & ML and CRM development"
               width={50}
               height={30}
               className="hidden dark:block"
             />
             <Image
               src="/images/logo/logo.png"
-              alt="Codewyse — custom web, mobile, AI & ML and CRM development"
+              alt="Codewyse: custom web, mobile, AI & ML and CRM development"
               width={50}
               height={40}
               className="dark:hidden"

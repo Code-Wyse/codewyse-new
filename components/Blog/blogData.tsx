@@ -15,7 +15,7 @@ const BlogData: Blog[] = [
     body: (
       <>
         <p>
-          Every founder starts with HubSpot or Salesforce — and most should.
+          Every founder starts with HubSpot or Salesforce, and most should.
           Off-the-shelf CRMs are a fast on-ramp when your sales process is
           still being discovered. But somewhere around 20–30 reps the same
           teams hit a wall: the CRM dictates how they sell instead of the
@@ -33,13 +33,13 @@ const BlogData: Blog[] = [
         </p>
         <h2>The signal it&rsquo;s time to build</h2>
         <p>
-          The clearest signal isn&rsquo;t cost — it&rsquo;s the number of
+          The clearest signal isn&rsquo;t cost; it&rsquo;s the number of
           Zapier hops, Google Sheets exports and manual overrides your reps
           run every day to make the system fit their work. When ops is
           rebuilding the CRM in spreadsheets every quarter, you&rsquo;ve
           already paid for a custom build in lost productivity. The Codewyse
           team has shipped CRM modernizations for{" "}
-          <Link href="/projects/">several scale-up clients</Link> — the
+          <Link href="/projects/">several scale-up clients</Link>, the
           playbook is the same every time.
         </p>
         <h2>What a modern custom CRM stack looks like</h2>
@@ -47,8 +47,7 @@ const BlogData: Blog[] = [
           For most teams, the right architecture in 2026 is a Next.js +
           Node.js application backed by Postgres, with a type-safe ORM
           (Prisma or Drizzle), background jobs on a queue (BullMQ or Inngest),
-          and event-driven integrations instead of polling. AI features —
-          call summarization, deal-risk scoring, next-best-action — are LLM
+          and event-driven integrations instead of polling. AI features (call summarization, deal-risk scoring, next-best-action) are LLM
           calls behind a feature flag.
         </p>
         <h2>Cost and timeline reality check</h2>
@@ -97,7 +96,7 @@ const BlogData: Blog[] = [
           A 4-second wait feels broken; a 4-second stream feels alive. Use
           the OpenAI SDK with `stream: true` and pipe tokens directly through
           a Next.js Route Handler with `Response` body as a `ReadableStream`.
-          The frontend reads chunks and appends — no extra dependency
+          The frontend reads chunks and appends, no extra dependency
           required.
         </p>
         <h2>Retrieval Augmented Generation with pgvector</h2>
@@ -110,7 +109,7 @@ const BlogData: Blog[] = [
         </p>
         <h2>Prompt caching and cost control</h2>
         <p>
-          The single biggest cost win is prompt caching — put your system
+          The single biggest cost win is prompt caching: put your system
           prompt and few-shot examples in the cached portion. Combined with
           per-tenant token budgets and Redis-backed rate limiting at the
           edge, AI features stay profitable even as usage grows.
@@ -120,7 +119,7 @@ const BlogData: Blog[] = [
           Wrap every prompt in a feature flag. Ship to 5% of users with
           structured logging of input, output, latency and a thumbs
           up/down. Re-evaluate weekly with a small eval set. Don&rsquo;t
-          ship AI features without telemetry — you can&rsquo;t fix what
+          ship AI features without telemetry; you can&rsquo;t fix what
           you can&rsquo;t see.
         </p>
         <p>
@@ -146,7 +145,7 @@ const BlogData: Blog[] = [
         <p>
           Fintech mobile is a different beast from consumer mobile. PCI
           scope, biometric auth, certificate pinning, jailbreak detection
-          and tightly audited dependency trees all matter — and the choice
+          and tightly audited dependency trees all matter, and the choice
           of cross-platform framework changes how easy each one is. Here&rsquo;s
           the honest comparison from{" "}
           <Link href="/projects/">building both</Link>.
@@ -169,7 +168,7 @@ const BlogData: Blog[] = [
         <p>
           Flutter wins on raw scroll/animation performance and consistent
           rendering across devices. React Native (with the new architecture)
-          has closed most of the gap and ships smaller binaries — important
+          has closed most of the gap and ships smaller binaries, important
           for emerging-market users on low-storage devices.
         </p>
         <h2>Compliance and audit-ability</h2>
@@ -182,7 +181,7 @@ const BlogData: Blog[] = [
         <h2>Our default recommendation</h2>
         <p>
           For fintech, we default to React Native unless the app is
-          animation-heavy or design-system-driven from day one — then
+          animation-heavy or design-system-driven from day one, then
           Flutter wins. Either way,{" "}
           <Link href="/services/">talk to us</Link> before locking in the
           stack.
@@ -196,7 +195,7 @@ const BlogData: Blog[] = [
     title:
       "Building a SaaS MVP in 8 Weeks with Next.js, Stripe and Supabase",
     metadata:
-      "The exact stack and timeline we use to ship validated MVPs for funded startups. Auth, billing, multi-tenant — done right.",
+      "The exact stack and timeline we use to ship validated MVPs for funded startups. Auth, billing, multi-tenant, done right.",
     slug: "saas-mvp-8-weeks-nextjs-stripe-supabase",
     tags: ["SaaS", "MVP"],
     publishedAt: "2026-04-01",
@@ -222,7 +221,7 @@ const BlogData: Blog[] = [
         <p>
           Set up the repo, CI, deployment pipeline and Supabase schema.
           Implement auth flows (email/password + OAuth). Build the
-          multi-tenant data model with row-level security from day one —
+          multi-tenant data model with row-level security from day one,
           retrofitting tenancy later is brutal.
         </p>
         <h2>Week 3–5: core feature</h2>
@@ -234,7 +233,7 @@ const BlogData: Blog[] = [
         <p>
           Wire Stripe Checkout, webhooks for subscription state, and a
           minimal usage meter. Don&rsquo;t build pricing pages until you
-          have at least 5 paying customers — your pricing will change.
+          have at least 5 paying customers: your pricing will change.
         </p>
         <h2>Week 7: polish, week 8: launch</h2>
         <p>
@@ -255,7 +254,7 @@ const BlogData: Blog[] = [
     title:
       "Generative AI for E-commerce: Search, Recommendations and Support",
     metadata:
-      "Three high-ROI generative AI features any Shopify or custom storefront can ship this quarter — with sample code.",
+      "Three high-ROI generative AI features any Shopify or custom storefront can ship this quarter, with sample code.",
     slug: "generative-ai-ecommerce-search-recommendations",
     tags: ["AI & ML", "E-commerce"],
     publishedAt: "2026-03-25",
@@ -263,7 +262,7 @@ const BlogData: Blog[] = [
     body: (
       <>
         <p>
-          Generative AI in e-commerce isn&rsquo;t about flashy demos —
+          Generative AI in e-commerce isn&rsquo;t about flashy demos,
           it&rsquo;s about three boring features that move conversion: better
           search, smarter recommendations, and faster support. Here&rsquo;s
           how to ship each one this quarter on a Shopify store or a custom
@@ -309,7 +308,7 @@ const BlogData: Blog[] = [
     title:
       "HIPAA-Compliant Healthcare App Development: Architecture Checklist",
     metadata:
-      "Encryption, audit logging, access control and BAAs — the production checklist we use for every healthcare client.",
+      "Encryption, audit logging, access control and BAAs, the production checklist we use for every healthcare client.",
     slug: "hipaa-healthcare-app-architecture-checklist",
     tags: ["Healthcare", "Compliance"],
     publishedAt: "2026-03-18",
@@ -318,7 +317,7 @@ const BlogData: Blog[] = [
       <>
         <p>
           Healthcare apps fail HIPAA audits not because teams skip
-          encryption — they fail because of access logging, BAAs with
+          encryption; they fail because of access logging, BAAs with
           subprocessors, and uncontrolled PHI flow into analytics tools.
           Here&rsquo;s the production architecture checklist we use for
           every Codewyse{" "}
@@ -340,12 +339,12 @@ const BlogData: Blog[] = [
         <p>
           Every vendor that touches PHI needs a Business Associate
           Agreement. AWS, GCP, Azure, Datadog, Sentry, Twilio, SendGrid
-          all offer them — but you must request and sign them. No BAA, no
+          all offer them, but you must request and sign them. No BAA, no
           PHI.
         </p>
         <h2>Analytics without PHI leakage</h2>
         <p>
-          Posthog, Mixpanel, Google Analytics — none can receive PHI.
+          Posthog, Mixpanel, Google Analytics: none can receive PHI.
           Build a thin event-mapping layer that strips PHI before it
           reaches your analytics SDKs. One forgotten field is a
           reportable breach.

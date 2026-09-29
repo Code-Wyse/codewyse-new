@@ -56,6 +56,10 @@ if (slugMatch) {
   }
 }
 
+// House style: the site uses no em dashes.
+const emDashes = (src.match(/—/g) || []).length;
+if (emDashes) fail(`Found ${emDashes} em dash(es) (—). Replace with a comma, colon, full stop or parentheses.`);
+
 // Body
 const body = fmMatch ? src.slice(fmMatch[0].length) : src;
 const wordCount = body.trim().split(/\s+/).length;

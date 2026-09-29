@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
 import ToasterContext from "./context/ToastContext";
+import { regionDetectScript } from "@/lib/region";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
     title:
       "Codewyse | Custom Web Apps, Mobile Apps, AI & ML and CRM Development",
     description:
-      "Custom web apps, mobile apps, AI & ML, SaaS, MVPs and CRM systems built by Codewyse — your scale-ready software development partner.",
+      "Custom web apps, mobile apps, AI & ML, SaaS, MVPs and CRM systems built by Codewyse, your scale-ready software development partner.",
     url: SITE_URL,
     locale: "en_US",
     images: [
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
         url: "/images/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Codewyse — Smart Software Solutions Built to Scale",
+        alt: "Codewyse. Crafted for builders. Trusted by visionaries.",
       },
     ],
   },
@@ -132,6 +133,7 @@ const organizationJsonLd = {
   image: `${SITE_URL}/images/og-default.jpg`,
   description:
     "Codewyse builds custom web apps, mobile apps, AI & ML solutions, SaaS, CRMs and MVPs for startups and enterprises worldwide.",
+  slogan: "Crafted for builders. Trusted by visionaries.",
   foundingDate: "2020",
   areaServed: "Worldwide",
   knowsAbout: [
@@ -183,6 +185,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Tags <html data-region> before first paint so "/" can show the Africa version. */}
+        <script dangerouslySetInnerHTML={{ __html: regionDetectScript }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

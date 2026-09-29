@@ -46,7 +46,7 @@ export const projectData: Project[] = [
     bannerImage: "/images/project/tordao/front/CRM-Graphic-tordao.jpg",
     processtitle: 'The Challenge',
     process:
-      "TORDAO aimed to launch a Web 3.0 token platform with a strong digital presence that educates users, establishes credibility in a competitive crypto space, and communicates complex blockchain utilities — all while remaining visually appealing and accessible across devices",
+      "TORDAO aimed to launch a Web 3.0 token platform with a strong digital presence that educates users, establishes credibility in a competitive crypto space, and communicates complex blockchain utilities, all while remaining visually appealing and accessible across devices",
     processtitle2: 'Our Solution',
     process2: 'We crafted a high-performance, responsive website using modern technologies tailored for blockchain audiences. From UX strategy to development, every piece was optimized to boost engagement, minimize friction, and embody TORDAO futuristic brand identity.',
     tabs: [
@@ -139,7 +139,7 @@ export const projectData: Project[] = [
     bannerImage: "/images/project/trifit/mobile-show-case/TRI.jpg",
     processtitle: 'The Challenge',
     process:
-      "Trifits wanted to bridge the gap between personal training, nutrition, and tech. The goal was to deliver a cross-platform mobile app where users could receive meal and workout plans tailored to their BMI — all while ensuring expert oversight from registered nutritionists and trainers.",
+      "Trifits wanted to bridge the gap between personal training, nutrition, and tech. The goal was to deliver a cross-platform mobile app where users could receive meal and workout plans tailored to their BMI, all while ensuring expert oversight from registered nutritionists and trainers.",
     processtitle2: 'Our Solution',
     process2: 'We built a scalable fitness app powered by Node.js on the backend and Flutter for the mobile experience. Users receive customized plans based on BMI and activity level, with nutritionists assigning meal and fitness modules through a React-based admin portal. The app delivers video workouts, dietary tracking, and motivational progress features.',
     tabs: [
@@ -192,7 +192,7 @@ export const projectData: Project[] = [
     reviewName: 'Trifits',
     reviewimage: image1,
     designation: "Trifits CEO",
-    review: "Trifits is now a complete digital trainer. The team nailed our vision — from BMI-based plans to easy nutritionist control. Our users love the experience",
+    review: "Trifits is now a complete digital trainer. The team nailed our vision, from BMI-based plans to easy nutritionist control. Our users love the experience",
      portfolio: [
       {
         id: 1,
@@ -221,13 +221,13 @@ export const projectData: Project[] = [
     slug: "junohouseclub",
     semititle: 'Juno House Club',
     title: "Technologies Used: WordPress (Custom Theme Development), PHP, SCSS, JavaScript",
-    description: "A fully custom-coded WordPress website tailored for Juno House — a private women’s club — reflecting elegance, empowerment, and modern luxury. No page builders were used; everything was handcrafted for performance, flexibility, and brand precision.",
+    description: "A fully custom-coded WordPress website tailored for Juno House, a private women’s club, reflecting elegance, empowerment, and modern luxury. No page builders were used; everything was handcrafted for performance, flexibility, and brand precision.",
     bannerImage: "/images/project/Juno/front/CRM-Graphic-Juno.jpg",
     processtitle: 'The Challenge',
     process:
-      "Juno House required a bespoke WordPress solution that mirrored the club's exclusive atmosphere and branding — without relying on heavy plugins or page builders. The site needed to be visually refined, content-flexible, and fast, with support for multilingual content and structured updates for events, press, and memberships.",
+      "Juno House required a bespoke WordPress solution that mirrored the club's exclusive atmosphere and branding, without relying on heavy plugins or page builders. The site needed to be visually refined, content-flexible, and fast, with support for multilingual content and structured updates for events, press, and memberships.",
     processtitle2: 'Our Solution',
-    process2: 'We developed a fully custom WordPress theme from the ground up. Every component — from the layout system to interactive elements — was built using clean PHP templates, SCSS for styling, and minimal JS for transitions. Admin editing was made seamless via ACF Pro, allowing Juno’s team full content control with zero risk of breaking layout integrity.',
+    process2: 'We developed a fully custom WordPress theme from the ground up. Every component, from the layout system to interactive elements, was built using clean PHP templates, SCSS for styling, and minimal JS for transitions. Admin editing was made seamless via ACF Pro, allowing Juno’s team full content control with zero risk of breaking layout integrity.',
     tabs: [
       {
         id: "Web Design",
@@ -243,7 +243,7 @@ export const projectData: Project[] = [
       {
         id: "Custom WP Development",
         title: "Custom WP Development",
-        content: "No themes or builders — this project is 100% custom code, written for performance, scalability, and precision.",
+        content: "No themes or builders: this project is 100% custom code, written for performance, scalability, and precision.",
         bold: 'Key Features:',
         list: [
           "Clean PHP theme with no bloated dependencies",
@@ -256,7 +256,7 @@ export const projectData: Project[] = [
       {
         id: "Branding",
         title: "Branding",
-        content: "We ensured that the mood of “New York meets Barcelona” translated into every hover, scroll, and transition. The website feels editorial yet inviting — balancing minimalism with flair.",
+        content: "We ensured that the mood of “New York meets Barcelona” translated into every hover, scroll, and transition. The website feels editorial yet inviting, balancing minimalism with flair.",
         bold: 'Deliverables:',
         list: [
           "Custom-styled forms and newsletter CTAs",
@@ -268,7 +268,7 @@ export const projectData: Project[] = [
     lastImage: "/images/project/Juno/result-illustration/1.png",
     logndescTitle: ' Results ',
     longDescription: [
-      "100% custom-coded — zero builder lock-in or plugin bloat",
+      "100% custom-coded: zero builder lock-in or plugin bloat",
       "+35% page engagement after redesign",
       "Site loads in under 1.4 seconds globally",
       "Seamless EN/ES multilingual support with optimized SEO structure",
@@ -314,13 +314,13 @@ export const projectData: Project[] = [
     slug: "crazzypizza",
     semititle: 'Crazzy Pizza',
     title: "Technologies Used: WordPress (Custom Theme & Plugin Development), PHP, JavaScript, SCSS",
-    description: "A fully custom-coded WordPress website for Crazzy Pizza — a multinational pizza brand with delivery and pickup options. We crafted a custom theme and developed bespoke plugins to streamline order flows, location management, and menu interactions — all without relying on third-party builders or ACF.",
+    description: "A fully custom-coded WordPress website for Crazzy Pizza, a multinational pizza brand with delivery and pickup options. We crafted a custom theme and developed bespoke plugins to streamline order flows, location management, and menu interactions, all without relying on third-party builders or ACF.",
     bannerImage: "/images/project/crazy-pizza/mobile-show-case/CRM-Graphic-Crazy-Pizza.jpg",
     processtitle: 'About Crazzy Pizza',
     process:
       "Crazzy Pizza is a globally recognized brand that brings bold flavors, fast delivery, and an energetic brand voice to the pizza industry. With international locations and a growing online customer base, the brand required a powerful and easy-to-manage platform for showcasing menus, managing store availability, and handling location-specific orders.",
     processtitle2: 'Our Solution',
-    process2: 'We built a custom WordPress theme and multiple purpose-built plugins to cover everything from product display to store hours — all optimized for performance, admin ease, and scalability. Unlike typical WordPress sites, no page builders or ACF were used. Every feature was developed with clean code to ensure lightweight performance and full control over UI and logic.',
+    process2: 'We built a custom WordPress theme and multiple purpose-built plugins to cover everything from product display to store hours, all optimized for performance, admin ease, and scalability. Unlike typical WordPress sites, no page builders or ACF were used. Every feature was developed with clean code to ensure lightweight performance and full control over UI and logic.',
     tabs: [
       {
         id: "Key Features",
@@ -356,7 +356,7 @@ export const projectData: Project[] = [
     reviewName: ' Crazzy Pizza',
     reviewimage: image1,
     designation: "Crazzy Pizza Management",
-    review: "We love how everything just works. Managing pizzas, pickup times, and orders is simpler than ever — and the site is blazing fast.",
+    review: "We love how everything just works. Managing pizzas, pickup times, and orders is simpler than ever, and the site is blazing fast.",
      portfolio: [
       {
         id: 1,
@@ -394,7 +394,7 @@ export const projectData: Project[] = [
     slug: "ensure-ups",
     semititle: 'Ensure UPS',
     title: "Technologies Used: Flutter (Mobile App), Laravel (Backend), ESP32 (Device Firmware with cURL & BLE)",
-    description: "An intelligent UPS monitoring system with mobile app access, real-time inverter status, historical logs, and smart alerts — integrated with a custom ESP firmware and BLE service.",
+    description: "An intelligent UPS monitoring system with mobile app access, real-time inverter status, historical logs, and smart alerts, integrated with a custom ESP firmware and BLE service.",
     bannerImage: "/images/project/ensure/mobile-show-case/ENSURE.jpg",
     processtitle: 'The Challenge',
     process:
@@ -429,7 +429,7 @@ export const projectData: Project[] = [
       {
         id: "Branding",
         title: "Branding",
-        content: "Ensure UPS branding focused on clarity, stability, and trust — values critical to energy management. The user interface reflects a calm, tech-savvy tone with intuitive icons and structured feedback.",
+        content: "Ensure UPS branding focused on clarity, stability, and trust, values critical to energy management. The user interface reflects a calm, tech-savvy tone with intuitive icons and structured feedback.",
         bold: 'Deliverables:',
         list: [
           "Custom icons for charging states",
@@ -486,9 +486,9 @@ export const projectData: Project[] = [
     perView: 4,
     mobile: true,
     process:
-      "Vnexia aimed to digitize health and safety operations using AI — enabling real-time worker monitoring, risk detection, and reporting across industrial sites. The challenge was to engineer a platform that is fast, secure, scalable, and intuitive for both field workers and safety managers.",
+      "Vnexia aimed to digitize health and safety operations using AI, enabling real-time worker monitoring, risk detection, and reporting across industrial sites. The challenge was to engineer a platform that is fast, secure, scalable, and intuitive for both field workers and safety managers.",
     processtitle2: 'Our Solution',
-    process2: 'We built a cross-platform solution with a NestJS backend powering both a Flutter-based mobile app and a Laravel Blade web dashboard. The architecture was optimized for real-time AI alert handling, robust worker tracking, and compliance logging — all while maintaining a seamless user experience across devices.',
+    process2: 'We built a cross-platform solution with a NestJS backend powering both a Flutter-based mobile app and a Laravel Blade web dashboard. The architecture was optimized for real-time AI alert handling, robust worker tracking, and compliance logging, all while maintaining a seamless user experience across devices.',
     tabs: [
       {
         id: "Web Design",
@@ -516,7 +516,7 @@ export const projectData: Project[] = [
       {
         id: "Branding",
         title: "Branding",
-        content: "Vnexia’s brand reflects precision, care, and innovation in safety. We developed a simple, trustworthy identity for an industrial audience — blending professional aesthetics with tech-forward UX.",
+        content: "Vnexia’s brand reflects precision, care, and innovation in safety. We developed a simple, trustworthy identity for an industrial audience, blending professional aesthetics with tech-forward UX.",
         bold: 'Deliverables:',
         list: [
           "Brand palette and UI consistency rules",
@@ -569,7 +569,7 @@ export const projectData: Project[] = [
     bannerImage: "/images/project/Kuwait-Swat/front/CRM-Graphic-KS.jpg",
     processtitle: 'The Challenge',
     process:
-      "KSEIC needed a platform capable of handling team registrations, displaying daily event scores, and automatically compiling results for multi-day tournaments — all in a high-security and performance-sensitive environment.",
+      "KSEIC needed a platform capable of handling team registrations, displaying daily event scores, and automatically compiling results for multi-day tournaments, all in a high-security and performance-sensitive environment.",
     processtitle2: 'Our Solution',
     process2: 'We created a fully customized WordPress solution, combining a tailor-made theme for branding and user experience with a powerful plugin that manages registration flows, scoring inputs, and live tournament result generation. The platform supports real-time updates, secure role-based access, and mobile-first responsive.',
     tabs: [
@@ -621,7 +621,7 @@ export const projectData: Project[] = [
     reviewName: 'KSEIC',
     reviewimage: image1,
     designation: "Event Coordinator",
-    review: "KSEIC was a major international event — and our website held up perfectly. The custom plugin handled scores and rankings just as we envisioned. Kudos to the team for delivering a flawless solution.",
+    review: "KSEIC was a major international event, and our website held up perfectly. The custom plugin handled scores and rankings just as we envisioned. Kudos to the team for delivering a flawless solution.",
      portfolio: [
       {
         id: 1,
@@ -748,7 +748,7 @@ export const projectData: Project[] = [
       {
         id: "Custom Theme Design",
         title: "Custom Theme Design",
-        content: "Crafted from the ground up using best practices in WordPress development — no third-party page builders.",
+        content: "Crafted from the ground up using best practices in WordPress development, no third-party page builders.",
         bold: 'Highlights:',
         list: [
           "Fully responsive design with minimal, professional UI",
@@ -794,7 +794,7 @@ export const projectData: Project[] = [
     reviewName: 'MRM Trades',
     reviewimage: image1,
     designation: "Director, MRM Trades",
-    review: "Exactly what we needed — clean, fast, and future-proof. The site reflects our identity and gives us full control without plugin clutter. Excellent execution by the dev team.",
+    review: "Exactly what we needed: clean, fast, and future-proof. The site reflects our identity and gives us full control without plugin clutter. Excellent execution by the dev team.",
      portfolio: [
       {
         id: 1,
@@ -834,7 +834,7 @@ export const projectData: Project[] = [
       {
         id: "Theme Design",
         title: "Custom Theme Design",
-        content: "The theme was designed from scratch to mirror luxury aesthetics — with animation, layered visuals, and elegant typography.",
+        content: "The theme was designed from scratch to mirror luxury aesthetics, with animation, layered visuals, and elegant typography.",
         bold: 'Highlights:',
         list: [
           "Hero sliders for flagship events",

@@ -3,7 +3,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Codewyse — Hire Web, Mobile, AI & ML and CRM Experts",
+  title: "Contact Codewyse: Hire Web, Mobile, AI & ML and CRM Experts",
   description:
     "Get in touch with Codewyse to scope a custom web app, mobile app, AI & ML solution, SaaS product or CRM. Free consultation, global delivery.",
   keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/support" },
   openGraph: {
-    title: "Contact Codewyse — Hire Web, Mobile, AI & ML and CRM Experts",
+    title: "Contact Codewyse: Hire Web, Mobile, AI & ML and CRM Experts",
     description:
       "Scope a custom web, mobile, AI & ML, SaaS or CRM project with Codewyse.",
     url: "/support",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Codewyse — Hire Web, Mobile, AI & ML and CRM Experts",
+    title: "Contact Codewyse: Hire Web, Mobile, AI & ML and CRM Experts",
     description:
       "Scope a custom web, mobile, AI & ML, SaaS or CRM project with Codewyse.",
   },

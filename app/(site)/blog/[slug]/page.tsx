@@ -249,7 +249,7 @@ export default async function BlogSlugPage({ params }: any) {
                 </h4>
                 <p className="mb-5 text-sm text-white/85">
                   Talk to a senior engineer about your web, mobile, AI &amp; ML
-                  or CRM project — no strings attached.
+                  or CRM project, no strings attached.
                 </p>
                 <Link
                   href="/support/"

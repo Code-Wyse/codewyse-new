@@ -434,8 +434,7 @@ const TestimonialsSection = () => {
                   I transitioned{" "}
                   <span className="">
                     from using no-code tools to launching a fully-coded saas
-                  </span>{" "}
-                  — Explorify — in two weeks, all while having a full-time job
+                  </span>{" "} (Explorify) in two weeks, all while having a full-time job
                 </div>
               </blockquote>
               <figcaption className="relative flex items-center justify-start gap-4 pt-4 mt-4 border-t border-base-content/10">

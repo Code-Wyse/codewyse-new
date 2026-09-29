@@ -6,21 +6,21 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-01.svg",
     title: "Custom Web App Development",
     description:
-      "Custom web apps and SaaS platforms built on Next.js, React and Node.js — fast, SEO-friendly and built to scale from MVP to millions of users.",
+      "Custom web apps and SaaS platforms built on Next.js, React and Node.js, fast, SEO-friendly and built to scale from MVP to millions of users.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
     title: "Mobile App Development (iOS & Android)",
     description:
-      "Native and cross-platform mobile app development with React Native, Flutter, Swift and Kotlin — shipped to the App Store and Google Play.",
+      "Native and cross-platform mobile app development with React Native, Flutter, Swift and Kotlin, shipped to the App Store and Google Play.",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
     title: "AI & ML Development",
     description:
-      "Generative AI, LLM integration, computer vision and predictive ML models — production AI features your users will actually pay for.",
+      "Generative AI, LLM integration, computer vision and predictive ML models, production AI features your users will actually pay for.",
   },
   {
     id: 4,
@@ -34,14 +34,14 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-05.svg",
     title: "SaaS & MVP Development",
     description:
-      "Production-ready SaaS and MVP development with auth, billing, multi-tenant architecture and AI features — launch in weeks, not months.",
+      "Production-ready SaaS and MVP development with auth, billing, multi-tenant architecture and AI features. Launch in weeks, not months.",
   },
   {
     id: 6,
     icon: "/images/icon/icon-06.svg",
     title: "Cloud, DevOps & Scalable Architecture",
     description:
-      "Cloud-native architecture on AWS, GCP and Azure with CI/CD, containers and Kubernetes — your custom web apps and mobile apps stay fast at any scale.",
+      "Cloud-native architecture on AWS, GCP and Azure with CI/CD, containers and Kubernetes, so your custom web apps and mobile apps stay fast at any scale.",
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Security & Compliance (HIPAA, SOC2, GDPR)",
     description:
-      "Security-first engineering for fintech, healthcare and e-commerce — encryption, access control, threat modeling and compliance from day one.",
+      "Security-first engineering for fintech, healthcare and e-commerce, encryption, access control, threat modeling and compliance from day one.",
   },
 ];
 

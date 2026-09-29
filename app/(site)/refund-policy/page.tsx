@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Return & Refund Policy",
   description:
-    "Codewyse return and refund policy for custom software, web, mobile, AI & ML, SaaS and CRM development services — eligibility, timeframes and how to request a refund.",
+    "Codewyse return and refund policy for custom software, web, mobile, AI & ML, SaaS and CRM development services: eligibility, timeframes and how to request a refund.",
   alternates: { canonical: "/refund-policy" },
   robots: { index: true, follow: true },
 };

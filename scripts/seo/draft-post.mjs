@@ -60,7 +60,7 @@ Voice: confident, technical, no fluff, no AI cliches ("dive in", "in today's fas
 Goals:
 1. Rank in Google for the target keyword (use it in title, H1, first paragraph, one H2, and naturally throughout).
 2. Convert readers into consultation bookings (CTA at the end pointing to https://codewyse.io/support).
-3. Be the post a senior engineer or CTO actually wants to read — not generic listicle SEO slop.
+3. Be the post a senior engineer or CTO actually wants to read, not generic listicle SEO slop.
 
 Output MUST be valid MDX with this exact structure:
 
@@ -87,14 +87,14 @@ faqs:
 
 <2-3 sentence lede that names the problem and the keyword>
 
-## <H2 #1 — what / why>
+## <H2 #1: what / why>
 ...
-## <H2 #2 — implementation / how>
+## <H2 #2: implementation / how>
 \`\`\`code blocks where useful, fenced and language-tagged\`\`\`
-## <H2 #3 — comparison / tradeoffs>
-## <H2 #4 — common pitfalls>
-## <H2 #5 — checklist or step-by-step>
-## <H2 #6 — next steps + CTA to /support>
+## <H2 #3: comparison / tradeoffs>
+## <H2 #4: common pitfalls>
+## <H2 #5: checklist or step-by-step>
+## <H2 #6: next steps + CTA to /support>
 
 ## FAQs
 **Q1?**
@@ -109,11 +109,12 @@ A3.
 
 Hard rules:
 - 1800-2400 words total.
-- At least 3 internal links: one to /services, one to /projects, one to /support — use natural anchor text.
-- At least one external authoritative link (MDN, official docs, RFC, well-known vendor blog) — never invent URLs; only link to canonical official docs you are certain exist.
+- At least 3 internal links: one to /services, one to /projects, one to /support. Use natural anchor text.
+- At least one external authoritative link (MDN, official docs, RFC, well-known vendor blog). Never invent URLs; only link to canonical official docs you are certain exist.
 - Include at least one realistic code block when the topic is technical.
 - Include a comparison table (markdown) when the intent is "comparison".
 - No emojis. No filler phrases. No "in conclusion".
+- Never use em dashes (—) anywhere, including headings and frontmatter. Use a comma, colon, full stop or parentheses instead.
 - Frontmatter must be valid YAML (quote strings with colons).`;
 
 function userPrompt(keyword, intent) {

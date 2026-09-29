@@ -3,7 +3,7 @@ import BlogItem from "@/components/Blog/BlogItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — Web, Mobile, AI & ML, SaaS and CRM Insights",
+  title: "Blog: Web, Mobile, AI & ML, SaaS and CRM Insights",
   description:
     "Codewyse blog: insights, guides and news on custom web apps, mobile development, AI & ML, generative AI, SaaS, MVPs and CRM systems.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog — Web, Mobile, AI & ML, SaaS and CRM Insights",
+    title: "Blog: Web, Mobile, AI & ML, SaaS and CRM Insights",
     description:
       "Insights and guides on custom web apps, mobile, AI & ML, SaaS and CRM development.",
     url: "/blog",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog — Web, Mobile, AI & ML, SaaS and CRM Insights",
+    title: "Blog: Web, Mobile, AI & ML, SaaS and CRM Insights",
     description:
       "Insights and guides on custom web apps, mobile, AI & ML, SaaS and CRM development.",
   },

@@ -15,6 +15,8 @@ import Testimonial from "@/components/Testimonial";
 import RecentWork from "@/components/RecentWorks/RecentWork";
 import CookieConsent from "@/components/Cookies/CookieConsent";
 import OurProcessSection from "@/components/services/OurProcessSection";
+import RegionSwitch from "@/components/Region/RegionSwitch";
+import AfricaHome from "@/components/Africa/AfricaHome";
 
 export const metadata: Metadata = {
   title:
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     title:
       "Codewyse | Custom Web Apps, Mobile Apps, AI & ML and CRM Development",
     description:
-      "Custom web apps, mobile apps, AI & ML, SaaS, MVPs and CRM systems built by Codewyse — your scale-ready software partner.",
+      "Custom web apps, mobile apps, AI & ML, SaaS, MVPs and CRM systems built by Codewyse, your scale-ready software partner.",
     url: "/",
     type: "website",
   },
@@ -58,7 +60,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <RegionSwitch africa={<AfricaHome />}>
+    {/* data-region-global: hidden for African visitors until the Africa version mounts (see globals.css) */}
+    <main data-region-global>
       <Hero />
       <Brands />
       {/* <ServicesGridSection /> */}
@@ -77,5 +81,6 @@ export default function Home() {
       <CookieConsent />
       {/* <Blog /> */}
     </main>
+    </RegionSwitch>
   );
 }

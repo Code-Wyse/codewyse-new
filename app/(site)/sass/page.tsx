@@ -11,9 +11,9 @@ import TestimonialsSection from "@/components/SassPage/TestimonialsSection";
 import BoostAppSection from "@/components/SassPage/BoostAppSection";
 
 export const metadata: Metadata = {
-  title: "SaaS & MVP Development — Launch Your Startup in Days, Not Weeks",
+  title: "SaaS & MVP Development: Launch Your Startup in Days, Not Weeks",
   description:
-    "Codewyse delivers production-ready SaaS and MVP development on Next.js, React and Node.js — go from idea to launch fast with built-in auth, payments, AI features and CRM integrations.",
+    "Codewyse delivers production-ready SaaS and MVP development on Next.js, React and Node.js, go from idea to launch fast with built-in auth, payments, AI features and CRM integrations.",
   keywords: [
     "SaaS development",
     "MVP development",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/sass" },
   openGraph: {
-    title: "SaaS & MVP Development — Launch Your Startup in Days, Not Weeks",
+    title: "SaaS & MVP Development: Launch Your Startup in Days, Not Weeks",
     description:
       "Production-ready SaaS and MVP development on Next.js, React and Node.js by Codewyse.",
     url: "/sass",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SaaS & MVP Development — Launch Your Startup in Days, Not Weeks",
+    title: "SaaS & MVP Development: Launch Your Startup in Days, Not Weeks",
     description:
       "Production-ready SaaS and MVP development on Next.js, React and Node.js by Codewyse.",
   },

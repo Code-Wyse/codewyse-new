@@ -89,7 +89,7 @@ const FreeConsultationPopup = () => {
               Get a <span className="text-primary">1-Hour Free Consultation</span> with Codewyse
             </h2>
             <p className="mb-5 text-sm text-waterloo dark:text-gray-300">
-              Talk to a senior engineer about your <strong>web app, mobile app, AI &amp; ML, SaaS, MVP or CRM</strong> idea. We&rsquo;ll scope the project, surface risks, and map a realistic roadmap — no strings attached.
+              Talk to a senior engineer about your <strong>web app, mobile app, AI &amp; ML, SaaS, MVP or CRM</strong> idea. We&rsquo;ll scope the project, surface risks, and map a realistic roadmap, no strings attached.
             </p>
 
             <ul className="mb-6 space-y-2 text-sm text-black dark:text-gray-200">
@@ -211,7 +211,7 @@ const ConsultIllustration = () => (
       <line x1="226" y1="92" x2="233" y2="96" stroke="#1a3d3a" strokeWidth="2.2" strokeLinecap="round" />
     </g>
 
-    {/* floating badge "1h" — animated via CSS transform on the group */}
+    {/* floating badge "1h", animated via CSS transform on the group */}
     <g className="badge-1h">
       <circle cx="80" cy="90" r="22" fill="#fff" />
       <circle cx="80" cy="90" r="22" fill="none" stroke="#3ba196" strokeWidth="3" />

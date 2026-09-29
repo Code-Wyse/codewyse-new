@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Shipping & Service Delivery Policy",
   description:
-    "How Codewyse delivers its digital software and development services — delivery methods, timelines, acceptance and support. No physical shipping is involved.",
+    "How Codewyse delivers its digital software and development services: delivery methods, timelines, acceptance and support. No physical shipping is involved.",
   alternates: { canonical: "/service-delivery-policy" },
   robots: { index: true, follow: true },
 };
@@ -38,8 +38,8 @@ const page = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-2">1. Digital Delivery Only</h2>
             <p>
-              All our products and services — including web applications, mobile
-              apps, AI &amp; ML solutions, SaaS platforms, MVPs and CRM systems —
+              All our products and services, including web applications, mobile
+              apps, AI &amp; ML solutions, SaaS platforms, MVPs and CRM systems,
               are delivered electronically. There is no physical shipment,
               courier, or postal delivery involved, and therefore no shipping
               charges apply.

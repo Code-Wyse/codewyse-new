@@ -59,7 +59,7 @@ const faqData: FAQ[] = [
   {
     id: 9,
     quest: "What’s your process for starting a new project?",
-    ans: "We begin with a discovery call to understand your goals. From there, we provide a proposal with scope, timeline, and budget. Once agreed, we move into design, development, testing, and launch—with regular check-ins every step of the way.",
+    ans: "We begin with a discovery call to understand your goals. From there, we provide a proposal with scope, timeline, and budget. Once agreed, we move into design, development, testing, and launch, with regular check-ins every step of the way.",
   },
   {
     id: 10,

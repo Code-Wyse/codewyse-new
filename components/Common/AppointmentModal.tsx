@@ -67,7 +67,7 @@ const AppointmentModal = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          _subject: `New Appointment Request — ${form.name}`,
+          _subject: `New Appointment Request: ${form.name}`,
           _template: "table",
           _captcha: "false",
           form_type: "Appointment Request",

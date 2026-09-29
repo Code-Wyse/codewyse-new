@@ -2,8 +2,36 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useRegion } from "@/lib/useRegion";
+
+// Contact details shown in the footer on the Africa home page.
+// TODO: add the Codewyse Africa office address and phone number.
+const africaContact = {
+  email: "info@codewyse.io",
+  hours: "Mon–Fri, 9am–6pm",
+  office: "",
+  phone: "",
+};
+
+// Footer quick links on the Africa home page point at its own sections.
+const africaLinks = [
+  [
+    { title: "Home", href: "/" },
+    { title: "Services", href: "/#services" },
+    { title: "Industries", href: "/#industries" },
+  ],
+  [
+    { title: "Our Work", href: "/#our-work" },
+    { title: "About Us", href: "/#about" },
+    { title: "Contact", href: `mailto:${africaContact.email}` },
+  ],
+];
 
 const Footer = () => {
+  const region = useRegion();
+  const isAfrica = usePathname() === "/" && region === "africa";
+
   return (
     <>
       <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
@@ -34,40 +62,57 @@ const Footer = () => {
                     width={60}
                     height={80}
                     src="/images/logo/logo.png"
-                    alt="Codewyse — custom web, mobile, AI & ML and CRM development"
+                    alt="Codewyse: custom web, mobile, AI & ML and CRM development"
                     className="dark:hidden"
                   />
                   <Image
                     width={60}
                     height={80}
                     src="/images/logo/logo.png"
-                    alt="Codewyse — custom web, mobile, AI & ML and CRM development"
+                    alt="Codewyse: custom web, mobile, AI & ML and CRM development"
                     className="hidden dark:block"
                   />
                 </a>
 
-                <p className="mb-10 mt-5">
-                    Smart Solutions. Built to Scale.
+                <p className="mt-5 text-itemtitle2 font-medium text-black dark:text-white">
+                    Crafted for builders. Trusted by visionaries.
                 </p>
 
                 <p className="mb-10 mt-5">
-                Codewyse builds custom web apps, mobile apps, AI &amp; ML solutions, SaaS platforms, MVPs and CRM systems on Next.js, React and Node.js — for startups and enterprises worldwide.
+                Codewyse builds custom web apps, mobile apps, AI &amp; ML solutions, SaaS platforms, MVPs and CRM systems on Next.js, React and Node.js, for startups and enterprises worldwide.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                 Contact Us
                 </p>
-                <a
-                  href="mailto:info@codewyse.io"
-                  className="text-itemtitle font-medium text-black dark:text-white"
-                >
-                  <b>Email:</b> info@codewyse.io<br /></a>
-                  <span className="text-itemtitle font-medium text-black dark:text-white">
-                  <b>Hours:</b> Mon–Fri, 9am–6pm<br />
-                  <b>Pakistan Office:</b> 184 Alma 1, Emaar DHA, Islamabad<br />
-                  Phone: <a href="tel:+923353909432">+92 335 3909 432</a><br />
-                  <b>USA Office:</b> 30 N Gould St Ste R, Sheridan, WY 82801<br />
-                  Phone: <a href="tel:+18886802233">+1 888 680 2233</a></span>
+                {isAfrica ? (
+                  <>
+                    <a
+                      href={`mailto:${africaContact.email}`}
+                      className="text-itemtitle font-medium text-black dark:text-white"
+                    >
+                      <b>Email:</b> {africaContact.email}<br /></a>
+                    <span className="text-itemtitle font-medium text-black dark:text-white">
+                      <b>Hours:</b> {africaContact.hours}<br />
+                      {africaContact.office && <><b>Africa Office:</b> {africaContact.office}<br /></>}
+                      {africaContact.phone && (
+                        <>Phone: <a href={`tel:${africaContact.phone.replace(/[^+\d]/g, "")}`}>{africaContact.phone}</a></>
+                      )}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <a
+                      href="mailto:info@codewyse.io"
+                      className="text-itemtitle font-medium text-black dark:text-white"
+                    >
+                      <b>Email:</b> info@codewyse.io<br /></a>
+                    <span className="text-itemtitle font-medium text-black dark:text-white">
+                      <b>Hours:</b> Mon–Fri, 9am–6pm<br />
+                      <b>USA Office:</b> 30 N Gould St Ste R, Sheridan, WY 82801<br />
+                      Phone: <a href="tel:+18886802233">+1 888 680 2233</a></span>
+                  </>
+                )}
               </motion.div>
 
               <div className="flex w-full flex-wrap lg:flex-nowrap gap-20  px-4 lg:px-0 lg:gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -93,6 +138,17 @@ const Footer = () => {
                     Quick Links
                   </h4>
 
+                  {isAfrica ? (
+                    <ul>
+                      {africaLinks[0].map((link) => (
+                        <li key={link.title}>
+                          <Link href={link.href} className="mb-3 inline-block hover:text-primary">
+                            {link.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
                   <ul>
                     <li>
                       <Link
@@ -135,6 +191,7 @@ const Footer = () => {
                       </a>
                     </li> */}
                   </ul>
+                  )}
                 </motion.div>
 
                 <motion.div
@@ -159,6 +216,17 @@ const Footer = () => {
                     Quick Links
                   </h4>
 
+                  {isAfrica ? (
+                    <ul>
+                      {africaLinks[1].map((link) => (
+                        <li key={link.title}>
+                          <Link href={link.href} className="mb-3 inline-block hover:text-primary">
+                            {link.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
                   <ul>
                     <li>
                       <Link
@@ -193,6 +261,7 @@ const Footer = () => {
                       </Link>
                     </li>
                   </ul>
+                  )}
                 </motion.div>
 
                 <motion.div
@@ -329,7 +398,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p className="text-center">
-                &copy; {new Date().getFullYear()} CodeWyse. All rights reserved <br />Crafted for builders. Trusted by visionaries.
+                &copy; {new Date().getFullYear()} CodeWyse. All rights reserved
               </p>
             </motion.div>
 

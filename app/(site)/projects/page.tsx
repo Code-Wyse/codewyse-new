@@ -6,7 +6,7 @@ import React from 'react'
 
 export const metadata: Metadata = {
     title:
-        "Our Projects — Web, Mobile, AI & ML, SaaS and CRM Case Studies",
+        "Our Projects: Web, Mobile, AI & ML, SaaS and CRM Case Studies",
     description:
         "Explore Codewyse projects: custom web apps, mobile apps, AI & ML solutions, SaaS platforms, e-commerce builds and CRM systems delivered for clients worldwide.",
     keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: "/projects" },
     openGraph: {
-        title: "Our Projects — Web, Mobile, AI & ML, SaaS and CRM Case Studies",
+        title: "Our Projects: Web, Mobile, AI & ML, SaaS and CRM Case Studies",
         description:
             "Web, mobile, AI & ML, SaaS and CRM case studies built by Codewyse.",
         url: "/projects",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Our Projects — Web, Mobile, AI & ML, SaaS and CRM Case Studies",
+        title: "Our Projects: Web, Mobile, AI & ML, SaaS and CRM Case Studies",
         description:
             "Web, mobile, AI & ML, SaaS and CRM case studies built by Codewyse.",
     },

@@ -6,7 +6,7 @@ import React from 'react'
 
 export const metadata: Metadata = {
   title:
-    "Services — Custom Web Apps, Mobile Apps, AI & ML, SaaS and CRM Development",
+    "Services: Custom Web Apps, Mobile Apps, AI & ML, SaaS and CRM Development",
   description:
     "Codewyse services: custom web app development, iOS and Android mobile apps, AI & ML solutions, generative AI, SaaS platforms, MVPs and tailor-made CRM systems built with Next.js, React and Node.js.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services" },
   openGraph: {
     title:
-      "Services — Custom Web Apps, Mobile Apps, AI & ML, SaaS and CRM Development",
+      "Services: Custom Web Apps, Mobile Apps, AI & ML, SaaS and CRM Development",
     description:
       "Custom web, mobile, AI & ML, SaaS and CRM development services from Codewyse.",
     url: "/services",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Services — Custom Web Apps, Mobile Apps, AI & ML, SaaS and CRM Development",
+      "Services: Custom Web Apps, Mobile Apps, AI & ML, SaaS and CRM Development",
     description:
       "Custom web, mobile, AI & ML, SaaS and CRM development services from Codewyse.",
   },

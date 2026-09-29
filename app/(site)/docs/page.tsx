@@ -2,12 +2,12 @@ import SidebarLink from "@/components/Docs/SidebarLink";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Documentation — Codewyse",
+  title: "Documentation",
   description:
     "Codewyse documentation: guides and references for our web, mobile, AI & ML, SaaS and CRM development workflows.",
   alternates: { canonical: "/docs" },
   openGraph: {
-    title: "Documentation — Codewyse",
+    title: "Documentation",
     description:
       "Guides and references for Codewyse web, mobile, AI & ML, SaaS and CRM workflows.",
     url: "/docs",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Documentation — Codewyse",
+    title: "Documentation",
     description:
       "Guides and references for Codewyse web, mobile, AI & ML, SaaS and CRM workflows.",
   },

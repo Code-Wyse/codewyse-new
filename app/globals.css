@@ -28,6 +28,17 @@
   --color-zumthor: #edf5ff;
   --color-socialicon: #d1d8e0;
 
+  /* Africa site */
+  --color-af-navy: #0b2536;
+  --color-af-navy2: #10344a;
+  --color-af-ink: #0e1f2b;
+  --color-af-teal: #1fcf9f;
+  --color-af-tealho: #19b98d;
+  --color-af-gold: #f5a524;
+  --color-af-goldho: #e59414;
+  --color-af-mist: #f3f6f8;
+  --color-af-body: #4b5b68;
+
   --text-metatitle: 12px, 20px;
   --text-sectiontitle: 14px, 22px;
   --text-regular: 16px, 26px;
@@ -81,6 +92,17 @@
       transform: translateY(0);
     }
   }
+}
+
+/* African visitors: hide the global home page and header from first paint until
+   React swaps in the Africa version (see lib/region.ts). */
+html[data-region="africa"] [data-region-global] {
+  display: none !important;
+}
+
+/* Inlined so the utility resolves the next/font variable set on the Africa page wrapper. */
+@theme inline {
+  --font-afdisplay: var(--font-af-display), Inter, sans-serif;
 }
 
 /*

@@ -31,7 +31,7 @@ const slides: Slide[] = [
                 fontSize: '1.375rem',
                 fontWeight: '400'
             }}>
-                Codewyse is founded by a group of passionate tech professionals, united by a vision to create transformative digital solutions—ranging from custom software and web platforms to AI-powered systems.
+                Codewyse is founded by a group of passionate tech professionals, united by a vision to create transformative digital solutions, ranging from custom software and web platforms to AI-powered systems.
 
             </p>
         ),

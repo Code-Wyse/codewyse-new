@@ -16,7 +16,7 @@ const Pricing = () => {
             <SectionHeader
               headerInfo={{
                 subtitle: `Flexible Options for Every Stage of Your SaaS Journey`,
-                description: `Choose from our expertly crafted boilerplates to match your startup’s needs—from rapid MVP launches to fully customized, production-ready SaaS platforms. One-time pricing, no recurring fees.`,
+                description: `Choose from our expertly crafted boilerplates to match your startup’s needs, from rapid MVP launches to fully customized, production-ready SaaS platforms. One-time pricing, no recurring fees.`,
               }}
             />
           </div>

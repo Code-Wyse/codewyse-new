@@ -45,7 +45,7 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          _subject: `New Contact Message — ${form.name}`,
+          _subject: `New Contact Message: ${form.name}`,
           _template: "table",
           _captcha: "false",
           form_type: "Contact",

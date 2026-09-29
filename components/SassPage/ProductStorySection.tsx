@@ -14,7 +14,7 @@ function ProductStorySection() {
         className='w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-8 mb-8 object-center object-cover'
         />
             {/* <img
-                alt="Marc Lou — Product Hunt Maker of the Year 2023" loading="lazy" width="200" height="200"
+                alt="Marc Lou, Product Hunt Maker of the Year 2023" loading="lazy" width="200" height="200"
                 decoding="async" data-nimg="1"
                 className="w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-8 mb-8 object-center object-cover"
                 style="color: transparent;"
@@ -24,7 +24,7 @@ function ProductStorySection() {
             <p className="mb-5 text-black">In 2018, I believed I was Mark Zuckerberg, built a startup for 1 year, and got 0 users...
             </p>
             <p className="mb-5 text-black">A few years after my burnout, I restarted the journey differently: I shipped like a
-                madman—<a className="link text-black font-medium hover:link-accent whitespace-nowrap" target="_blank"
+                madman, <a className="link text-black font-medium hover:link-accent whitespace-nowrap" target="_blank"
                     href="#">16 startups in 2 years.</a>Now I'm happy and
                 earn $45,000 a month.</p>
             <p className="mb-5 text-black">I realized I was doing the same thing over and over: set up DNS records, listen to Stripe
@@ -34,7 +34,7 @@ function ProductStorySection() {
                     building a business</li>
                 <li><span className="text-black font-medium">Avoid headaches</span> like emails ending in
                     spam or handling Stripe subscriptions</li>
-                <li><span className="text-black font-medium">Get profitable fast</span>—the more you ship, the more
+                <li><span className="text-black font-medium">Get profitable fast</span>: the more you ship, the more
                     you learn, the more you earn</li>
             </ul>
             <p className='text-black'><a className="link text-black whitespace-nowrap text-black hover:link-accent font-medium group" target="_blank"

@@ -19,7 +19,7 @@ const WhatDefinesUs = () => {
             <div className="numbered-grid__content">
               <h3>Transparency</h3>
               <p>
-                Many companies claim to be transparent — it’s easy to say. But you can just keep
+                Many companies claim to be transparent; it’s easy to say. But you can just keep
                 reading our website to see that we live it. Between our{' '}
                 <Link href="/services/">Services</Link> page and{' '}
                 <Link href="/#faq">FAQ</Link>, we’ve tried to anticipate your questions and
@@ -68,7 +68,7 @@ const WhatDefinesUs = () => {
               </p>
               <p>
                 Second, we take on complex projects that push the boundaries of what’s possible. We
-                don’t repackage old solutions — we build{' '}
+                don’t repackage old solutions; we build{' '}
                 <strong>cutting-edge digital products</strong>.
               </p>
               <p>

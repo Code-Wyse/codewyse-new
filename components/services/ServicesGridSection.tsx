@@ -16,61 +16,61 @@ const coreValues: CoreValue[] = [
   {
     title: "Custom Web App Development",
     imageSrc: "/images/web-development-services.png",
-    imageAlt: "Custom web app development services — Codewyse",
+    imageAlt: "Custom web app development services by Codewyse",
     description:
-      "Custom web apps and SaaS platforms built on Next.js, React and Node.js — fast, SEO-ready, secure and built to scale from MVP to millions of users.",
+      "Custom web apps and SaaS platforms built on Next.js, React and Node.js, fast, SEO-ready, secure and built to scale from MVP to millions of users.",
   },
   {
     title: "Mobile App Development",
     imageSrc: "/images/mobile-development-services.png",
-    imageAlt: "iOS and Android mobile app development — Codewyse",
+    imageAlt: "iOS and Android mobile app development by Codewyse",
     description:
-      "iOS, Android and cross-platform mobile app development with React Native, Flutter, Swift and Kotlin — native-grade UX, App Store and Google Play delivery.",
+      "iOS, Android and cross-platform mobile app development with React Native, Flutter, Swift and Kotlin, native-grade UX, App Store and Google Play delivery.",
   },
   {
     title: "AI & ML Development",
     imageSrc: "/images/ui-ux-services.png",
-    imageAlt: "AI and machine learning development — Codewyse",
+    imageAlt: "AI and machine learning development by Codewyse",
     description: (
       <>
-        Generative AI, LLM integration, RAG pipelines, recommendation engines and predictive ML — production AI &amp; ML features that move the metrics inside your web and mobile apps.
+        Generative AI, LLM integration, RAG pipelines, recommendation engines and predictive ML, production AI &amp; ML features that move the metrics inside your web and mobile apps.
       </>
     ),
   },
   {
     title: "Custom CRM Development",
     imageSrc: "/images/api-integration-icon.png",
-    imageAlt: "Custom CRM development — Codewyse",
+    imageAlt: "Custom CRM development by Codewyse",
     description:
-      "Tailor-made CRM systems that fit your sales, support and operations workflows — with integrations to HubSpot, Salesforce, Zoho, Stripe and Twilio.",
+      "Tailor-made CRM systems that fit your sales, support and operations workflows, with integrations to HubSpot, Salesforce, Zoho, Stripe and Twilio.",
   },
   {
     title: "SaaS & MVP Development",
     imageSrc: "/images/prod-mvp-icon.png",
-    imageAlt: "SaaS and MVP development — Codewyse",
+    imageAlt: "SaaS and MVP development by Codewyse",
     description:
-      "Production-ready SaaS and MVP development with auth, billing, multi-tenancy and AI features — go from idea to paying users in weeks, not months.",
+      "Production-ready SaaS and MVP development with auth, billing, multi-tenancy and AI features. Go from idea to paying users in weeks, not months.",
   },
   {
     title: "Cloud, DevOps & Scalable Architecture",
     imageSrc: "/images/scalable-architechture.png",
-    imageAlt: "Cloud DevOps and scalable architecture — Codewyse",
+    imageAlt: "Cloud DevOps and scalable architecture by Codewyse",
     description:
-      "Cloud-native architecture on AWS, GCP and Azure with CI/CD, containers and observability — fast, resilient and cost-efficient at any scale.",
+      "Cloud-native architecture on AWS, GCP and Azure with CI/CD, containers and observability, fast, resilient and cost-efficient at any scale.",
   },
   {
     title: "API Development & Integrations",
     imageSrc: "/images/api-integration-icon.png",
-    imageAlt: "API development and integrations — Codewyse",
+    imageAlt: "API development and integrations by Codewyse",
     description:
       "REST and GraphQL API development plus integrations with Stripe, PayPal, Salesforce, HubSpot, Firebase, Algolia, OpenAI and more.",
   },
   {
     title: "Security & Compliance",
     imageSrc: "/images/security-icon.png",
-    imageAlt: "Security and compliance by design — Codewyse",
+    imageAlt: "Security and compliance by design by Codewyse",
     description:
-      "Security-first engineering with encryption, RBAC, threat modeling and compliance for GDPR, HIPAA, SOC2 and PCI — embedded into every build.",
+      "Security-first engineering with encryption, RBAC, threat modeling and compliance for GDPR, HIPAA, SOC2 and PCI, embedded into every build.",
   },
 ];
 

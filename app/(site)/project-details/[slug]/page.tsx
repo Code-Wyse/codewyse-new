@@ -20,10 +20,10 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       robots: { index: false, follow: false },
     };
   }
-  const title = `${project.title} — Case Study`;
+  const title = `${project.title}: Case Study`;
   const description =
     project.description?.toString().slice(0, 160) ||
-    `${project.title} — a custom web, mobile, AI & ML, SaaS or CRM project delivered by Codewyse.`;
+    `${project.title} is a custom web, mobile, AI & ML, SaaS or CRM project delivered by Codewyse.`;
   const url = `/project-details/${project.slug}`;
   return {
     title,

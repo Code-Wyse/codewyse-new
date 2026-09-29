@@ -26,7 +26,7 @@ function ProjectsSections() {
                 /> */}
                 {/* <div className="">
                     <h4 className='mx-auto text-center mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3'>Custom Web & Mobile Development That Drives Results</h4>
-                    <p className='mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] text-center'>We specialize in building powerful, user-first digital experiences — from responsive websites to high-performance mobile apps. Whether you're launching a startup or scaling an enterprise, our team brings your vision to life with clean code, intuitive design, and scalable architecture.</p>
+                    <p className='mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] text-center'>We specialize in building powerful, user-first digital experiences, from responsive websites to high-performance mobile apps. Whether you're launching a startup or scaling an enterprise, our team brings your vision to life with clean code, intuitive design, and scalable architecture.</p>
                 </div> */}
                 <div className="hello">
                     <motion.div

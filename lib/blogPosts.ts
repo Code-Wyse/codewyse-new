@@ -4,7 +4,7 @@
 //   2. MDX files in markdown/blog/*.mdx (drafter output)
 // Returns posts sorted by publishedAt desc.
 //
-// Server-only — uses fs/path. Do NOT import from a client component.
+// Server-only: uses fs/path. Do NOT import from a client component.
 
 import "server-only";
 import fs from "node:fs";

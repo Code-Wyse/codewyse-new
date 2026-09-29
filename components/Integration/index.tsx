@@ -16,7 +16,7 @@ const Integration = () => {
             headerInfo={{
               
               subtitle: `Optimize Operations with Intelligent Workflows`,
-              description: `From marketing and sales to support and DevOps, CodeWyse empowers startups and enterprises with powerful automation solutions—driving efficiency, accuracy, and scale without the manual hassle.`,
+              description: `From marketing and sales to support and DevOps, CodeWyse empowers startups and enterprises with powerful automation solutions, driving efficiency, accuracy, and scale without the manual hassle.`,
             }}
           />
 

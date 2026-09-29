@@ -19,7 +19,7 @@ const Feature = () => {
             headerInfo={{
 
               subtitle: "Your software partner for custom web apps, mobile apps, AI & ML, SaaS, MVPs and CRMs.",
-              description: `We don't just build apps — we ship production-grade web, mobile, AI/ML and CRM products that solve real business problems and scale.`,
+              description: `We don't just build apps; we ship production-grade web, mobile, AI/ML and CRM products that solve real business problems and scale.`,
             }}
           />
           {/* <!-- Section Title End --> */}
