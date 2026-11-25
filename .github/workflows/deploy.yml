@@ -25,7 +25,7 @@ env:
   # Pinned host key. Update if Namecheap moves the account to another server:
   #   ssh-keyscan -p 21098 -t ed25519 codewyse.io
   SSH_HOST_KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKpKOo0GRVG8IX3zvu90l2pQ1iiCKsiE40PolqHW/yf8
-  SITE_URL: http://codewyse.io
+  SITE_URL: https://codewyse.io
 
 # Build and deploy are separate jobs so that dependencies and repository code
 # never run on the machine that holds the SSH key.
