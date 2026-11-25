@@ -1,0 +1,144 @@
+name: Build & Deploy codewyse.io
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Never let two deploys overlap on the same host directory.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+# Required secrets: SSH_PRIVATE_KEY (authorized in cPanel > SSH Access) and
+# SSH_USER (the cPanel username).
+env:
+  SSH_HOST: codewyse.io
+  # Namecheap shared hosting uses 21098, not 22.
+  SSH_PORT: '21098'
+  # Document root of codewyse.io, relative to the SSH user's home. This account hosts other sites too, so the
+  # deploy step refuses to run against any other path.
+  DEPLOY_PATH: codewyse.io
+  # Pinned host key. Update if Namecheap moves the account to another server:
+  #   ssh-keyscan -p 21098 -t ed25519 codewyse.io
+  SSH_HOST_KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKpKOo0GRVG8IX3zvu90l2pQ1iiCKsiE40PolqHW/yf8
+  SITE_URL: http://codewyse.io
+
+# Build and deploy are separate jobs so that dependencies and repository code
+# never run on the machine that holds the SSH key.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      # output: 'export' in next.config.js writes the static site to out/.
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+
+      # rsync --delete must never run from an empty or partial build.
+      - name: Verify build output
+        run: |
+          set -euo pipefail
+          for f in index.html 404.html .htaccess sitemap.xml _next/static; do
+            if [ ! -e "out/$f" ]; then
+              echo "::error::out/$f is missing; refusing to deploy."
+              exit 1
+            fi
+          done
+          echo "$(find out -type f | wc -l) files, $(du -sh out | cut -f1)"
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: out
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: out
+
+      - name: Configure SSH
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "$SSH_PRIVATE_KEY" ] || [ -z "$SSH_USER" ]; then
+            echo "::error::Repository secrets SSH_PRIVATE_KEY and SSH_USER must be set."
+            exit 1
+          fi
+          mkdir -p ~/.ssh
+          # tr guards against CRLF from a Windows copy-paste.
+          (umask 077; printf '%s\n' "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/deploy_key)
+          if ! ssh-keygen -y -P '' -f ~/.ssh/deploy_key > /dev/null; then
+            echo "::error::SSH_PRIVATE_KEY is malformed or passphrase-protected."
+            exit 1
+          fi
+          echo "[$SSH_HOST]:$SSH_PORT $SSH_HOST_KEY" > ~/.ssh/known_hosts
+
+      # Excluded paths are never deleted: cgi-bin and .well-known belong to
+      # cPanel (the latter is used for SSL certificate validation).
+      # Pages go last, so they never reference assets not yet uploaded.
+      - name: Deploy via rsync
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          set -euo pipefail
+          if [ "$DEPLOY_PATH" != "codewyse.io" ]; then
+            echo "::error::Unexpected DEPLOY_PATH: $DEPLOY_PATH"
+            exit 1
+          fi
+          test -s out/index.html && test -s out/.htaccess && test -d out/_next/static
+          SSH="ssh -p $SSH_PORT -i $HOME/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o HostKeyAlgorithms=ssh-ed25519"
+          DEST="$SSH_USER@$SSH_HOST:$DEPLOY_PATH"
+          rsync -rlz --chmod=D755,F644 -e "$SSH" out/_next/ "$DEST/_next/"
+          rsync -rlz --chmod=Du=rwx,Dgo=rx,F644 --omit-dir-times --delete-after             --exclude='/cgi-bin/' --exclude='/.well-known/'             -e "$SSH" out/ "$DEST/"
+          # cPanel expects the document root itself at 750 (group nobody).
+          $SSH "$SSH_USER@$SSH_HOST" "chmod 750 '$DEPLOY_PATH'"
+
+      # Compare the live home page with what was just built.
+      - name: Check live site
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3 4 5; do
+            if curl -fsSL --max-time 30 "$SITE_URL/?deploy=$GITHUB_RUN_ID" -o /tmp/live.html               && cmp -s /tmp/live.html out/index.html; then
+              echo "Live home page matches this build."
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::Live home page does not match this build."
+          exit 1
+
+      - name: Remove deploy key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
